@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact – Uma Associate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial}
+header{background:#0b5ed7;color:#fff;padding:40px;text-align:center}
+nav{background:#f4f4f4;padding:12px;text-align:center}
+nav a{margin:0 15px;text-decoration:none;color:#0b5ed7;font-weight:bold}
+section{padding:50px;font-size:17px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Contact Us</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<p><strong>Uma Associate & Tax Consultant</strong></p>
+<p>📧 Email: Umaassociate2020@yahoo.com</p>
+<p>📞 Mobile: +91 95746 65220</p>
+<p>📍 Gujarat, India</p>
+</section>
+
+</body>
+</html>
