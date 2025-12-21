@@ -4,60 +4,152 @@
   <meta charset="UTF-8">
   <title>Uma Associate & Tax Consultant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uma Associate & Tax Consultant – Accounting, Income Tax, GST, TDS, Financial & Business Analysis">
+  <meta name="description" content="Uma Associate & Tax Consultant – Income Tax, GST, TDS, ROC, Company Registration & Compliance Services">
   <style>
-    body{margin:0;font-family:Arial;line-height:1.6;color:#222}
-    header{
-      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-      url('https://images.unsplash.com/photo-1581091870627-3b5a1a5b9b27');
-      background-size:cover;color:#fff;text-align:center;padding:70px 20px
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
-    nav{text-align:center;background:#f4f4f4;padding:12px}
-    nav a{margin:0 15px;color:#0b5ed7;text-decoration:none;font-weight:bold}
-    section{max-width:1100px;margin:auto;padding:50px 20px}
-    .hero{display:flex;flex-wrap:wrap;gap:30px;align-items:center}
-    .hero img{max-width:360px;border-radius:15px}
-    footer{text-align:center;background:#222;color:#fff;padding:20px}
-    .tax-bg{
-      background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),
-      url('https://images.unsplash.com/photo-1554224154-22dec7ec8818');
-      background-size:cover
+
+    header {
+      background: #0b2c4d;
+      color: white;
+      padding: 15px 30px;
     }
-    .whatsapp{
-      position:fixed;bottom:20px;right:20px;
-      background:#25d366;color:#fff;
-      padding:14px 20px;border-radius:50px;
-      font-weight:bold;text-decoration:none
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0b2c4d;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-box h3 {
+      color: #0b2c4d;
+    }
+
+    footer {
+      background: #0b2c4d;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Uma Associate & Tax Consultant</h1>
-  <p>Accounting • Income Tax • GST • TDS • Financial Analysis</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About & Services</a>
-</nav>
+<section class="hero">
+  <h1>Uma Associate & Tax Consultant</h1>
+  <p>One Stop Solution for Tax, Accounting & Compliance Services</p>
+</section>
 
-<section class="tax-bg">
-  <div class="hero">
-    <div>
-      <h2>Your Trusted Tax & Financial Professional</h2>
-      <p>Professional accounting and taxation services focused on accuracy, compliance and business growth.</p>
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+
+    <div class="service-box">
+      <h3>Income Tax</h3>
+      <p>ITR Filing, Tax Planning, Capital Gain, TDS & Tax Notices Handling.</p>
     </div>
-    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Professional Handshake">
+
+    <div class="service-box">
+      <h3>GST Services</h3>
+      <p>GST Registration, Returns Filing, GST Audit & GST Compliance.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>TDS / TCS</h3>
+      <p>TDS Return Filing, Correction, Form 16 / 16A & Compliance.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Company & ROC</h3>
+      <p>Company Incorporation, ROC Annual Filing, LLP & OPC Compliance.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Accounting</h3>
+      <p>Book Keeping, Finalization of Accounts & MIS Reports.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>MSME & Other</h3>
+      <p>MSME Registration, PAN, TAN, DSC & Business Compliance.</p>
+    </div>
+
   </div>
 </section>
 
 <footer>
-  <p>© 2025 Uma Associate & Tax Consultant</p>
+  <p><strong>Uma Associate & Tax Consultant</strong></p>
+  <p>Contact Person: Harshil Patel</p>
+  <p>Email: Umaassociate2020@yahoo.com | Mobile: +91 95746 65220</p>
+  <p>© 2025 Uma Associate. All Rights Reserved.</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/919574665220" target="_blank">💬 WhatsApp</a>
 
 </body>
 </html>
