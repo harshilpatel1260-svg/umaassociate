@@ -60,3 +60,227 @@ footer{background:#0b2c4d;color:white;text-align:center;padding:20px;}
 <a class="whatsapp" href="https://wa.me/919574665220">💬</a>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Services – Uma Associate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:
+linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),
+url("https://images.unsplash.com/photo-1554224154-22dec7ec8818");
+background-size:cover;
+background-attachment:fixed;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{text-align:center;color:#0b2c4d;}
+h2{color:#0b2c4d;margin-top:40px;}
+
+.service{
+display:flex;
+gap:15px;
+margin-bottom:25px;
+align-items:flex-start;
+}
+
+.service img{
+width:120px;
+height:90px;
+object-fit:cover;
+border-radius:8px;
+flex-shrink:0;
+}
+
+.service p{
+font-size:14px;
+color:#444;
+line-height:1.6;
+}
+
+form{
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.1);
+max-width:500px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+button{
+background:#0b5ed7;
+color:#fff;
+border:none;
+padding:12px;
+width:100%;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#0b2c4d;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<h1>Our Professional Services</h1>
+
+<!-- INCOME TAX -->
+<div class="service" id="tax">
+<img src="https://images.unsplash.com/photo-1581091012184-7c54b8c1b7a9">
+<p>
+<b>Income Tax Services</b><br>
+We provide end-to-end income tax services including ITR filing for individuals,
+firms, companies, trusts and NRIs. Our focus is on tax planning, compliance,
+capital gains, notices and representation before tax authorities.
+</p>
+</div>
+
+<!-- GST -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
+<p>
+<b>GST – Goods & Services Tax</b><br>
+GST registration, monthly/annual returns, audits, notices, departmental
+assessments and appeals. We ensure smooth compliance and minimize risk.
+</p>
+</div>
+
+<!-- ACCOUNTING -->
+<div class="service" id="accounting">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
+<p>
+<b>Accounting, TDS & TCS</b><br>
+Complete accounting solutions including bookkeeping, payroll, TDS/TCS
+compliance, returns filing and reconciliation to ensure accurate financial records.
+</p>
+</div>
+
+<!-- COMPANY REGISTRATION -->
+<div class="service" id="company">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1">
+<p>
+<b>Company Registration & ROC Compliance</b><br>
+Private Limited, LLP, OPC registration, ROC filings, annual compliance,
+director changes, share capital alteration and company closure services.
+</p>
+</div>
+
+<!-- STARTUP -->
+<div class="service" id="startup">
+<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
+<p>
+<b>Startup & MSME Services</b><br>
+We assist startups and MSMEs with registrations, compliance, accounting,
+tax planning and advisory to help them grow in a compliant manner.
+</p>
+</div>
+
+<!-- CORPORATE FINANCE -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7">
+<p>
+<b>Corporate Finance & Advisory</b><br>
+Project funding, working capital, financial restructuring, valuations,
+business advisory and strategic financial planning for corporates.
+</p>
+</div>
+
+<!-- INSURANCE -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8">
+<p>
+<b>Insurance & Personal Financial Advisory</b><br>
+Insurance planning, investment advisory, retirement planning and personal
+financial solutions tailored to client needs.
+</p>
+</div>
+
+</section>
+
+<!-- GET IN TOUCH -->
+<section>
+<h2 style="text-align:center;">Get In Touch</h2>
+
+<form onsubmit="sendWhatsApp();return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+<textarea id="message" placeholder="Your Message"></textarea>
+<button type="submit">Send on WhatsApp</button>
+</form>
+</section>
+
+<footer>
+<p>
+<b>Uma Associate & Tax Consultant</b><br>
+📞 +91 95746 65220 | ✉️ Umaassociate2020@yahoo.com
+</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919574665220">💬</a>
+
+<script>
+function sendWhatsApp(){
+var name=document.getElementById("name").value;
+var mobile=document.getElementById("mobile").value;
+var msg=document.getElementById("message").value;
+
+var url="https://wa.me/919574665220?text="
++"Name: "+name+"%0A"
++"Mobile: "+mobile+"%0A"
++"Message: "+msg;
+
+window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
+
+<footer>
+<p><b>Uma Associate & Tax Consultant</b></p>
+<p>📞 +91 95746 65220 | 📧 Umaassociate2020@yahoo.com</p>
+</footer>
+
+</body>
+</html>
