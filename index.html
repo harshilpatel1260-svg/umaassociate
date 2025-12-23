@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>Uma Associate & Tax Consultant</title>
-<div style="margin-top:25px;">
-  
-  <!-- OUR SERVICES SCROLL BUTTON -->
-  <a href="#services"
-     class="btn-primary">
-     Our Services
-  </a>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FREE CONSULTATION BUTTON -->
-  <a href="https://wa.me/919574665220?text=Hello%20I%20need%20free%20consultation"
-     class="btn-secondary">
-     Get Free Consultation
-  </a>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:
+linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),
+url("https://images.unsplash.com/photo-1554224154-22dec7ec8818");
+background-size:cover;
+}
 
-</div>
+header{
+text-align:center;
+padding:80px 20px;
+color:#0b2c4d;
+}
 
-<a href="services.html"
-style="
-  <style>
-html{
-scroll-behavior:smooth;
+nav{
+background:#0b2c4d;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
 }
 
 .btn-primary{
 display:inline-block;
-margin:10px;
 padding:14px 30px;
 background:#0b5ed7;
 color:#fff;
-font-size:16px;
 font-weight:bold;
 border-radius:30px;
 text-decoration:none;
-box-shadow:0 6px 18px rgba(11,94,215,.4);
-transition:0.3s;
+margin:10px;
 }
 
-.btn-primary:hover{
-background:#084298;
-transform:translateY(-2px);
-}
-
-/* PULSE ANIMATION */
 .btn-secondary{
 display:inline-block;
-margin:10px;
 padding:14px 30px;
 background:#25D366;
 color:#fff;
-font-size:16px;
 font-weight:bold;
 border-radius:30px;
 text-decoration:none;
-animation:pulse 1.8s infinite;
+margin:10px;
+animation:pulse 1.5s infinite;
 }
 
 @keyframes pulse{
@@ -64,215 +67,60 @@ animation:pulse 1.8s infinite;
 70%{box-shadow:0 0 0 15px rgba(37,211,102,0);}
 100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
 }
-</style>
 
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:#0b5ed7;
-color:#ffffff;
-font-size:16px;
-font-weight:bold;
-border-radius:30px;
-text-decoration:none;
-box-shadow:0 6px 18px rgba(11,94,215,.4);
-">
-Our Services
-</a>
-
-<meta name="description" content="Uma Associate & Tax Consultant – Accounting, Income Tax, GST, TDS, Corporate & Advisory Services in India.">
-<meta name="keywords" content="Tax Consultant, Income Tax, GST, TDS, Accounting, Company Registration">
-
-<style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif}
-
-/* HEADER BACKGROUND */
-header{
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1554224154-22dec7ec8818");
-background-size:cover;
-background-position:center;
-color:#fff;
-padding:90px 20px;
-text-align:center;
-}
-
-/* NAVIGATION */
-nav{
-background:#f4f4f4;
-padding:12px;
-text-align:center;
-}
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:#0b2c4d;
-font-weight:bold;
-}
-
-/* SECTION */
-section{
-padding:50px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-<section>
-<h2 style="text-align:center">Our Professional Services</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px">
-
-<!-- SAP -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0">
-<h3>SAP Accounting Support</h3>
-<p>SAP based accounting & reporting services.</p>
-<a href="service-detail.html#sap">Know More</a>
-</div>
-
-<!-- MSME -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e">
-<h3>MSME Registration</h3>
-<p>MSME registration & compliance benefits.</p>
-<a href="service-detail.html#msme">Know More</a>
-</div>
-
-<!-- Accounting -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-<h3>Accounting Services</h3>
-<p>Complete bookkeeping & financial reports.</p>
-<a href="service-detail.html#accounting">Know More</a>
-</div>
-
-<!-- GST -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
-<h3>GST Services</h3>
-<p>Registration, returns, audit & notices.</p>
-<a href="service-detail.html#gst">Know More</a>
-</div>
-
-<!-- Income Tax -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521791055366-0d553872125f">
-<h3>Income Tax</h3>
-<p>ITR filing, tax planning & litigation.</p>
-<a href="service-detail.html#income-tax">Know More</a>
-</div>
-
-<!-- TDS TCS -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
-<h3>TDS / TCS</h3>
-<p>TDS & TCS compliance and returns.</p>
-<a href="service-detail.html#tds">Know More</a>
-</div>
-
-<!-- Company Registration -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
-<h3>Company Registration & Compliance</h3>
-<p>Pvt Ltd, LLP, OPC, ROC filings.</p>
-<a href="service-detail.html#company">Know More</a>
-</div>
-
-<!-- Insurance -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0">
-<h3>Insurance & Investment</h3>
-<p>Life, health insurance & investments.</p>
-<a href="service-detail.html#insurance">Know More</a>
-</div>
-
-<!-- Personal Advisory -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9">
-<h3>Personal Financial Advisory</h3>
-<p>Wealth & tax efficient planning.</p>
-<a href="service-detail.html#advisory">Know More</a>
-</div>
-
-<!-- Corporate Finance -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
-<h3>Corporate Finance</h3>
-<p>Funding, restructuring & valuation.</p>
-<a href="service-detail.html#corporate-finance">Know More</a>
-</div>
-
-</div>
-</section>
-
-/* BUTTON */
-.btn{
-display:inline-block;
-background:#0b5ed7;
-color:#fff;
-padding:12px 25px;
-text-decoration:none;
-border-radius:30px;
-margin-top:15px;
-}
-
-/* FOOTER */
 footer{
 background:#0b2c4d;
-color:#fff;
+color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<h1 style="font-size:42px;">Welcome to Uma Associate & Tax Consultant</h1>
-<p style="font-size:18px;">
-Accounting • Income Tax • GST • TDS • Corporate & Advisory Services
-</p>
-<a href="services.html" class="btn">View Our Services</a>
-</header>
-
-<!-- NAV -->
 <nav>
 <a href="index.html">Home</a>
-<a href="about.html">About Us</a>
 <a href="services.html">Services</a>
 </nav>
 
-<!-- INTRO -->
+<header>
+<h1>Welcome to Uma Associate & Tax Consultant</h1>
+<p>Accounting • Income Tax • GST • TDS • Corporate Finance</p>
+
+<div>
+<a href="services.html" class="btn-primary">Our Services</a>
+<a href="https://wa.me/919574665220" class="btn-secondary">Get Free Consultation</a>
+</div>
+</header>
+
 <section>
-<h2>Your Trusted Financial & Tax Partner</h2>
-<p>
-Uma Associate & Tax Consultant provides professional accounting,
-taxation and advisory services to individuals, startups and corporates.
-Our focus is on compliance, accuracy and long-term client relationships.
-</p>
+<h2>📊 Current Finance Updates</h2>
+<ul>
+<li>ITR Filing compliance tightening</li>
+<li>GST notices increasing for MSMEs</li>
+<li>Startups advised proper accounting & ROC filing</li>
+</ul>
 </section>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/919574665220"
-style="position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px 18px;border-radius:50px;
-text-decoration:none;font-weight:bold">
-💬 WhatsApp
-</a>
-
-<!-- FOOTER -->
 <footer>
-<p><b>Uma Associate & Tax Consultant</b></p>
-<p>📍 Gujarat, India</p>
-<p>📞 +91 95746 65220</p>
-<p>📧 Umaassociate2020@yahoo.com</p>
-<p>© 2025 Uma Associate. All Rights Reserved.</p>
+<b>Uma Associate & Tax Consultant</b><br>
+📞 +91 95746 65220 | ✉️ Umaassociate2020@yahoo.com
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919574665220">💬</a>
 
 </body>
 </html>
