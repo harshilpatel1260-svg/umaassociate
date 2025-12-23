@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Our Services – Uma Associate</title>
+<title>Our Services – Uma Associate & Tax Consultant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
 margin:0;
-font-family:Arial,Helvetica,sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:
 linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),
 url("https://images.unsplash.com/photo-1554224154-22dec7ec8818");
@@ -16,42 +16,48 @@ background-size:cover;
 background-attachment:fixed;
 }
 
+/* COMMON SECTION */
 section{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 padding:40px 20px;
 }
 
-h1{text-align:center;color:#0b2c4d;}
-h2{color:#0b2c4d;margin-top:40px;}
+h1,h2{color:#0b2c4d;text-align:center;}
 
 .service{
 display:flex;
 gap:15px;
 margin-bottom:25px;
 align-items:flex-start;
+background:#fff;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .service img{
-width:120px;
-height:90px;
+width:110px;
+height:85px;
 object-fit:cover;
 border-radius:8px;
 flex-shrink:0;
 }
 
 .service p{
+margin:0;
 font-size:14px;
-color:#444;
 line-height:1.6;
+color:#444;
 }
 
+/* FORM */
 form{
 background:#fff;
 padding:25px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,.1);
-max-width:500px;
+border-radius:15px;
+box-shadow:0 6px 18px rgba(0,0,0,.12);
+max-width:520px;
 margin:auto;
 }
 
@@ -75,6 +81,7 @@ border-radius:6px;
 cursor:pointer;
 }
 
+/* FOOTER */
 footer{
 background:#0b2c4d;
 color:#fff;
@@ -83,16 +90,19 @@ padding:20px;
 margin-top:50px;
 }
 
+/* BIG WHATSAPP BUTTON */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:#fff;
-padding:15px;
-border-radius:50%;
+padding:18px 20px;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
 text-decoration:none;
-font-size:22px;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -106,30 +116,50 @@ font-size:22px;
 <div class="service" id="tax">
 <img src="https://images.unsplash.com/photo-1581091012184-7c54b8c1b7a9">
 <p>
-<b>Income Tax Services</b><br>
-We provide end-to-end income tax services including ITR filing for individuals,
-firms, companies, trusts and NRIs. Our focus is on tax planning, compliance,
-capital gains, notices and representation before tax authorities.
+<b>Income Tax</b><br>
+We provide comprehensive income tax services including ITR filing, tax planning,
+capital gains advisory, notices handling and representation before tax authorities
+for individuals, firms and companies.
 </p>
 </div>
 
-<!-- GST -->
+<!-- TDS / TCS -->
 <div class="service">
-<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
 <p>
-<b>GST – Goods & Services Tax</b><br>
-GST registration, monthly/annual returns, audits, notices, departmental
-assessments and appeals. We ensure smooth compliance and minimize risk.
+<b>TDS & TCS Compliance</b><br>
+End-to-end TDS/TCS services including calculation, deduction, returns filing,
+reconciliation and compliance to avoid penalties and interest.
 </p>
 </div>
 
 <!-- ACCOUNTING -->
 <div class="service" id="accounting">
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c">
 <p>
-<b>Accounting, TDS & TCS</b><br>
-Complete accounting solutions including bookkeeping, payroll, TDS/TCS
-compliance, returns filing and reconciliation to ensure accurate financial records.
+<b>Accounting & Bookkeeping</b><br>
+Accurate bookkeeping, ledger maintenance, payroll accounting and preparation
+of financial statements to support business decisions and compliance.
+</p>
+</div>
+
+<!-- CORPORATE FINANCE -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7">
+<p>
+<b>Corporate Finance</b><br>
+Assistance in project funding, working capital, financial restructuring,
+valuation, mergers and strategic financial advisory.
+</p>
+</div>
+
+<!-- SAP -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<p>
+<b>SAP & Financial Systems Support</b><br>
+Support in SAP accounting processes, reporting, reconciliation and system-based
+financial controls for efficient business operations.
 </p>
 </div>
 
@@ -138,38 +168,28 @@ compliance, returns filing and reconciliation to ensure accurate financial recor
 <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1">
 <p>
 <b>Company Registration & ROC Compliance</b><br>
-Private Limited, LLP, OPC registration, ROC filings, annual compliance,
-director changes, share capital alteration and company closure services.
+Private Limited, LLP, OPC registration, ROC filings, annual compliance, director
+changes, share capital alteration and company closure services.
 </p>
 </div>
 
-<!-- STARTUP -->
-<div class="service" id="startup">
-<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
-<p>
-<b>Startup & MSME Services</b><br>
-We assist startups and MSMEs with registrations, compliance, accounting,
-tax planning and advisory to help them grow in a compliant manner.
-</p>
-</div>
-
-<!-- CORPORATE FINANCE -->
-<div class="service">
-<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7">
-<p>
-<b>Corporate Finance & Advisory</b><br>
-Project funding, working capital, financial restructuring, valuations,
-business advisory and strategic financial planning for corporates.
-</p>
-</div>
-
-<!-- INSURANCE -->
+<!-- PERSONAL ADVISORY -->
 <div class="service">
 <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8">
 <p>
-<b>Insurance & Personal Financial Advisory</b><br>
-Insurance planning, investment advisory, retirement planning and personal
-financial solutions tailored to client needs.
+<b>Personal Financial Advisory</b><br>
+Personal finance planning, retirement planning, wealth structuring and advisory
+solutions to achieve long-term financial goals.
+</p>
+</div>
+
+<!-- INSURANCE & INVESTMENT -->
+<div class="service">
+<img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad">
+<p>
+<b>Insurance & Investment Advisory</b><br>
+Guidance on insurance planning, investment options and risk management to
+secure personal and business financial stability.
 </p>
 </div>
 
@@ -177,24 +197,22 @@ financial solutions tailored to client needs.
 
 <!-- GET IN TOUCH -->
 <section>
-<h2 style="text-align:center;">Get In Touch</h2>
+<h2>Get in Touch</h2>
 
 <form onsubmit="sendWhatsApp();return false;">
 <input type="text" id="name" placeholder="Your Name" required>
 <input type="tel" id="mobile" placeholder="Mobile Number" required>
 <textarea id="message" placeholder="Your Message"></textarea>
-<button type="submit">Send on WhatsApp</button>
+<button type="submit">Send Message on WhatsApp</button>
 </form>
 </section>
 
 <footer>
-<p>
 <b>Uma Associate & Tax Consultant</b><br>
 📞 +91 95746 65220 | ✉️ Umaassociate2020@yahoo.com
-</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919574665220">💬</a>
+<a class="whatsapp" href="https://wa.me/919574665220">💬 WhatsApp</a>
 
 <script>
 function sendWhatsApp(){
@@ -210,14 +228,6 @@ var url="https://wa.me/919574665220?text="
 window.open(url,"_blank");
 }
 </script>
-
-</body>
-</html>
-
-<footer>
-<p><b>Uma Associate & Tax Consultant</b></p>
-<p>📞 +91 95746 65220 | 📧 Umaassociate2020@yahoo.com</p>
-</footer>
 
 </body>
 </html>
