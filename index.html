@@ -3,30 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <title>Uma Associate & Tax Consultant</title>
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f6f8;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(to right,#0f4c81,#1e88e5);
+  color:white;
+  padding:50px 20px;
+  text-align:center;
+}
+header h1{margin:0;font-size:36px;}
+header p{font-size:18px;margin:10px 0;}
+header a{
+  display:inline-block;
+  margin:10px;
+  padding:12px 22px;
+  background:#fff;
+  color:#0f4c81;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* SECTION */
+section{
+  padding:50px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+h2{text-align:center;color:#0f4c81;margin-bottom:30px;}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:white;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-5px);}
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+.card div{padding:15px;}
+.card h3{margin-top:0;color:#0f4c81;}
+.card p{font-size:14px;color:#555;}
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#1e88e5;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* ABOUT */
+.about{
+  background:white;
+  border-radius:12px;
+  padding:30px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* NEWS */
+.news ul{
+  list-style:none;
+  padding:0;
+}
+.news li{
+  background:white;
+  margin:10px 0;
+  padding:15px;
+  border-left:5px solid #1e88e5;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+  background:#0f4c81;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+footer a{color:#fff;text-decoration:none;font-weight:bold;}
+</style>
 </head>
+
 <body>
 
-<header class="hero">
+<header>
   <h1>Uma Associate & Tax Consultant</h1>
-  <p>Accounting • Income Tax • GST • TDS</p>
-  <a class="btn" href="services.html">View Services</a>
-  <a class="btn whatsapp" href="https://wa.me/919574665220">WhatsApp</a>
+  <p>Accounting • Income Tax • GST • TDS • Corporate Finance</p>
+  <a href="#services">Our Services</a>
+  <a href="https://wa.me/919574665220">Get Free Consultation</a>
 </header>
 
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Professional Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07">
+<div>
+<h3>Accounting</h3>
+<p>Complete bookkeeping, ledger, reconciliation and financial statements.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581091870627-3fd6b9c7d9c4">
+<div>
+<h3>GST Services</h3>
+<p>GST registration, monthly/annual returns & compliance.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
+<div>
+<h3>Income Tax</h3>
+<p>ITR filing, tax planning, notices & assessments.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd">
+<div>
+<h3>TDS / TCS</h3>
+<p>TDS return filing, challan, Form 16/26Q compliance.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+<div>
+<h3>MSME Services</h3>
+<p>MSME registration & government benefit advisory.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
+<div>
+<h3>Corporate Finance</h3>
+<p>Funding support, projections & business finance advisory.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565372918678-52c3a77f2a70">
+<div>
+<h3>Investment & Insurance</h3>
+<p>Smart investment & insurance planning guidance.</p>
+<a href="#">Know More</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section>
+<h2>About Us</h2>
+<div class="about">
+<p>
+Uma Associate & Tax Consultant is a professional firm providing reliable accounting,
+taxation and compliance services. We help individuals, startups and businesses
+to manage finances efficiently and stay compliant with Indian laws.
+</p>
+</div>
+</section>
+
+<!-- NEWS -->
 <section class="news">
-<h2>Latest Financial Updates</h2>
-<ul id="finance-news">
-  <li>Income Tax return due dates updated</li>
-  <li>MSME benefits expanded by Govt</li>
-  <li>RBI policy impacts business loans</li>
+<h2>Latest Finance Updates</h2>
+<ul>
+<li>Income Tax return due dates announced</li>
+<li>GST compliance rules updated for MSMEs</li>
+<li>RBI policy impacts business loans</li>
 </ul>
 </section>
 
 <footer>
-📞 +91 95746 65220 | ✉ Umaassociate2020@yahoo.com
+📞 +91 95746 65220 |
+✉ Umaassociate2020@yahoo.com <br>
+© Uma Associate & Tax Consultant
 </footer>
 
-<script src="js/news.js"></script>
 </body>
 </html>
