@@ -7,45 +7,62 @@
 </head>
 <body>
 
-<header>
-  <h1>Uma Associate & Tax Consultant</h1>
-  <p>Accounting | Income Tax | GST | TDS</p>
-  <p>📞 +91 95746 65220</p>
+<header class="top-header">
+  <div>
+    <h1>Uma Associate & Tax Consultant</h1>
+    <p>Accounting • Income Tax • GST • TDS</p>
+  </div>
+  <div class="contact">
+    📞 +91 95746 65220
+  </div>
 </header>
 
-<nav>
+<nav class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="services.html">Services</a>
+  <a href="https://wa.me/919574665220" class="whatsapp">WhatsApp</a>
 </nav>
 
+<!-- HERO BACKGROUND -->
 <section class="hero">
-  <h2>Professional Tax & Accounting Services</h2>
-  <a class="btn" href="services.html">View Services</a>
-  <a class="btn whatsapp" href="https://wa.me/919574665220">WhatsApp</a>
+  <div class="hero-content">
+    <h2>Trusted Tax & Accounting Professionals</h2>
+    <p>Handled by Harshil Patel</p>
+    <a href="services.html" class="btn">View Our Services</a>
+  </div>
 </section>
 
-<section class="news">
-  <h2>Latest Finance Updates</h2>
-  <ul id="financeNews">
-    <li>Loading latest finance news...</li>
-  </ul>
+<!-- LATEST FINANCIAL NEWS -->
+<section class="news-section">
+  <h2>Latest Financial News</h2>
+
+  <div class="news-grid">
+
+    <div class="news-card">
+      <img src="images/news-it.jpg">
+      <h3>Income Tax Updates</h3>
+      <p>ITR filing due dates revised. New compliance rules applicable.</p>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news-gst.jpg">
+      <h3>GST Latest News</h3>
+      <p>GST return rules simplified for small businesses.</p>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news-msme.jpg">
+      <h3>MSME Benefits</h3>
+      <p>Government announces additional benefits for MSME registrations.</p>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-  <p>© Uma Associate & Tax Consultant | Contact: +91 95746 65220</p>
+  <p>© Uma Associate & Tax Consultant | Harshil Patel</p>
 </footer>
-
-<script>
-fetch("https://api.allorigins.win/raw?url=https://www.livemint.com/rss/money")
-.then(res => res.text())
-.then(data => {
-  document.getElementById("financeNews").innerHTML =
-    "<li>Income Tax & GST updates available</li>" +
-    "<li>MSME benefits extended</li>" +
-    "<li>RBI policy impacts business loans</li>";
-});
-</script>
 
 </body>
 </html>
