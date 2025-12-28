@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Welcome to Uma Associate & Tax Consultant</title>
+<title>Uma Associate & Tax Consultant</title>
 <link rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<header class="hero">
-  <h1>Welcome to Uma Associate & Tax Consultant</h1>
-  <p>Accounting • Income Tax • GST • TDS • Corporate Finance</p>
-
-  <a href="#services" class="btn">Our Services</a>
-  <a href="services.html" class="btn blue">Get Free Consultation</a>
+<header>
+  <h1>Uma Associate & Tax Consultant</h1>
+  <p>Accounting | Income Tax | GST | TDS</p>
+  <p>📞 +91 95746 65220</p>
 </header>
 
 <nav>
@@ -23,48 +19,33 @@
   <a href="services.html">Services</a>
 </nav>
 
-<section class="finance">
+<section class="hero">
+  <h2>Professional Tax & Accounting Services</h2>
+  <a class="btn" href="services.html">View Services</a>
+  <a class="btn whatsapp" href="https://wa.me/919574665220">WhatsApp</a>
+</section>
+
+<section class="news">
   <h2>Latest Finance Updates</h2>
-  <ul>
-    <li>📈 GST compliance becoming stricter for MSMEs</li>
-    <li>💰 New Income Tax rules for FY 2025</li>
-    <li>🏦 RBI policy impact on loans & businesses</li>
+  <ul id="financeNews">
+    <li>Loading latest finance news...</li>
   </ul>
 </section>
 
-<section id="services">
-  <h2>Our Core Services</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581091870627-3b5a1a5b9b27">
-      <h3>Accounting</h3>
-      <p>Professional bookkeeping & financial reporting.</p>
-      <a href="service-detail.html?service=accounting">Know More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
-      <h3>Income Tax</h3>
-      <p>ITR filing, tax planning & notices.</p>
-      <a href="service-detail.html?service=tax">Know More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
-      <h3>GST</h3>
-      <p>Registration, returns & audits.</p>
-      <a href="service-detail.html?service=gst">Know More</a>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <p>📞 +91 95746 65220 | ✉️ Umaassociate2020@yahoo.com</p>
-  <p>Managed by Harshil Patel</p>
+  <p>© Uma Associate & Tax Consultant | Contact: +91 95746 65220</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919574665220">WhatsApp</a>
+<script>
+fetch("https://api.allorigins.win/raw?url=https://www.livemint.com/rss/money")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("financeNews").innerHTML =
+    "<li>Income Tax & GST updates available</li>" +
+    "<li>MSME benefits extended</li>" +
+    "<li>RBI policy impacts business loans</li>";
+});
+</script>
 
 </body>
 </html>
