@@ -4,245 +4,121 @@
 <meta charset="UTF-8">
 <title>Uma Associate & Tax Consultant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- CSS -->
 <style>
 body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:url("assets/images/tax-paper-bg.jpg") no-repeat center center fixed;
-  background-size:cover;
+ margin:0;
+ font-family:Arial;
+ background:url("https://images.unsplash.com/photo-1554224155-6726b3ff858f") no-repeat center/cover;
 }
-
-/* NAV */
+header{
+ background:rgba(0,0,0,0.65);
+ color:#fff;
+ padding:90px 20px;
+ text-align:center;
+}
 nav{
-  background:#0b5ed7;
-  padding:12px;
-  text-align:center;
+ background:#0b5ed7;
+ padding:12px;
+ text-align:center;
 }
 nav a{
-  color:#fff;
-  margin:0 15px;
-  text-decoration:none;
-  font-weight:bold;
+ color:#fff;
+ margin:0 15px;
+ text-decoration:none;
+ font-weight:bold;
 }
-
-/* COMMON */
 section{
-  padding:50px 8%;
+ background:#fff;
+ max-width:1100px;
+ margin:30px auto;
+ padding:30px;
+ border-radius:12px;
 }
-h2{
-  text-align:center;
-  color:#0b5ed7;
-  margin-bottom:30px;
+.services{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:20px;
 }
-p{
-  line-height:1.6;
+.card{
+ box-shadow:0 4px 12px rgba(0,0,0,.15);
+ border-radius:12px;
+ overflow:hidden;
 }
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  background:#0b5ed7;
-  color:#fff;
-  padding:8px 16px;
-  border-radius:6px;
-  text-decoration:none;
-  margin-top:10px;
+.card img{width:100%;height:160px;object-fit:cover;}
+.card div{padding:15px;}
+button{
+ background:#0b5ed7;
+ color:#fff;
+ border:none;
+ padding:10px 15px;
+ border-radius:6px;
+ cursor:pointer;
 }
-
-/* HERO */
-.hero{
-  background:rgba(255,255,255,0.9);
-  text-align:center;
-  padding:80px 10%;
-}
-.hero h1{
-  color:#0b5ed7;
-  font-size:32px;
-}
-
-/* ABOUT */
-.about-box{
-  background:#fff;
-  border-radius:12px;
-  display:flex;
-  gap:30px;
-  padding:30px;
-  flex-wrap:wrap;
-}
-.about-box img{
-  width:280px;
-  border-radius:12px;
-}
-.about-text{
-  flex:1;
-}
-
-/* SERVICES */
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-.service-card{
-  background:#fff;
-  padding:15px;
-  border-radius:10px;
-  text-align:center;
-}
-.service-card img{
-  width:100%;
-  max-height:130px;
-  object-fit:cover;
-  border-radius:8px;
-}
-
-/* CONTACT */
-.contact-box{
-  background:#0b5ed7;
-  color:#fff;
-  text-align:center;
-  padding:40px;
-}
-.contact-box a{
-  background:#25D366;
-  color:#fff;
-}
-
-/* FOOTER */
 footer{
-  background:#000;
-  color:#fff;
-  text-align:center;
-  padding:15px;
+ background:#222;
+ color:#fff;
+ text-align:center;
+ padding:20px;
+}
+.whatsapp{
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ background:#25d366;
+ color:#fff;
+ padding:16px 22px;
+ border-radius:50px;
+ font-weight:bold;
+ text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
+<header>
+<h1>Welcome to Uma Associate & Tax Consultant</h1>
+<p>Accounting • GST • Income Tax • Corporate Finance • MSME</p>
+</header>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Welcome to Uma Associate & Tax Consultant</h1>
-  <p>Professional Accounting, GST, Income Tax & Financial Advisory Services</p>
-  <a href="#services" class="btn">Our Services</a>
+<section>
+<h2>Our Professional Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
+<div>
+<h3>GST Services</h3>
+<p>Registration, returns & compliance.</p>
+<a href="service-gst.html"><button>Know More</button></a>
+</div>
 </div>
 
-<!-- ABOUT -->
-<section id="about">
-<h2>About Us</h2>
-<div class="about-box">
-  <img src="assets/images/about-office.jpg" alt="Office">
-  <div class="about-text">
-    <p>
-      Uma Associate & Tax Consultant is a professional firm led by <b>Harshil Patel</b>,
-      providing reliable and compliant financial, taxation and business advisory services.
-    </p>
-    <p>
-      We help individuals, startups and businesses manage Accounting, GST, Income Tax,
-      MSME, Corporate Finance and Investment Planning with accuracy and integrity.
-    </p>
-    <a href="about.html" class="btn">Read More</a>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092918367-3b7c1c3c6a1b">
+<div>
+<h3>Accounting & SAP</h3>
+<p>Professional bookkeeping & MIS.</p>
+<a href="service-accounting.html"><button>Know More</button></a>
 </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-<h2>Our Services</h2>
-
-<div class="services-grid">
-
-<div class="service-card">
-<img src="assets/images/gst.jpg">
-<h4>GST Services</h4>
-<p>Registration, Return Filing & Compliance.</p>
-<a href="gst.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/income-tax.jpg">
-<h4>Income Tax</h4>
-<p>ITR Filing, Tax Planning & Notices.</p>
-<a href="income-tax.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/accounting.jpg">
-<h4>Accounting</h4>
-<p>Bookkeeping & Financial Statements.</p>
-<a href="accounting.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/sap.jpg">
-<h4>SAP Accounting</h4>
-<p>Enterprise-level Accounting Support.</p>
-<a href="sap.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/investment.jpg">
-<h4>Investment & Insurance</h4>
-<p>Wealth Protection & Growth Planning.</p>
-<a href="investment.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/advisory.jpg">
-<h4>Financial Advisory</h4>
-<p>Personal & Business Advisory.</p>
-<a href="advisory.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/corporate-finance.jpg">
-<h4>Corporate Finance</h4>
-<p>Funding, Reports & Valuation.</p>
-<a href="corporate-finance.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/msme.jpg">
-<h4>MSME Services</h4>
-<p>Udyam Registration & Benefits.</p>
-<a href="msme.html" class="btn">Know More</a>
-</div>
-
-<div class="service-card">
-<img src="assets/images/tds.jpg">
-<h4>TDS / TCS</h4>
-<p>Returns, Compliance & Corrections.</p>
-<a href="tds.html" class="btn">Know More</a>
 </div>
 
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-<div class="contact-box">
-  <h2>Get in Touch</h2>
-  <p><b>Harshil Patel</b></p>
-  <p>📞 +91 95746 65220</p>
-  <p>📧 Umaassociate2020@yahoo.com</p>
-  <a href="https://wa.me/919574665220" class="btn">WhatsApp Now</a>
-</div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-© 2025 Uma Associate & Tax Consultant | Managed by Harshil Patel
+<p>📞 +91 95746 65220 | ✉ Umaassociate2020@yahoo.com</p>
+<p>Handled by Harshil Patel</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919574665220">WhatsApp</a>
 
 </body>
 </html>
