@@ -8,9 +8,11 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background:#f4f6f8;
 }
+
+/* HOME */
 header{
   height:100vh;
   background:url("https://images.unsplash.com/photo-1581090700227-1e37b190418e") center/cover no-repeat;
@@ -24,21 +26,42 @@ header{
   align-items:center;
   text-align:center;
   color:#fff;
+  padding:20px;
 }
-header h1{font-size:46px;margin:0;}
-header p{font-size:20px;}
+header h1{
+  font-size:48px;
+  margin:10px 0;
+  font-weight:600;
+}
+header p{
+  font-size:20px;
+  margin:10px 0 20px;
+}
+
+.symbols{
+  display:flex;
+  gap:15px;
+  align-items:center;
+  justify-content:center;
+}
+.symbols img{
+  height:45px;
+}
+
 .btn{
-  padding:12px 22px;
+  padding:12px 26px;
   background:#0b3c5d;
   color:#fff;
   text-decoration:none;
   border-radius:6px;
-  margin-top:15px;
-  display:inline-block;
+  font-size:16px;
 }
+
+/* GENERAL */
 section{padding:60px 8%;}
 h2{text-align:center;color:#0b3c5d;margin-bottom:40px;}
 
+/* ABOUT */
 .about{
   display:flex;
   gap:30px;
@@ -46,10 +69,11 @@ h2{text-align:center;color:#0b3c5d;margin-bottom:40px;}
   flex-wrap:wrap;
 }
 .about img{
-  width:260px;
+  width:240px;
   border-radius:10px;
 }
 
+/* SERVICES + NEWS */
 .services, .news{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -69,6 +93,7 @@ h2{text-align:center;color:#0b3c5d;margin-bottom:40px;}
 .card .content{padding:18px;}
 .card h3{margin-top:0;color:#0b3c5d;}
 
+/* CONTACT */
 .contact{
   background:url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a") center/cover no-repeat;
 }
@@ -85,12 +110,16 @@ input, textarea{
   border:none;
   border-radius:5px;
 }
+
+/* FOOTER */
 footer{
   background:#0b3c5d;
   color:#fff;
   text-align:center;
   padding:15px;
 }
+
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -104,8 +133,15 @@ footer{
 <!-- HOME -->
 <header>
 <div class="overlay">
-<h1>Uma Associate & Tax Consultant</h1>
-<p>GST • Income Tax • Accounting • Finance & Advisory</p>
+
+<div class="symbols">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/State_Emblem_of_India.svg">
+</div>
+
+<h1>Welcome to Uma Associate & Tax Consultant</h1>
+<p>Trusted Accounting • GST • Income Tax • Financial Advisory</p>
+
 <a href="#contact" class="btn">Get Free Consultation</a>
 </div>
 </header>
@@ -117,12 +153,12 @@ footer{
 <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
 <div>
 <p>
-Uma Associate & Tax Consultant provides professional taxation,
-accounting and financial advisory services with accuracy and trust.
+Uma Associate & Tax Consultant is a professional firm providing reliable
+taxation, accounting and compliance services across India.
 </p>
 <p>
-Led by <strong>Harshil Patel</strong>, we help individuals, MSMEs and
-corporates with compliance, planning and financial growth.
+We follow transparency, accuracy and ethical practices inspired by
+<strong>Satyamev Jayate</strong>.
 </p>
 </div>
 </div>
@@ -133,53 +169,26 @@ corporates with compliance, planning and financial growth.
 <h2>Our Services</h2>
 <div class="services">
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"><div class="content"><h3>GST</h3><p>GST registration, returns, reconciliation and notices.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"><div class="content"><h3>GST Services</h3><p>Registration, returns, reconciliation & notices.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818"><div class="content"><h3>Income Tax</h3><p>ITR filing, tax planning & scrutiny support.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818"><div class="content"><h3>Income Tax</h3><p>ITR filing, tax planning & scrutiny.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"><div class="content"><h3>Accounting</h3><p>Bookkeeping, final accounts & MIS reporting.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"><div class="content"><h3>Accounting</h3><p>Bookkeeping & final accounts.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"><div class="content"><h3>SAP Accounting</h3><p>SAP FICO accounting & reporting support.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1565373679107-344d8a7f2c95"><div class="content"><h3>Investment</h3><p>Financial growth & planning.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1565373679107-344d8a7f2c95"><div class="content"><h3>Investment & Insurance</h3><p>Wealth planning & insurance advisory.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2"><div class="content"><h3>Financial Advisory</h3><p>Personal & business finance.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2"><div class="content"><h3>Financial Advisory</h3><p>Personal & business finance guidance.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"><div class="content"><h3>Corporate Finance</h3><p>Funding & restructuring.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"><div class="content"><h3>Corporate Finance</h3><p>Funding, restructuring & valuation.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f"><div class="content"><h3>MSME</h3><p>MSME registration & compliance.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f"><div class="content"><h3>MSME Services</h3><p>MSME registration & compliance.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105"><div class="content"><h3>TDS / TCS</h3><p>Returns & deductions.</p></div></div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105"><div class="content"><h3>TDS / TCS</h3><p>TDS/TCS returns & compliance.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1521791055366-0d553872125f"><div class="content"><h3>Startup Services</h3><p>Company & LLP registration.</p></div></div>
 
 </div>
 </section>
-
-<!-- FINANCIAL NEWS -->
-<section>
-<h2>Latest Financial News</h2>
-<div class="news" id="newsContainer"></div>
-</section>
-
-<script>
-const NEWS_API_KEY = "PASTE_YOUR_NEWSAPI_KEY_HERE";
-
-fetch(`https://newsapi.org/v2/top-headlines?category=business&country=in&pageSize=6&apiKey=${NEWS_API_KEY}`)
-.then(res=>res.json())
-.then(data=>{
-  const box=document.getElementById("newsContainer");
-  data.articles.forEach(n=>{
-    box.innerHTML+=`
-    <div class="card">
-      <img src="${n.urlToImage || 'https://images.unsplash.com/photo-1495020689067-958852a7765e'}">
-      <div class="content">
-        <h3>${n.title}</h3>
-        <p>${n.description || ''}</p>
-        <a href="${n.url}" target="_blank">Read More</a>
-      </div>
-    </div>`;
-  });
-});
-</script>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
@@ -199,7 +208,7 @@ fetch(`https://newsapi.org/v2/top-headlines?category=business&country=in&pageSiz
 </a>
 
 <footer>
-© 2026 Uma Associate & Tax Consultant | Contact: Harshil Patel
+© 2026 Uma Associate & Tax Consultant | Harshil Patel
 </footer>
 
 </body>
