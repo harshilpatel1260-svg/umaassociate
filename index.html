@@ -6,151 +6,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-margin:0;
-font-family:Segoe UI,Arial;
-background:#f4f6f8;
-line-height:1.6
-}
-
-/* NAV */
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:#0b3c5d;
-padding:12px;
-text-align:center;
-z-index:999
-}
-nav a{
-color:#fff;
-margin:0 15px;
-text-decoration:none;
-font-weight:500
-}
-
-/* HERO */
-header{
-height:100vh;
-background:url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") center/cover no-repeat;
-}
-.hero{
-background:rgba(0,0,0,.65);
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:#fff;
-text-align:center;
-padding:20px
-}
-.hero h1{font-size:48px}
-.hero p{font-size:20px}
-
-/* SYMBOLS */
-.symbols img{
-height:45px;
-background:#fff;
-padding:5px;
-margin:5px;
-border-radius:6px
-}
-
-/* BUTTON */
-.btn{
-padding:12px 28px;
-background:#0b3c5d;
-color:#fff;
-border-radius:6px;
-text-decoration:none;
-font-size:16px;
-display:inline-block;
-margin-top:15px
-}
-
-/* SECTION */
-section{
-padding:90px 8%
-}
-h2{
-text-align:center;
-color:#0b3c5d;
-margin-bottom:40px
-}
+body{margin:0;font-family:Segoe UI,Arial;background:#f4f6f8}
+nav{position:fixed;top:0;width:100%;background:#0b3c5d;padding:12px;text-align:center;z-index:999}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}
+header{height:100vh;background:url("https://images.unsplash.com/photo-1581091012184-5c7c99f33f0b") center/cover no-repeat}
+.hero{background:rgba(0,0,0,.65);height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:20px}
+.hero h1{font-size:46px}
+.symbols img{height:42px;background:#fff;padding:6px;border-radius:6px;margin:5px}
+.btn{padding:12px 26px;background:#0b3c5d;color:#fff;border-radius:6px;text-decoration:none;margin-top:15px}
+section{padding:90px 8%}
+h2{text-align:center;color:#0b3c5d;margin-bottom:40px}
 
 /* ABOUT */
-.about{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-align-items:center
-}
-.about img{
-width:240px;
-border-radius:10px
-}
+.about{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
+.about img{width:230px;border-radius:10px}
 
 /* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px
-}
-.card{
-background:#fff;
-border-radius:10px;
-box-shadow:0 5px 18px rgba(0,0,0,.1);
-overflow:hidden
-}
-.card img{
-width:100%;
-height:160px;
-object-fit:cover
-}
-.card div{
-padding:18px
-}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.1);overflow:hidden}
+.card img{width:100%;height:160px;object-fit:cover}
+.card div{padding:18px}
 
 /* NEWS */
-.news{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px
-}
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
 
 /* CONTACT */
 .contact{
-background:url("https://images.unsplash.com/photo-1521791055366-0d553872125f") center/cover no-repeat
+background:url("https://images.unsplash.com/photo-1605902711622-cfb43c44367f") center/cover no-repeat
 }
 .contact .overlay{
-background:rgba(0,0,0,.7);
+background:rgba(0,0,0,.75);
 padding:60px;
 color:#fff
 }
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:none;
-border-radius:5px
-}
+input,textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:5px}
 
 /* FOOTER */
-footer{
-background:#0b3c5d;
-color:#fff;
-text-align:center;
-padding:20px
-}
+footer{background:#0b3c5d;color:#fff;text-align:center;padding:20px}
 
 /* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px
-}
+.whatsapp{position:fixed;bottom:20px;right:20px}
 </style>
 </head>
 
@@ -169,8 +64,8 @@ right:20px
 <div class="hero">
 
 <div class="symbols">
-<img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Lion_Capital_of_Ashoka.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Lion_Capital_of_Ashoka.svg" alt="Satyamev Jayate">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag">
 </div>
 
 <h1>Welcome to Uma Associate & Tax Consultant</h1>
@@ -186,14 +81,13 @@ right:20px
 <div class="about">
 <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
 <div>
+<p><strong>Uma Associate & Tax Consultant</strong> is a professional firm led by
+<strong>Harshil Patel</strong>, providing reliable accounting, taxation and financial
+advisory services.</p>
 <p>
-<strong>Uma Associate & Tax Consultant</strong> is a professional firm led by
-<strong>Harshil Patel</strong>, offering trusted accounting, taxation and financial
-advisory services.
-</p>
-<p>
-We focus on accuracy, compliance and long-term client relationships,
-guided by ethical values inspired by <strong>Satyamev Jayate</strong>.
+Our firm believes in transparency, compliance and long-term relationships.
+We help individuals, MSMEs and corporates take correct financial decisions
+with confidence.
 </p>
 </div>
 </div>
@@ -204,32 +98,78 @@ guided by ethical values inspired by <strong>Satyamev Jayate</strong>.
 <h2>Our Services</h2>
 <div class="services">
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"><div><h3>GST</h3><p>GST registration, returns, audit & notices.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
+<div><h3>GST Services</h3><p>GST registration, return filing, audits and departmental notices.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818"><div><h3>Income Tax</h3><p>ITR filing, tax planning & scrutiny.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
+<div><h3>Income Tax</h3><p>ITR filing, tax planning, scrutiny & appeals.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"><div><h3>Accounting</h3><p>Bookkeeping, final accounts & MIS.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07">
+<div><h3>Accounting</h3><p>Bookkeeping, final accounts and MIS reports.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd"><div><h3>Investment & Insurance</h3><p>Wealth creation & risk protection.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd">
+<div><h3>Investment & Insurance</h3><p>Wealth creation, insurance planning & risk management.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e"><div><h3>MSME Services</h3><p>MSME registration & benefits.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e">
+<div><h3>MSME Services</h3><p>MSME registration, benefits & compliance support.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"><div><h3>Corporate Finance</h3><p>Funding & financial structuring.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df">
+<div><h3>Corporate Finance</h3><p>Project funding, working capital & restructuring.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"><div><h3>SAP Accounting</h3><p>SAP based accounting solutions.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c">
+<div><h3>SAP Accounting</h3><p>SAP-based accounting and reporting solutions.</p></div>
+</div>
 
-<div class="card"><img src="https://images.unsplash.com/photo-1554224154-6d1b2c6cfcfd"><div><h3>Financial Advisory</h3><p>Personal & business advisory.</p></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224154-6d1b2c6cfcfd">
+<div><h3>Financial Advisory</h3><p>Personal and business financial planning services.</p></div>
+</div>
 
 </div>
 </section>
 
-<!-- NEWS -->
+<!-- FINANCE NEWS -->
 <section id="news">
 <h2>Latest Financial Updates</h2>
 <div class="news">
-<div class="card"><img src="https://images.unsplash.com/photo-1523285367489-d38aec03b6c8"><div><p>GST compliance tightening for MSMEs.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"><div><p>Income tax return filing deadlines update.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f"><div><p>Budget focus on startups & MSMEs.</p></div></div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+<div>
+<p><strong>Income Tax Update:</strong> The Income Tax Department has increased
+focus on AIS reconciliation and timely filing to avoid notices.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523285367489-d38aec03b6c8">
+<div>
+<p><strong>GST Update:</strong> GST compliance for MSMEs has become stricter with
+enhanced scrutiny on returns and ITC claims.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
+<div>
+<p><strong>Finance & Budget:</strong> Government continues to support startups and
+MSMEs through funding schemes and tax incentives.</p>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -247,7 +187,7 @@ guided by ethical values inspired by <strong>Satyamev Jayate</strong>.
 </section>
 
 <a class="whatsapp" href="https://wa.me/919574665220" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="55">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60">
 </a>
 
 <footer>
