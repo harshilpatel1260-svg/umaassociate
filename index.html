@@ -3,196 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <title>Uma Associate & Tax Consultant</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Segoe UI,Arial;background:#f4f6f8}
-nav{position:fixed;top:0;width:100%;background:#0b3c5d;padding:12px;text-align:center;z-index:999}
-nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}
-header{height:100vh;background:url("https://images.unsplash.com/photo-1581091012184-5c7c99f33f0b") center/cover no-repeat}
-.hero{background:rgba(0,0,0,.65);height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:20px}
-.hero h1{font-size:46px}
-.symbols img{height:42px;background:#fff;padding:6px;border-radius:6px;margin:5px}
-.btn{padding:12px 26px;background:#0b3c5d;color:#fff;border-radius:6px;text-decoration:none;margin-top:15px}
-section{padding:90px 8%}
-h2{text-align:center;color:#0b3c5d;margin-bottom:40px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f7fd;color:#222}
 
-/* ABOUT */
-.about{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
-.about img{width:230px;border-radius:10px}
+/* NAVBAR */
+.navbar{background:#0b3c8a;color:white;padding:14px 26px;display:flex;justify-content:space-between;align-items:center}
+.navbar a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
+.logo{font-size:20px;font-weight:600}
 
-/* SERVICES */
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.card{background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.1);overflow:hidden}
-.card img{width:100%;height:160px;object-fit:cover}
-.card div{padding:18px}
+/* HERO SLIDER */
+.slider{position:relative;height:58vh;overflow:hidden}
+.slide{position:absolute;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s}
+.slide.active{opacity:1}
+.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center}
+.hero-text h1{font-size:32px}
+.hero-text p{opacity:.9}
+.hero-btn{background:white;color:#0b3c8a;padding:10px 20px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:12px}
 
-/* NEWS */
-.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+/* SECTIONS */
+section{max-width:1150px;margin:40px auto;padding:0 20px}
+h2{color:#0b3c8a;margin-bottom:12px}
 
-/* CONTACT */
-.contact{
-background:url("https://images.unsplash.com/photo-1605902711622-cfb43c44367f") center/cover no-repeat
-}
-.contact .overlay{
-background:rgba(0,0,0,.75);
-padding:60px;
-color:#fff
-}
-input,textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:5px}
+/* GRID CARDS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:white;border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.card h3{color:#0b3c8a}
+.card p{font-size:14px;line-height:1.5}
+
+/* ICON */
+.icon{font-size:24px;margin-bottom:6px}
 
 /* FOOTER */
-footer{background:#0b3c5d;color:#fff;text-align:center;padding:20px}
+.footer{background:#0b3c8a;color:white;text-align:center;padding:24px;margin-top:30px}
 
-/* WHATSAPP */
-.whatsapp{position:fixed;bottom:20px;right:20px}
+/* WHATSAPP BUTTON */
+.whatsapp{position:fixed;bottom:16px;right:16px;background:#25d366;color:white;
+padding:13px 16px;border-radius:50px;text-decoration:none;font-weight:700}
 </style>
 </head>
 
 <body>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#news">Finance News</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- HOME -->
-<header id="home">
-<div class="hero">
-
-<div class="symbols">
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Lion_Capital_of_Ashoka.svg" alt="Satyamev Jayate">
-<img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag">
-</div>
-
-<h1>Welcome to Uma Associate & Tax Consultant</h1>
-<p>Accounting • GST • Income Tax • Financial Advisory</p>
-
-<a href="#services" class="btn">View Our Services</a>
-</div>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Us</h2>
-<div class="about">
-<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+<!-- NAVBAR -->
+<div class="navbar">
+<div class="logo">Uma Associate & Tax Consultant</div>
 <div>
-<p><strong>Uma Associate & Tax Consultant</strong> is a professional firm led by
-<strong>Harshil Patel</strong>, providing reliable accounting, taxation and financial
-advisory services.</p>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#news">Financial News</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<!-- SLIDER -->
+<div class="slider" id="home">
+<img class="slide active" src="https://images.unsplash.com/photo-1556157382-97eda2f9e2ab" />
+<img class="slide" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" />
+<img class="slide" src="https://images.unsplash.com/photo-1521791136064-7986c2920216" />
+
+<div class="hero-text">
+<h1>Professional CA Firm Style Consultancy</h1>
+<p>Tax • GST • MSME • Investment • Insurance Services</p>
+<a href="#contact" class="hero-btn">Book Appointment</a>
+</div>
+</div>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let i=0;
+setInterval(()=>{
+slides[i].classList.remove("active");
+i=(i+1)%slides.length;
+slides[i].classList.add("active");
+},3500);
+</script>
+
+<section>
+<h2>About Us</h2>
+<div class="card">
 <p>
-Our firm believes in transparency, compliance and long-term relationships.
-We help individuals, MSMEs and corporates take correct financial decisions
-with confidence.
+We provide expert consultancy in Accounting, Income Tax Return Filing, GST Returns,
+TDS Compliance, Business Registration, MSME (Udyam) Registration,
+Investment & Insurance advisory. Our focus is accuracy, compliance and client growth.
 </p>
 </div>
-</div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
 <h2>Our Services</h2>
-<div class="services">
+
+<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-<div><h3>GST Services</h3><p>GST registration, return filing, audits and departmental notices.</p></div>
+<div class="icon">🧾</div>
+<h3>Income Tax Return Filing</h3>
+<p>ITR-1 to ITR-4 filing, new regime advisory, refund assistance and notice reply support.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818">
-<div><h3>Income Tax</h3><p>ITR filing, tax planning, scrutiny & appeals.</p></div>
+<div class="icon">💼</div>
+<h3>GST Registration & Returns</h3>
+<p>GSTIN registration, GSTR-1, GSTR-3B, e-invoice, e-way bill and ITC reconciliation.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07">
-<div><h3>Accounting</h3><p>Bookkeeping, final accounts and MIS reports.</p></div>
+<div class="icon">📚</div>
+<h3>Accounting & Bookkeeping</h3>
+<p>Ledger posting, financial statements, profit & loss, balance sheet and cash flow reports.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd">
-<div><h3>Investment & Insurance</h3><p>Wealth creation, insurance planning & risk management.</p></div>
+<div class="icon">🏦</div>
+<h3>MSME (Udyam) Registration</h3>
+<p>Registration, certificate, subsidy guidance and collateral-free loan assistance.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e">
-<div><h3>MSME Services</h3><p>MSME registration, benefits & compliance support.</p></div>
+<div class="icon">📈</div>
+<h3>Investment Planning</h3>
+<p>SIP, lumpsum, retirement planning and tax-saving investment advisory.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df">
-<div><h3>Corporate Finance</h3><p>Project funding, working capital & restructuring.</p></div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c">
-<div><h3>SAP Accounting</h3><p>SAP-based accounting and reporting solutions.</p></div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224154-6d1b2c6cfcfd">
-<div><h3>Financial Advisory</h3><p>Personal and business financial planning services.</p></div>
+<div class="icon">🛡️</div>
+<h3>Insurance Advisory</h3>
+<p>Health, term life, motor and business insurance consultation & claim guidance.</p>
 </div>
 
 </div>
 </section>
 
-<!-- FINANCE NEWS -->
 <section id="news">
-<h2>Latest Financial Updates</h2>
-<div class="news">
-
+<h2>Latest Financial News & Updates</h2>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
-<div>
-<p><strong>Income Tax Update:</strong> The Income Tax Department has increased
-focus on AIS reconciliation and timely filing to avoid notices.</p>
-</div>
-</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1523285367489-d38aec03b6c8">
-<div>
-<p><strong>GST Update:</strong> GST compliance for MSMEs has become stricter with
-enhanced scrutiny on returns and ITC claims.</p>
-</div>
-</div>
+<h4>📌 Income Tax & Budget Focus</h4>
+<p>Government is promoting simplified tax slabs, digital returns and faster refund mechanisms.</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
-<div>
-<p><strong>Finance & Budget:</strong> Government continues to support startups and
-MSMEs through funding schemes and tax incentives.</p>
-</div>
-</div>
+<h4>📌 GST E-Invoice & Compliance</h4>
+<p>Real-time invoice reporting and turnover-based applicability is expanding for businesses.</p>
 
+<h4>📌 MSME Growth Schemes</h4>
+<p>Subsidies and low-interest loan schemes are supporting small business modernization.</p>
+
+<small>AI generated informational content for awareness purpose.</small>
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<div class="overlay">
-<h2>Get In Touch</h2>
-<form>
-<input placeholder="Your Name">
-<input placeholder="Mobile Number">
-<textarea rows="4" placeholder="Message"></textarea>
-<button class="btn">Submit</button>
-</form>
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="card">
+<p><b>Business Name:</b> Uma Associate & Tax Consultant</p>
+<p><b>Website:</b> umaassociate.in</p>
+<p><b>WhatsApp:</b> 95746652220</p>
+<p><b>Location:</b> Gujarat, India</p>
 </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/919574665220" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60">
-</a>
+<a class="whatsapp" target="_blank" href="https://wa.me/919574665220">WhatsApp</a>
 
-<footer>
-© 2026 Uma Associate & Tax Consultant | Contact Person: Harshil Patel
-</footer>
+<div class="footer">© 2026 Uma Associate & Tax Consultant — All Rights Reserved</div>
 
 </body>
 </html>
