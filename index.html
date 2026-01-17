@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Uma Associate & Tax Consultant</title>
-  <meta name="description" content="Professional Accounting, Income Tax, GST, TDS & Business Compliance Services in Gandhinagar.">
-  <meta name="keywords" content="Accountant Gandhinagar, GST Filing, Income Tax Return, TDS, Company Registration">
+  <meta name="description" content="Professional Accounting, Income Tax, GST, MSME, Investment & Insurance Services in Gandhinagar.">
+  <meta name="keywords" content="Accountant Gandhinagar, GST Filing, Income Tax Return, MSME Registration, Investment Advisory, Insurance">
   <meta name="author" content="Uma Associate & Tax Consultant">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,10 +24,10 @@
 
     /* HERO */
     .hero{
-      background:url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      background:url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
       color:#fff;
       text-align:center;
-      padding:100px 20px;
+      padding:110px 20px;
       position:relative;
     }
     .hero::after{
@@ -36,18 +36,19 @@
       background:rgba(0,0,0,0.55);
     }
     .hero-content{position:relative;max-width:900px;margin:auto}
-    .hero h1{font-size:42px;margin-bottom:10px}
+    .hero h1{font-size:42px;margin-bottom:10px;letter-spacing:1px}
     .hero p{font-size:18px;margin-bottom:25px}
     .btn{
       display:inline-block;
       background:#ffcc00;
       color:#000;
-      padding:12px 22px;
-      border-radius:6px;
+      padding:13px 26px;
+      border-radius:30px;
       font-weight:700;
       transition:.3s;
+      box-shadow:0 6px 15px rgba(0,0,0,.3);
     }
-    .btn:hover{background:#e6b800}
+    .btn:hover{background:#e6b800;transform:translateY(-2px)}
 
     /* SECTIONS */
     section{padding:70px 20px}
@@ -82,11 +83,11 @@
     .service-card p{font-size:15px;color:#555;margin-bottom:15px}
     .service-card button{
       background:#0b3c5d;color:#fff;border:none;
-      padding:10px;border-radius:6px;cursor:pointer;font-weight:600;
+      padding:10px;border-radius:20px;cursor:pointer;font-weight:600;
     }
     .service-card button:hover{background:#082a42}
 
-    /* MODAL (SERVICE DETAIL) */
+    /* MODAL */
     .modal{
       display:none;
       position:fixed;
@@ -136,26 +137,21 @@
     }
     .why-box h4{margin-bottom:8px;color:#0b3c5d}
 
-    /* PROCESS */
-    .process-grid{
+    /* NEWS */
+    .news-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:25px;
       margin-top:30px;
     }
-    .process-step{
+    .news-card{
       background:#fff;
+      padding:20px;
       border-radius:14px;
-      padding:25px;
       box-shadow:0 6px 18px rgba(0,0,0,.1);
-      text-align:center;
     }
-    .process-step span{
-      display:inline-block;
-      width:40px;height:40px;line-height:40px;
-      border-radius:50%;
-      background:#0b3c5d;color:#fff;font-weight:700;margin-bottom:10px;
-    }
+    .news-card h4{color:#0b3c5d;margin-bottom:8px}
+    .news-card p{font-size:14px;color:#555}
 
     /* CONTACT */
     .contact-grid{
@@ -182,7 +178,7 @@
     }
     .contact-box button{
       background:#0b3c5d;color:#fff;border:none;
-      padding:12px;border-radius:6px;cursor:pointer;font-weight:700;width:100%;
+      padding:12px;border-radius:30px;cursor:pointer;font-weight:700;width:100%;
     }
     .contact-box button:hover{background:#082a42}
 
@@ -195,13 +191,15 @@
     .whatsapp{
       position:fixed;right:20px;bottom:20px;
       background:#25d366;color:#fff;
-      padding:12px 18px;border-radius:40px;
-      font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.3);
+      padding:14px 20px;border-radius:40px;
+      font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.35);
       z-index:3000;
+      display:flex;
+      align-items:center;
+      gap:8px;
     }
     .whatsapp:hover{background:#1ebe5d}
 
-    /* RESPONSIVE */
     @media(max-width:900px){
       .about-grid,.contact-grid{grid-template-columns:1fr}
       .hero h1{font-size:30px}
@@ -219,7 +217,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
+        <li><a href="#news">Financial News</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -229,8 +227,8 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-content">
-    <h1>Professional Accounting & Tax Solutions</h1>
-    <p>Income Tax • GST • Accounting • TDS • Company Registration • Compliance</p>
+    <h1>WELCOME TO UMA ASSOCIATE & TAX CONSULTANT</h1>
+    <p>Professional Accounting • Tax • Compliance • MSME • Investment • Insurance Solutions</p>
     <a href="#contact" class="btn">Book Free Consultation</a>
   </div>
 </section>
@@ -247,22 +245,21 @@
         <p>
           <strong>Uma Associate & Tax Consultant</strong> is a professional firm providing
           complete accounting, taxation and compliance solutions to individuals,
-          startups and businesses. With strong practical experience in Income Tax,
-          GST, TDS and statutory compliances, we help clients stay compliant and
-          financially healthy.
+          startups and businesses. With strong experience in Income Tax, GST, TDS,
+          MSME, Investment and Insurance advisory, we help clients stay compliant
+          and financially strong.
         </p>
         <p>
-          Our approach is simple — accuracy, transparency, timely delivery and
-          long-term client relationships. We focus on understanding each client’s
-          business and delivering customized financial solutions.
+          Our mission is to deliver accurate, timely and affordable financial
+          solutions with complete transparency and client satisfaction.
         </p>
         <p>
-          Whether you are a salaried individual, professional, trader, startup or
-          company, we ensure hassle-free tax filing and compliance management.
+          Whether you are salaried, professional, trader, startup or company,
+          we ensure hassle-free compliance and smart financial planning.
         </p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80" alt="Professional Meeting">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80" alt="Professional Handshake">
       </div>
     </div>
   </div>
@@ -320,6 +317,28 @@
         <button onclick="openModal('advisory')">Know More</button>
       </div>
 
+      <!-- NEW SERVICES -->
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1907/1907557.png">
+        <h3>MSME Registration & Benefits</h3>
+        <p>Udyam registration, MSME benefits, subsidies & government schemes support.</p>
+        <button onclick="openModal('msme')">Know More</button>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135711.png">
+        <h3>Investment Advisory</h3>
+        <p>SIP, mutual funds, tax-saving investments & financial goal planning.</p>
+        <button onclick="openModal('investment')">Know More</button>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3076/3076633.png">
+        <h3>Insurance Services</h3>
+        <p>Life, health, vehicle & business insurance advisory and policy support.</p>
+        <button onclick="openModal('insurance')">Know More</button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -344,7 +363,7 @@
     <div class="why-grid">
       <div class="why-box">
         <h4>✔ Experienced Professionals</h4>
-        <p>Handled hundreds of Income Tax, GST and compliance cases with accuracy.</p>
+        <p>Handled hundreds of Income Tax, GST, MSME and compliance cases with accuracy.</p>
       </div>
       <div class="why-box">
         <h4>✔ Affordable Pricing</h4>
@@ -362,34 +381,43 @@
   </div>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
+<!-- FINANCIAL NEWS -->
+<section id="news">
   <div class="container">
     <div class="section-title">
-      <h2>Our Working Process</h2>
-      <p>Simple, transparent and client-friendly</p>
+      <h2>Current Financial News & Updates</h2>
+      <p>Latest tax, GST, MSME and investment-related updates</p>
     </div>
 
-    <div class="process-grid">
-      <div class="process-step">
-        <span>1</span>
-        <h4>Consultation</h4>
-        <p>Understand your requirement and collect basic information.</p>
+    <div class="news-grid">
+      <div class="news-card">
+        <h4>📢 Income Tax Return Due Dates</h4>
+        <p>ITR filing due dates are extended for certain categories. Taxpayers are advised to file early to avoid late fees and interest.</p>
       </div>
-      <div class="process-step">
-        <span>2</span>
-        <h4>Document Review</h4>
-        <p>Verify documents and provide compliance checklist.</p>
+
+      <div class="news-card">
+        <h4>📢 GST Compliance Update</h4>
+        <p>GST department has increased scrutiny on ITC mismatches. Regular reconciliation between GSTR-2B and purchase records is recommended.</p>
       </div>
-      <div class="process-step">
-        <span>3</span>
-        <h4>Execution</h4>
-        <p>File returns / complete registrations accurately.</p>
+
+      <div class="news-card">
+        <h4>📢 MSME Registration Benefits</h4>
+        <p>Registered MSMEs can avail collateral-free loans, interest subsidies and priority sector lending benefits from banks.</p>
       </div>
-      <div class="process-step">
-        <span>4</span>
-        <h4>Delivery & Support</h4>
-        <p>Submit reports and provide post-filing support.</p>
+
+      <div class="news-card">
+        <h4>📢 Investment & Tax Saving</h4>
+        <p>Tax-saving investments under Section 80C and NPS remain popular for reducing tax liability and long-term wealth creation.</p>
+      </div>
+
+      <div class="news-card">
+        <h4>📢 Health Insurance Awareness</h4>
+        <p>Health insurance coverage is essential for financial security and offers tax benefits under Section 80D.</p>
+      </div>
+
+      <div class="news-card">
+        <h4>📢 New Business Compliance</h4>
+        <p>Startups and companies are advised to maintain timely ROC and GST compliance to avoid penalties and notices.</p>
       </div>
     </div>
   </div>
@@ -418,7 +446,7 @@
       </div>
 
       <div class="contact-box">
-        <h3>Book Appointment</h3>
+        <h3>Book Free Consultation</h3>
         <form action="mailto:Umaassociate2020@yahoo.com" method="post" enctype="text/plain">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
@@ -432,10 +460,13 @@
             <option>TDS / TCS Compliance</option>
             <option>Company / Firm Registration</option>
             <option>Financial Advisory</option>
+            <option>MSME Registration</option>
+            <option>Investment Advisory</option>
+            <option>Insurance Services</option>
           </select>
 
           <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-          <button type="submit">Submit Request</button>
+          <button type="submit">Book Free Consultation</button>
         </form>
       </div>
     </div>
@@ -448,7 +479,9 @@
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/919574665220" class="whatsapp" target="_blank">💬 WhatsApp</a>
+<a href="https://wa.me/919574665220" class="whatsapp" target="_blank">
+  💬 WhatsApp Chat
+</a>
 
 <!-- SCRIPT -->
 <script>
@@ -457,7 +490,6 @@
       <h3>Income Tax & ITR Filing</h3>
       <p>We provide complete Income Tax services for salaried individuals,
       professionals, traders, firms and companies.</p>
-      <p><strong>Our services include:</strong></p>
       <ul>
         <li>ITR-1, ITR-2, ITR-3, ITR-4 filing</li>
         <li>Old & New Tax Regime calculation</li>
@@ -465,72 +497,81 @@
         <li>Tax planning & advisory</li>
         <li>Reply to Income Tax notices</li>
       </ul>
-      <p>We ensure accurate filing and maximum tax benefits with full compliance.</p>
     `,
     gst: `
       <h3>GST Registration & Returns</h3>
-      <p>End-to-end GST compliance services for businesses across all sectors.</p>
-      <p><strong>Our GST services include:</strong></p>
+      <p>End-to-end GST compliance services for businesses.</p>
       <ul>
         <li>GST Registration & Amendment</li>
-        <li>GSTR-1, GSTR-3B, GSTR-9, GSTR-9C filing</li>
-        <li>Input Tax Credit reconciliation</li>
-        <li>GST notices & departmental replies</li>
-        <li>GST audit & compliance support</li>
+        <li>GSTR-1, GSTR-3B, GSTR-9 filing</li>
+        <li>ITC reconciliation</li>
+        <li>GST notices & replies</li>
       </ul>
-      <p>We help businesses stay GST compliant without stress.</p>
     `,
     accounting: `
       <h3>Accounting & Bookkeeping</h3>
-      <p>Professional accounting services to maintain accurate financial records.</p>
-      <p><strong>Our accounting services include:</strong></p>
       <ul>
         <li>Daily accounting in Tally / ERP</li>
         <li>Bank & cash reconciliation</li>
         <li>Ledger scrutiny & trial balance</li>
         <li>Final accounts preparation</li>
-        <li>MIS reports & financial analysis</li>
+        <li>MIS reports & analysis</li>
       </ul>
-      <p>We help you understand your business numbers clearly.</p>
     `,
     tds: `
       <h3>TDS & TCS Compliance</h3>
-      <p>Complete TDS compliance services for businesses and professionals.</p>
-      <p><strong>Our TDS services include:</strong></p>
       <ul>
         <li>TDS challan calculation & payment</li>
         <li>TDS return filing (24Q, 26Q, 27Q, 27EQ)</li>
         <li>Form 16 / 16A issuance</li>
-        <li>TDS reconciliation & corrections</li>
+        <li>TDS corrections & reconciliation</li>
         <li>Reply to TDS notices</li>
       </ul>
-      <p>Ensure smooth TDS compliance with expert handling.</p>
     `,
     company: `
       <h3>Company & Firm Registration</h3>
-      <p>We provide complete business registration and ROC compliance services.</p>
-      <p><strong>Our services include:</strong></p>
       <ul>
-        <li>Private Limited Company registration</li>
-        <li>LLP & OPC registration</li>
+        <li>Private Limited, LLP & OPC registration</li>
         <li>Partnership firm registration</li>
         <li>MSME & Startup registration</li>
-        <li>ROC annual compliance & filings</li>
+        <li>ROC annual compliance</li>
       </ul>
-      <p>Start your business smoothly with full legal compliance.</p>
     `,
     advisory: `
       <h3>Financial Advisory</h3>
-      <p>Strategic financial advisory services to improve business performance.</p>
-      <p><strong>Our advisory services include:</strong></p>
       <ul>
         <li>Tax planning & savings strategies</li>
-        <li>Business structuring & compliance planning</li>
+        <li>Business structuring</li>
         <li>Financial analysis & budgeting</li>
         <li>Profitability improvement advisory</li>
-        <li>Regulatory compliance consulting</li>
       </ul>
-      <p>We help businesses grow with smart financial decisions.</p>
+    `,
+    msme: `
+      <h3>MSME Registration & Benefits</h3>
+      <ul>
+        <li>Udyam registration & certificate</li>
+        <li>MSME subsidies & government schemes</li>
+        <li>Collateral-free loan assistance</li>
+        <li>MSME compliance & advisory</li>
+      </ul>
+    `,
+    investment: `
+      <h3>Investment Advisory</h3>
+      <ul>
+        <li>Mutual fund & SIP planning</li>
+        <li>Tax-saving investments (80C, NPS)</li>
+        <li>Goal-based financial planning</li>
+        <li>Long-term wealth creation strategies</li>
+      </ul>
+    `,
+    insurance: `
+      <h3>Insurance Services</h3>
+      <ul>
+        <li>Health insurance advisory</li>
+        <li>Life insurance planning</li>
+        <li>Vehicle & business insurance</li>
+        <li>Policy servicing & claims support</li>
+      </ul>
     `
   };
 
