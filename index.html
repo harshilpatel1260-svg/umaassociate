@@ -4,21 +4,32 @@
 <meta charset="UTF-8">
 <title>Uma Associate & Tax Consultant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+:root{
+--primary:#0B5ED7;
+--secondary:#20C997;
+--accent:#FFC107;
+--bg:#F8FAFC;
+--dark:#0a2540;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
-body{background:#f4f7fb;color:#333;line-height:1.6}
+body{background:var(--bg);color:#333;line-height:1.6}
 a{text-decoration:none}
 
 /* HEADER */
-header{background:#0f4c81;color:#fff;padding:15px 0;position:sticky;top:0;z-index:1000}
+header{background:var(--primary);color:#fff;padding:15px 0;position:sticky;top:0;z-index:1000}
 nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 15px}
-nav h1{font-size:22px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700}
+.logo span{color:var(--accent)}
 nav ul{list-style:none;display:flex;gap:18px}
 nav ul li a{color:#fff;font-weight:600}
 
 /* HERO */
 .hero{
-background:url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+background:linear-gradient(rgba(11,94,215,0.8),rgba(11,94,215,0.8)),
+url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
 padding:90px 20px;
 text-align:center;
 color:#fff;
@@ -28,7 +39,7 @@ color:#fff;
 
 /* BUTTON */
 .btn{
-background:#ffcc00;
+background:var(--accent);
 padding:14px 26px;
 color:#000;
 font-weight:700;
@@ -37,7 +48,8 @@ display:inline-block;
 border:none;
 cursor:pointer;
 }
-.btn:hover{background:#e6b800}
+.btn.secondary{background:var(--secondary);color:#fff}
+.btn:hover{opacity:0.9}
 
 /* SECTIONS */
 section{padding:60px 20px}
@@ -52,11 +64,13 @@ section{padding:60px 20px}
 .card{
 background:#fff;
 padding:22px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 text-align:center;
+transition:.3s;
 }
-.card h3{color:#0f4c81;margin-bottom:10px}
+.card:hover{transform:translateY(-5px)}
+.card h3{color:var(--primary);margin-bottom:10px}
 
 /* PROCESS */
 .process{background:#fff}
@@ -69,22 +83,21 @@ margin-top:30px;
 .process-box{
 background:#f9fbff;
 padding:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+border-radius:14px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
 text-align:center;
 }
-.process-box h3{color:#0f4c81;margin-bottom:8px}
-.process-box p{font-size:14px;margin-bottom:12px}
+.process-box h3{color:var(--primary);margin-bottom:8px}
 
 /* NEWS */
-.news{background:#eaf2ff}
+.news{background:#eef4ff}
 .news ul{list-style:none;padding:0}
 .news li{
 background:#fff;
 padding:15px;
-border-radius:8px;
+border-radius:10px;
 margin-bottom:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.08);
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 /* CONTACT */
@@ -92,8 +105,8 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 .contact form{
 background:#fff;
 padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 .contact input,.contact textarea{
 width:100%;
@@ -104,7 +117,7 @@ border:1px solid #ccc;
 }
 
 /* FOOTER */
-footer{background:#0f4c81;color:#fff;text-align:center;padding:15px}
+footer{background:var(--dark);color:#fff;text-align:center;padding:15px}
 
 /* WHATSAPP */
 .whatsapp{
@@ -133,10 +146,51 @@ z-index:2000;
 .modal-content{
 background:#fff;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 width:90%;
-max-width:400px;
+max-width:420px;
 }
+
+/* ADMIN */
+.admin-panel{
+display:none;
+position:fixed;
+top:0;left:0;width:100%;height:100%;
+background:#f4f7fb;
+overflow:auto;
+z-index:3000;
+padding:20px;
+}
+.admin-card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+.admin-card input,.admin-card textarea{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+.admin-card button{
+background:var(--primary);
+color:#fff;
+padding:10px 16px;
+border:none;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+.admin-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+.logout{background:#dc3545!important}
 
 @media(max-width:768px){
 .about,.contact{grid-template-columns:1fr}
@@ -146,88 +200,56 @@ max-width:400px;
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 <header>
 <nav>
-<h1>Uma Associate & Tax Consultant</h1>
+<div class="logo">UA<span>Tax</span></div>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#process">Process</a></li>
 <li><a href="#news">News</a></li>
 <li><a href="#contact">Contact</a></li>
+<li><a href="javascript:void(0)" onclick="openAdminLogin()">Admin</a></li>
 </ul>
 </nav>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
 <h2>Welcome to Uma Associate & Tax Consultant</h2>
 <p>Accounting • GST • Income Tax • MSME • Investment • Insurance</p>
 <button class="btn" onclick="openAppointment()">Book Free Consultation</button>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <section>
 <div class="container about">
 <div>
 <h2>About Us</h2>
 <p>
 We are professional Accounting & Tax consultants providing reliable services in
-Income Tax, GST, MSME registration, Investment advisory and Insurance solutions.
+Income Tax, GST, MSME, Investment and Insurance advisory.
 </p>
 <p>
 Our goal is to provide accurate, timely and affordable financial services for individuals,
 businesses and startups.
 </p>
-<button class="btn" onclick="openAppointment()">Start Process</button>
+<button class="btn secondary" onclick="openAppointment()">Start Process</button>
 </div>
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80" alt="Professional meeting">
+<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80">
 </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 <section id="services">
 <div class="container">
 <h2 style="text-align:center;margin-bottom:30px">Our Services</h2>
-<div class="services">
-<div class="card">
-<h3>Accounting & Bookkeeping</h3>
-<p>Complete accounting services including bookkeeping, reconciliation and financial reporting.</p>
-</div>
-<div class="card">
-<h3>Income Tax (ITR Filing)</h3>
-<p>ITR filing for individuals, professionals and businesses with tax planning support.</p>
-</div>
-<div class="card">
-<h3>GST Registration & Returns</h3>
-<p>GST registration, monthly/quarterly returns and compliance management.</p>
-</div>
-<div class="card">
-<h3>TDS & TCS Compliance</h3>
-<p>TDS return filing, challans, certificates and compliance support.</p>
-</div>
-<div class="card">
-<h3>MSME Registration</h3>
-<p>Udyam registration, MSME benefits guidance and government scheme support.</p>
-</div>
-<div class="card">
-<h3>Investment Advisory</h3>
-<p>SIP, mutual funds, tax-saving investments and long-term financial planning.</p>
-</div>
-<div class="card">
-<h3>Insurance Services</h3>
-<p>Health, life and general insurance advisory with best policy comparison.</p>
-</div>
-<div class="card">
-<h3>Startup & Company Registration</h3>
-<p>Proprietorship, Partnership, LLP and Private Limited company registration services.</p>
-</div>
-</div>
+<div class="services" id="servicesList"></div>
 </div>
 </section>
 
-<!-- PROCESS -->
+<!-- ================= PROCESS ================= -->
 <section class="process" id="process">
 <div class="container">
 <h2 style="text-align:center;margin-bottom:20px">Our Work Process</h2>
@@ -269,20 +291,15 @@ We follow a simple, transparent and professional process to deliver accurate fin
 </div>
 </section>
 
-<!-- NEWS -->
+<!-- ================= NEWS ================= -->
 <section class="news" id="news">
 <div class="container">
 <h2 style="text-align:center;margin-bottom:25px">Current Financial News</h2>
-<ul id="newsList">
-<li>📌 Income Tax Department extended ITR filing due date for selected taxpayers.</li>
-<li>📌 GST Council announces simplified return filing structure for small businesses.</li>
-<li>📌 MSME registration benefits expanded under new government scheme.</li>
-<li>📌 RBI maintains repo rate, positive outlook for home and business loans.</li>
-</ul>
+<ul id="newsList"></ul>
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact">
 <div class="container contact">
 <div>
@@ -290,9 +307,7 @@ We follow a simple, transparent and professional process to deliver accurate fin
 <p><b>📞</b> +91 95746 65220</p>
 <p><b>📧</b> Umaassociate2020@yahoo.com</p>
 <p><b>📍</b> Gozariya, Mehsana, Gujarat</p>
-<p style="margin-top:10px">
-Office Hours: Mon – Sat | 10:00 AM – 7:00 PM
-</p>
+<p style="margin-top:10px">Office Hours: Mon – Sat | 10:00 AM – 7:00 PM</p>
 </div>
 <form onsubmit="submitForm(event)">
 <h3>Send Inquiry</h3>
@@ -304,15 +319,15 @@ Office Hours: Mon – Sat | 10:00 AM – 7:00 PM
 </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer>
 © 2026 Uma Associate & Tax Consultant | All Rights Reserved
 </footer>
 
-<!-- WHATSAPP BUTTON -->
+<!-- ================= WHATSAPP ================= -->
 <a class="whatsapp" href="https://wa.me/919574665220" target="_blank">WhatsApp</a>
 
-<!-- BOOK FREE CONSULTATION MODAL -->
+<!-- ================= BOOK APPOINTMENT MODAL ================= -->
 <div class="modal" id="appointmentBox">
 <div class="modal-content">
 <h3>Book Free Consultation</h3>
@@ -323,31 +338,265 @@ Office Hours: Mon – Sat | 10:00 AM – 7:00 PM
 <input type="time" id="atime" required>
 <textarea id="amessage" placeholder="Message"></textarea>
 <button class="btn" type="submit">Book Appointment</button>
-<button type="button" class="btn" onclick="closeAppointment()" style="background:#ccc;margin-top:5px">Close</button>
+<button type="button" class="btn secondary" onclick="closeAppointment()" style="margin-top:5px">Close</button>
 </form>
 </div>
 </div>
 
+<!-- ================= ADMIN LOGIN ================= -->
+<div class="modal" id="adminLoginBox">
+<div class="modal-content">
+<h3>Admin Login</h3>
+<input type="text" id="adminUser" placeholder="Username">
+<input type="password" id="adminPass" placeholder="Password">
+<button class="btn" onclick="adminLogin()">Login</button>
+<button class="btn secondary" onclick="closeAdminLogin()" style="margin-top:5px">Close</button>
+</div>
+</div>
+
+<!-- ================= ADMIN PANEL ================= -->
+<div class="admin-panel" id="adminPanel">
+
+<div class="admin-top">
+<h2>Admin Dashboard</h2>
+<button class="btn logout" onclick="adminLogout()">Logout</button>
+</div>
+
+<!-- SERVICES ADMIN -->
+<div class="admin-card">
+<h3>Manage Services</h3>
+<input type="text" id="serviceTitle" placeholder="Service Title">
+<textarea id="serviceDesc" placeholder="Service Description"></textarea>
+<button onclick="addService()">Add Service</button>
+<div id="adminServicesList"></div>
+</div>
+
+<!-- NEWS ADMIN -->
+<div class="admin-card">
+<h3>Manage Financial News</h3>
+<textarea id="newsText" placeholder="Enter financial news"></textarea>
+<button onclick="addNews()">Add News</button>
+<div id="adminNewsList"></div>
+</div>
+
+<!-- APPOINTMENTS ADMIN -->
+<div class="admin-card">
+<h3>Appointments</h3>
+<div id="adminAppointments"></div>
+</div>
+
+<!-- INQUIRIES ADMIN -->
+<div class="admin-card">
+<h3>Client Inquiries</h3>
+<div id="adminInquiries"></div>
+</div>
+
+</div>
+
 <script>
-function openAppointment(){
-document.getElementById("appointmentBox").style.display="flex";
+/* ================= DEFAULT DATA ================= */
+const defaultServices = [
+{title:"Accounting & Bookkeeping",desc:"Complete accounting services including bookkeeping, reconciliation and financial reporting."},
+{title:"Income Tax (ITR Filing)",desc:"ITR filing for individuals, professionals and businesses with tax planning support."},
+{title:"GST Registration & Returns",desc:"GST registration, monthly/quarterly returns and compliance management."},
+{title:"TDS & TCS Compliance",desc:"TDS return filing, challans, certificates and compliance support."},
+{title:"MSME Registration",desc:"Udyam registration and MSME benefits guidance."},
+{title:"Investment Advisory",desc:"SIP, mutual funds and tax-saving investments."},
+{title:"Insurance Services",desc:"Health, life and general insurance advisory."}
+];
+
+const defaultNews = [
+"Income Tax Department extended ITR filing due date for selected taxpayers.",
+"GST Council announces simplified return filing structure for small businesses.",
+"MSME registration benefits expanded under new government scheme.",
+"RBI keeps repo rate unchanged, positive outlook for business loans."
+];
+
+/* ================= STORAGE INIT ================= */
+if(!localStorage.getItem("services")){
+localStorage.setItem("services",JSON.stringify(defaultServices));
 }
-function closeAppointment(){
-document.getElementById("appointmentBox").style.display="none";
+if(!localStorage.getItem("news")){
+localStorage.setItem("news",JSON.stringify(defaultNews));
+}
+if(!localStorage.getItem("appointments")){
+localStorage.setItem("appointments",JSON.stringify([]));
+}
+if(!localStorage.getItem("inquiries")){
+localStorage.setItem("inquiries",JSON.stringify([]));
 }
 
+/* ================= RENDER FUNCTIONS ================= */
+function renderServices(){
+const services = JSON.parse(localStorage.getItem("services"));
+const list = document.getElementById("servicesList");
+const adminList = document.getElementById("adminServicesList");
+list.innerHTML="";
+adminList.innerHTML="";
+services.forEach((s,i)=>{
+list.innerHTML += `
+<div class="card">
+<h3>${s.title}</h3>
+<p>${s.desc}</p>
+</div>`;
+adminList.innerHTML += `
+<div style="border-bottom:1px solid #ddd;padding:8px 0">
+<b>${s.title}</b><br>
+${s.desc}<br>
+<button onclick="deleteService(${i})" style="margin-top:5px;background:#dc3545;color:#fff;border:none;padding:5px 10px;border-radius:5px">Delete</button>
+</div>`;
+});
+}
+
+function renderNews(){
+const news = JSON.parse(localStorage.getItem("news"));
+const list = document.getElementById("newsList");
+const adminList = document.getElementById("adminNewsList");
+list.innerHTML="";
+adminList.innerHTML="";
+news.forEach((n,i)=>{
+list.innerHTML += `<li>📌 ${n}</li>`;
+adminList.innerHTML += `
+<div style="border-bottom:1px solid #ddd;padding:8px 0">
+${n}<br>
+<button onclick="deleteNews(${i})" style="margin-top:5px;background:#dc3545;color:#fff;border:none;padding:5px 10px;border-radius:5px">Delete</button>
+</div>`;
+});
+}
+
+function renderAppointments(){
+const data = JSON.parse(localStorage.getItem("appointments"));
+const box = document.getElementById("adminAppointments");
+box.innerHTML="";
+if(data.length===0){box.innerHTML="<p>No appointments yet.</p>";return;}
+data.forEach((a,i)=>{
+box.innerHTML += `
+<div style="border-bottom:1px solid #ddd;padding:8px 0">
+<b>${a.name}</b> | ${a.mobile}<br>
+${a.date} at ${a.time}<br>
+${a.message || ""}
+</div>`;
+});
+}
+
+function renderInquiries(){
+const data = JSON.parse(localStorage.getItem("inquiries"));
+const box = document.getElementById("adminInquiries");
+box.innerHTML="";
+if(data.length===0){box.innerHTML="<p>No inquiries yet.</p>";return;}
+data.forEach((q,i)=>{
+box.innerHTML += `
+<div style="border-bottom:1px solid #ddd;padding:8px 0">
+<b>${q.name}</b> | ${q.mobile}<br>
+${q.message || ""}
+</div>`;
+});
+}
+
+/* ================= USER FORMS ================= */
 function submitForm(e){
 e.preventDefault();
+const data = JSON.parse(localStorage.getItem("inquiries"));
+data.push({
+name:document.getElementById("name").value,
+mobile:document.getElementById("mobile").value,
+message:document.getElementById("message").value,
+date:new Date().toLocaleString()
+});
+localStorage.setItem("inquiries",JSON.stringify(data));
 alert("Thank you! Your inquiry has been sent.");
 e.target.reset();
+renderInquiries();
 }
 
 function bookAppointment(e){
 e.preventDefault();
+const data = JSON.parse(localStorage.getItem("appointments"));
+data.push({
+name:document.getElementById("aname").value,
+mobile:document.getElementById("amobile").value,
+date:document.getElementById("adate").value,
+time:document.getElementById("atime").value,
+message:document.getElementById("amessage").value
+});
+localStorage.setItem("appointments",JSON.stringify(data));
 alert("Your free consultation is booked successfully!");
 closeAppointment();
 e.target.reset();
+renderAppointments();
 }
+
+/* ================= MODALS ================= */
+function openAppointment(){document.getElementById("appointmentBox").style.display="flex";}
+function closeAppointment(){document.getElementById("appointmentBox").style.display="none";}
+function openAdminLogin(){document.getElementById("adminLoginBox").style.display="flex";}
+function closeAdminLogin(){document.getElementById("adminLoginBox").style.display="none";}
+
+/* ================= ADMIN LOGIN ================= */
+const ADMIN_USER="admin";
+const ADMIN_PASS="12345";
+
+function adminLogin(){
+const u=document.getElementById("adminUser").value;
+const p=document.getElementById("adminPass").value;
+if(u===ADMIN_USER && p===ADMIN_PASS){
+document.getElementById("adminLoginBox").style.display="none";
+document.getElementById("adminPanel").style.display="block";
+renderServices();
+renderNews();
+renderAppointments();
+renderInquiries();
+}else{
+alert("Invalid Login!");
+}
+}
+
+function adminLogout(){
+document.getElementById("adminPanel").style.display="none";
+}
+
+/* ================= ADMIN ACTIONS ================= */
+function addService(){
+const title=document.getElementById("serviceTitle").value.trim();
+const desc=document.getElementById("serviceDesc").value.trim();
+if(!title||!desc){alert("Enter title and description");return;}
+const services = JSON.parse(localStorage.getItem("services"));
+services.push({title,desc});
+localStorage.setItem("services",JSON.stringify(services));
+document.getElementById("serviceTitle").value="";
+document.getElementById("serviceDesc").value="";
+renderServices();
+}
+
+function deleteService(i){
+if(!confirm("Delete this service?")) return;
+const services = JSON.parse(localStorage.getItem("services"));
+services.splice(i,1);
+localStorage.setItem("services",JSON.stringify(services));
+renderServices();
+}
+
+function addNews(){
+const text=document.getElementById("newsText").value.trim();
+if(!text){alert("Enter news");return;}
+const news = JSON.parse(localStorage.getItem("news"));
+news.unshift(text);
+localStorage.setItem("news",JSON.stringify(news));
+document.getElementById("newsText").value="";
+renderNews();
+}
+
+function deleteNews(i){
+if(!confirm("Delete this news?")) return;
+const news = JSON.parse(localStorage.getItem("news"));
+news.splice(i,1);
+localStorage.setItem("news",JSON.stringify(news));
+renderNews();
+}
+
+/* ================= INIT ================= */
+renderServices();
+renderNews();
 </script>
 
 </body>
