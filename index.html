@@ -2,471 +2,552 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Uma Associate & Tax Consultant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uma Associate & Tax Consultant | Gozariya</title>
-  <meta name="description" content="Uma Associate & Tax Consultant, Gozariya – Professional Accounting, GST, ITR, Insurance, Investment & Corporate Finance Services." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #f9fafc; color: #333; line-height: 1.6; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-
-    .container { width: 90%; max-width: 1200px; margin: auto; }
+    body {
+      background: #f4f6f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
 
     /* ================= HEADER ================= */
     header {
-      background: #0b1c2d;
-      color: #fff;
-      padding: 14px 0;
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-    .nav {
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
     }
+
     .logo {
       font-size: 22px;
       font-weight: 700;
       letter-spacing: 0.5px;
-      color: #ffd369;
     }
-    .nav ul {
+
+    .logo span {
+      color: #00e5ff;
+    }
+
+    nav ul {
       list-style: none;
       display: flex;
       gap: 22px;
     }
-    .nav ul li a {
+
+    nav ul li a {
       color: #fff;
+      text-decoration: none;
       font-weight: 500;
       transition: 0.3s;
     }
-    .nav ul li a:hover { color: #ffd369; }
 
-    .menu-btn {
-      display: none;
-      font-size: 22px;
-      cursor: pointer;
-      color: #fff;
+    nav ul li a:hover {
+      color: #00e5ff;
     }
 
-    /* ================= HERO ================= */
+    .cta-btn {
+      background: #00e5ff;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #fff;
+    }
+
+    /* ================= HERO SECTION (AUTO BACKGROUND CHANGE) ================= */
     .hero {
-      background:
-        linear-gradient(rgba(11,28,45,0.75), rgba(11,28,45,0.75)),
-        url('https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: #fff;
-      padding: 110px 0 90px;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: #fff;
+      margin-top: 70px;
     }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 1;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      animation: slideShow 24s infinite;
+      z-index: 0;
+    }
+
+    @keyframes slideShow {
+      0%   { background-image: url("https://images.unsplash.com/photo-1523287562758-66c7fc58967f?auto=format&fit=crop&w=1500&q=80"); }
+      25%  { background-image: url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1500&q=80"); }
+      50%  { background-image: url("https://images.unsplash.com/photo-1581091870627-3b8c1cfdc44f?auto=format&fit=crop&w=1500&q=80"); }
+      75%  { background-image: url("https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1500&q=80"); }
+      100% { background-image: url("https://images.unsplash.com/photo-1523287562758-66c7fc58967f?auto=format&fit=crop&w=1500&q=80"); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 20px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
     .hero h1 {
       font-size: 44px;
+      margin-bottom: 15px;
       font-weight: 700;
-      margin-bottom: 16px;
-      line-height: 1.2;
+      line-height: 1.3;
     }
-    .hero h1 span { color: #ffd369; }
+
+    .hero h1 span {
+      color: #00e5ff;
+    }
+
     .hero p {
       font-size: 18px;
-      max-width: 750px;
-      margin: 0 auto 28px;
-      color: #e6ecf2;
+      margin-bottom: 25px;
+      opacity: 0.95;
     }
-    .hero .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-    .btn {
-      padding: 12px 26px;
+
+    .hero-buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 22px;
       border-radius: 30px;
-      border: none;
+      text-decoration: none;
       font-weight: 600;
-      cursor: pointer;
       transition: 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
     }
+
     .btn-primary {
-      background: linear-gradient(135deg, #ffd369, #ffb703);
-      color: #0b1c2d;
-      box-shadow: 0 6px 16px rgba(255, 211, 105, 0.35);
+      background: #00e5ff;
+      color: #000;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(255, 211, 105, 0.45); }
+
+    .btn-primary:hover {
+      background: #fff;
+    }
+
     .btn-outline {
+      border: 2px solid #00e5ff;
+      color: #00e5ff;
       background: transparent;
-      border: 2px solid #ffd369;
-      color: #ffd369;
     }
+
     .btn-outline:hover {
-      background: #ffd369;
-      color: #0b1c2d;
-      transform: translateY(-2px);
+      background: #00e5ff;
+      color: #000;
     }
 
-    .hero-stats {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+    /* ================= COMMON SECTION STYLES ================= */
+    section {
+      padding: 70px 20px;
     }
-    .stat-card {
-      background: rgba(255,255,255,0.08);
-      border-radius: 14px;
-      padding: 18px 12px;
-      backdrop-filter: blur(6px);
-      transition: 0.3s;
-    }
-    .stat-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.12); }
-    .stat-card h3 {
-      font-size: 26px;
-      color: #ffd369;
-      margin-bottom: 6px;
-    }
-    .stat-card p { font-size: 14px; color: #e6ecf2; }
 
-    /* ================= SECTIONS COMMON ================= */
-    section { padding: 80px 0; }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
     .section-title {
       text-align: center;
       margin-bottom: 50px;
     }
+
     .section-title h2 {
-      font-size: 34px;
-      font-weight: 700;
+      font-size: 32px;
       margin-bottom: 10px;
-      color: #0b1c2d;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 10px;
+      font-weight: 700;
+      color: #203a43;
     }
-    .section-title h2::after {
-      content: '';
-      width: 70px;
-      height: 4px;
-      background: linear-gradient(135deg, #ffd369, #ffb703);
-      display: block;
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
+
     .section-title p {
-      max-width: 700px;
-      margin: auto;
       color: #555;
       font-size: 16px;
     }
 
-    /* ================= ABOUT ================= */
+    /* ================= ABOUT SECTION ================= */
+    .about {
+      background: #fff;
+    }
+
     .about-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       align-items: center;
     }
-    .about-img {
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 14px 30px rgba(0,0,0,0.15);
-    }
-    .about-img img { width: 100%; height: 100%; object-fit: cover; }
-    .about-content h3 {
-      font-size: 28px;
-      margin-bottom: 14px;
-      color: #0b1c2d;
-    }
-    .about-content p {
-      margin-bottom: 12px;
-      color: #555;
-    }
-    .about-points {
-      margin-top: 18px;
-      display: grid;
-      gap: 10px;
-    }
-    .about-point {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 15px;
-      color: #444;
-    }
-    .about-point i {
-      color: #ffb703;
-      font-size: 18px;
+
+    .about img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
-    /* ================= SERVICES ================= */
-    #services { background: #f2f5fb; }
+    .about-content h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #203a43;
+    }
+
+    .about-content p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .about-points {
+      margin-top: 15px;
+    }
+
+    .about-points li {
+      margin-bottom: 10px;
+      list-style: none;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .about-points li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #00bcd4;
+      font-weight: bold;
+    }
+
+    /* ================= SERVICES SECTION ================= */
+    .services {
+      background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    }
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 26px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
+
     .service-card {
       background: #fff;
-      border-radius: 18px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-      transition: 0.35s;
-      display: flex;
-      flex-direction: column;
-    }
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 36px rgba(0,0,0,0.12);
-    }
-    .service-img {
-      height: 190px;
-      overflow: hidden;
-    }
-    .service-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       transition: 0.4s;
+      display: flex;
+      flex-direction: column;
     }
-    .service-card:hover .service-img img { transform: scale(1.08); }
 
-    .service-content {
-      padding: 22px 20px 24px;
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.01);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .service-card-content {
+      padding: 20px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
-    .service-content h4 {
-      font-size: 20px;
+
+    .service-card-content h3 {
       margin-bottom: 10px;
-      color: #0b1c2d;
+      font-size: 20px;
+      color: #203a43;
     }
-    .service-content p {
+
+    .service-card-content p {
       font-size: 14.5px;
+      line-height: 1.7;
       color: #555;
-      margin-bottom: 14px;
       flex: 1;
     }
-    .service-content a {
+
+    .service-card-content a {
+      margin-top: 15px;
+      align-self: flex-start;
+      text-decoration: none;
       font-weight: 600;
-      color: #ffb703;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 14px;
-      transition: 0.3s;
+      color: #00bcd4;
     }
-    .service-content a:hover { gap: 10px; }
+
+    .service-card-content a:hover {
+      text-decoration: underline;
+    }
 
     /* ================= WHY CHOOSE US ================= */
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 26px;
-    }
-    .why-card {
+    .why {
       background: #fff;
-      border-radius: 18px;
-      padding: 28px 22px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-      transition: 0.35s;
-      text-align: center;
-    }
-    .why-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 36px rgba(0,0,0,0.12);
-    }
-    .why-card i {
-      font-size: 34px;
-      color: #ffb703;
-      margin-bottom: 14px;
-    }
-    .why-card h4 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #0b1c2d;
-    }
-    .why-card p {
-      font-size: 14.5px;
-      color: #555;
     }
 
-    /* ================= LATEST FINANCIAL UPDATES ================= */
-    #news { background: #f2f5fb; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .why-card {
+      background: linear-gradient(135deg, #203a43, #2c5364);
+      color: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: 0.4s;
+      text-align: center;
+    }
+
+    .why-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    .why-card h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .why-card p {
+      font-size: 14.5px;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    /* ================= FINANCIAL NEWS ================= */
+    .news {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    }
+
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 26px;
+      gap: 25px;
     }
+
     .news-card {
       background: #fff;
-      border-radius: 18px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-      transition: 0.35s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transition: 0.4s;
       display: flex;
       flex-direction: column;
     }
+
     .news-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 36px rgba(0,0,0,0.12);
-    }
-    .news-card img {
-      height: 180px;
-      object-fit: cover;
-      width: 100%;
-      transition: 0.4s;
-    }
-    .news-card:hover img { transform: scale(1.08); }
-    .news-content {
-      padding: 20px 18px 22px;
-      flex: 1;
-    }
-    .news-content h4 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #0b1c2d;
-    }
-    .news-content p {
-      font-size: 14.5px;
-      color: #555;
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.18);
     }
 
-    /* ================= CONTACT ================= */
-    #contact { background: #0b1c2d; color: #fff; }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 36px;
-      align-items: center;
-    }
-    .contact-info h3 {
-      font-size: 28px;
-      margin-bottom: 14px;
-      color: #ffd369;
-    }
-    .contact-info p {
-      font-size: 15px;
-      margin-bottom: 10px;
-      color: #e6ecf2;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .contact-info p i { color: #ffd369; }
-    .contact-box {
-      background: #fff;
-      border-radius: 18px;
-      padding: 28px 24px;
-      box-shadow: 0 14px 30px rgba(0,0,0,0.25);
-      color: #333;
-    }
-    .contact-box h4 {
-      font-size: 22px;
-      margin-bottom: 14px;
-      color: #0b1c2d;
-      text-align: center;
-    }
-    .contact-box form {
-      display: grid;
-      gap: 14px;
-    }
-    .contact-box input,
-    .contact-box textarea {
+    .news-card img {
       width: 100%;
-      padding: 12px 14px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-family: inherit;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card-content {
+      padding: 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card-content h4 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #203a43;
+    }
+
+    .news-card-content p {
       font-size: 14px;
-      outline: none;
-      transition: 0.3s;
+      line-height: 1.7;
+      color: #555;
+      flex: 1;
     }
-    .contact-box input:focus,
-    .contact-box textarea:focus {
-      border-color: #ffb703;
-      box-shadow: 0 0 0 3px rgba(255,183,3,0.15);
+
+    .news-card-content span {
+      font-size: 12px;
+      color: #888;
+      margin-top: 10px;
     }
-    .contact-box textarea { resize: none; height: 110px; }
-    .contact-box button {
-      background: linear-gradient(135deg, #ffd369, #ffb703);
-      border: none;
+
+    /* ================= CTA SECTION ================= */
+    .cta {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 24px;
       border-radius: 30px;
-      padding: 12px;
+      background: #00e5ff;
+      color: #000;
       font-weight: 600;
-      cursor: pointer;
+      text-decoration: none;
       transition: 0.3s;
-      font-size: 15px;
-      color: #0b1c2d;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
     }
-    .contact-box button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 22px rgba(255,211,105,0.45);
+
+    .cta a:hover {
+      background: #fff;
     }
 
     /* ================= FOOTER ================= */
     footer {
-      background: #071422;
-      color: #cfd8e3;
-      padding: 22px 0;
-      text-align: center;
-      font-size: 14px;
+      background: #0f2027;
+      color: #ccc;
+      padding-top: 60px;
     }
-    footer span { color: #ffd369; font-weight: 600; }
 
-    /* ================= FLOATING WHATSAPP ================= */
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 35px;
+    }
+
+    .footer-col h3 {
+      color: #fff;
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    .footer-col p {
+      font-size: 14.5px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: #00e5ff;
+      padding-left: 5px;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer-bottom span {
+      color: #00e5ff;
+      font-weight: 600;
+    }
+
+    /* ================= WHATSAPP FLOAT BUTTON ================= */
     .whatsapp-float {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
+      right: 18px;
+      bottom: 18px;
       background: #25d366;
       color: #fff;
       border-radius: 50%;
-      width: 56px;
-      height: 56px;
+      width: 55px;
+      height: 55px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 28px;
+      text-decoration: none;
       box-shadow: 0 8px 20px rgba(0,0,0,0.25);
       z-index: 999;
       transition: 0.3s;
     }
+
     .whatsapp-float:hover {
       transform: scale(1.08);
-      box-shadow: 0 12px 26px rgba(0,0,0,0.35);
+      background: #1ebe5d;
     }
 
     /* ================= RESPONSIVE ================= */
     @media (max-width: 768px) {
-      .nav ul {
-        position: absolute;
-        top: 64px;
-        right: 0;
-        background: #0b1c2d;
-        flex-direction: column;
-        width: 220px;
-        padding: 16px;
-        display: none;
-        box-shadow: 0 10px 24px rgba(0,0,0,0.3);
-        border-radius: 0 0 0 14px;
+      .hero h1 {
+        font-size: 32px;
       }
-      .nav ul.active { display: flex; }
-      .menu-btn { display: block; }
-      .hero h1 { font-size: 32px; }
-      .hero p { font-size: 16px; }
+
+      nav ul {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -474,259 +555,187 @@
 
   <!-- ================= HEADER ================= -->
   <header>
-    <div class="container nav">
-      <div class="logo">Uma Associate & Tax Consultant</div>
-      <i class="fa-solid fa-bars menu-btn" id="menuBtn"></i>
-      <ul id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#news">Updates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="navbar">
+      <div class="logo">Uma <span>Associate</span> & Tax Consultant</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#news">Financial News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="cta-btn">Free Consultation</a>
     </div>
   </header>
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="home">
-    <div class="container">
-      <h1>Trusted <span>Tax, Accounting & Financial</span><br>Solutions for Individuals & Businesses</h1>
+    <div class="hero-slide"></div>
+    <div class="hero-content">
+      <h1>Trusted <span>Tax, Finance & Business Advisory</span> Services</h1>
       <p>
-        Uma Associate & Tax Consultant provides reliable accounting, GST, income tax, insurance,
-        investment, and corporate finance advisory services to individuals, MSMEs, and corporates
-        with accuracy, transparency, and professional excellence.
+        We provide professional Income Tax, GST, Corporate Finance, Investment,
+        Insurance & Accounting solutions for individuals, startups, MSMEs
+        and corporates — with complete transparency and expert guidance.
       </p>
-      <div class="btn-group">
-        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Free Consultation</a>
-        <a href="tel:+919574665220" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-card">
-          <h3>500+</h3>
-          <p>Happy Clients</p>
-        </div>
-        <div class="stat-card">
-          <h3>100%</h3>
-          <p>Compliance Support</p>
-        </div>
-        <div class="stat-card">
-          <h3>24/7</h3>
-          <p>Client Assistance</p>
-        </div>
-        <div class="stat-card">
-          <h3>Trusted</h3>
-          <p>Professional Service</p>
-        </div>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <a href="#contact" class="btn-outline">Book Free Consultation</a>
       </div>
     </div>
   </section>
 
   <!-- ================= ABOUT ================= -->
-  <section id="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="section-title">
-        <h2>About Uma Associate</h2>
-        <p>
-          A professional financial consultancy dedicated to delivering accurate, compliant,
-          and growth-oriented solutions for individuals, startups, MSMEs, and corporates.
-        </p>
+        <h2>About Uma Associate & Tax Consultant</h2>
+        <p>Your reliable partner for taxation, finance & business growth</p>
       </div>
 
       <div class="about-grid">
-        <div class="about-img">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Professional Financial Consultants">
+        <div>
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80" alt="Professional Meeting">
         </div>
+
         <div class="about-content">
-          <h3>Your Reliable Partner in Finance & Compliance</h3>
+          <h3>Professional. Reliable. Result-Oriented.</h3>
           <p>
-            Uma Associate & Tax Consultant is committed to helping clients manage their finances,
-            taxes, and compliance responsibilities with clarity, confidence, and professionalism.
-            We focus on delivering practical solutions that support financial stability and
-            long-term business growth.
+            Uma Associate & Tax Consultant is a professional financial services firm
+            offering expert solutions in Income Tax, GST, Accounting, Corporate Finance,
+            Investment Planning, Insurance Advisory and SAP-based business solutions.
           </p>
           <p>
-            Our approach combines technical expertise with personalized advisory, ensuring that
-            every client receives transparent guidance, timely support, and result-oriented service.
+            Our mission is to simplify complex financial processes and help individuals,
+            startups, MSMEs and corporates achieve financial stability, compliance
+            and long-term growth with confidence.
           </p>
-          <div class="about-points">
-            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Accurate & Compliant Financial Solutions</div>
-            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Personalized Client Advisory</div>
-            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Transparent & Ethical Practices</div>
-            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Dedicated Support for Individuals & Businesses</div>
-          </div>
+
+          <ul class="about-points">
+            <li>Personalized financial & tax advisory</li>
+            <li>Complete business compliance solutions</li>
+            <li>Corporate finance & growth consulting</li>
+            <li>Transparent, ethical and client-focused service</li>
+            <li>Support for individuals, startups & enterprises</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ================= SERVICES ================= -->
-  <section id="services">
+  <section class="services" id="services">
     <div class="container">
       <div class="section-title">
         <h2>Our Professional Services</h2>
-        <p>
-          Comprehensive financial, taxation, and advisory solutions designed to support
-          individuals, startups, MSMEs, and corporates at every stage.
-        </p>
+        <p>Complete financial, taxation & business solutions under one roof</p>
       </div>
 
       <div class="services-grid">
 
-        <!-- Accounting -->
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1200&q=80" alt="Accounting Services" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Accounting & Bookkeeping</h4>
-            <p>
-              Complete accounting solutions including daily bookkeeping, ledger maintenance,
-              financial statements, reconciliation, and MIS reporting to ensure accurate
-              financial control and compliance.
-            </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
         <!-- Income Tax -->
         <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1605902711622-6c7c5bffb9c1?auto=format&fit=crop&w=1200&q=80" alt="Income Tax Return Filing" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Income Tax Return (ITR)</h4>
+          <img src="https://images.unsplash.com/photo-1586486855514-8c633cc6fd2d?auto=format&fit=crop&w=1200&q=80" alt="Income Tax">
+          <div class="service-card-content">
+            <h3>Income Tax & ITR Filing</h3>
             <p>
-              Filing of ITR-1, ITR-2, ITR-3, and ITR-4 under the new and old tax regimes for
-              salaried individuals, professionals, freelancers, and businesses with
-              maximum tax-saving strategies.
+              Filing of ITR-1, ITR-2, ITR-3 & ITR-4 under new & old regime,
+              tax planning, notices handling, refunds & assessments with accuracy and compliance.
             </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact">Consult Now →</a>
           </div>
         </div>
 
         <!-- GST -->
         <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="GST Services" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>GST Registration & Returns</h4>
+          <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1200&q=80" alt="GST Services">
+          <div class="service-card-content">
+            <h3>GST Registration & Returns</h3>
             <p>
-              GST registration, monthly/quarterly return filing (GSTR-1, GSTR-3B, GSTR-9),
-              reconciliation, notices handling, and advisory services for smooth GST compliance.
+              GST registration, monthly/quarterly return filing, reconciliation,
+              GST audits, notices reply & advisory to ensure smooth compliance.
             </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact">Consult Now →</a>
           </div>
         </div>
 
-        <!-- TDS -->
+        <!-- Accounting -->
         <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="TDS Return Filing" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>TDS Return Filing</h4>
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Accounting">
+          <div class="service-card-content">
+            <h3>Accounting & Bookkeeping</h3>
             <p>
-              Preparation and filing of quarterly TDS returns, Form 16/16A issuance,
-              corrections, and complete compliance support to avoid penalties and notices.
+              Complete accounting solutions including bookkeeping, financial statements,
+              MIS reports, reconciliation & compliance-ready records for businesses.
             </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- MSME -->
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80" alt="MSME Registration & Advisory" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>MSME Registration & Compliance</h4>
-            <p>
-              Udyam Registration, MSME advisory, government scheme benefits, subsidy guidance,
-              compliance management, and financial structuring for small and medium enterprises.
-            </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Investment -->
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?auto=format&fit=crop&w=1200&q=80" alt="Investment Planning" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Investment Planning</h4>
-            <p>
-              Personalized investment advisory including SIPs, mutual funds, tax-saving
-              investments (80C/80D), retirement planning, and wealth creation strategies
-              based on your financial goals and risk profile.
-            </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Insurance -->
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1576765607924-5c3bbf96c0b3?auto=format&fit=crop&w=1200&q=80" alt="Insurance Advisory" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Insurance Advisory</h4>
-            <p>
-              Expert guidance on Health Insurance, Term Insurance, Life Insurance, and
-              General Insurance policies to ensure complete financial protection for you,
-              your family, and your business.
-            </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Personal Financial Advice -->
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1200&q=80" alt="Personal Financial Advice" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Personal Financial Advice</h4>
-            <p>
-              One-to-one financial planning for individuals and families including tax
-              optimization, savings strategy, retirement planning, wealth protection,
-              and long-term goal-based financial guidance.
-            </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact">Consult Now →</a>
           </div>
         </div>
 
         <!-- Corporate Finance -->
         <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1200&q=80" alt="Corporate Finance Services" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>Corporate Finance Services</h4>
+          <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1200&q=80" alt="Corporate Finance">
+          <div class="service-card-content">
+            <h3>Corporate Finance Advisory</h3>
             <p>
-              Professional corporate finance advisory including business structuring,
-              financial projections, funding support, working capital management,
-              valuation assistance, and strategic growth planning.
+              Business funding assistance, project finance, CMA data,
+              working capital management, financial restructuring and growth advisory.
             </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact">Consult Now →</a>
           </div>
         </div>
 
-        <!-- SAP / ERP -->
+        <!-- Investment -->
         <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1581092919534-9aa8b1c2c5f1?auto=format&fit=crop&w=1200&q=80" alt="SAP ERP Services" loading="lazy">
-          </div>
-          <div class="service-content">
-            <h4>SAP / ERP Accounting Support</h4>
+          <img src="https://images.unsplash.com/photo-1565372910294-3f6c38f3a1a1?auto=format&fit=crop&w=1200&q=80" alt="Investment Planning">
+          <div class="service-card-content">
+            <h3>Investment & Wealth Planning</h3>
             <p>
-              End-to-end SAP and ERP accounting support including implementation assistance,
-              transaction posting, reconciliation, reporting, and compliance alignment for
-              medium and large businesses.
+              SIP, mutual funds, long-term investment planning, tax-saving instruments
+              and personalized wealth creation strategies.
             </p>
-            <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact">Consult Now →</a>
+          </div>
+        </div>
+
+        <!-- Insurance -->
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Insurance Services">
+          <div class="service-card-content">
+            <h3>Insurance Advisory</h3>
+            <p>
+              Health insurance, life insurance, business insurance,
+              risk assessment and policy selection for complete financial protection.
+            </p>
+            <a href="#contact">Consult Now →</a>
+          </div>
+        </div>
+
+        <!-- SAP -->
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1200&q=80" alt="SAP Services">
+          <div class="service-card-content">
+            <h3>SAP Business Solutions</h3>
+            <p>
+              SAP implementation support, accounting integration,
+              business process automation and financial system optimization.
+            </p>
+            <a href="#contact">Consult Now →</a>
+          </div>
+        </div>
+
+        <!-- TDS -->
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80" alt="TDS Returns">
+          <div class="service-card-content">
+            <h3>TDS & Compliance Services</h3>
+            <p>
+              TDS return filing, corrections, notices handling, 26Q/24Q/27Q
+              compliance and advisory for businesses and employers.
+            </p>
+            <a href="#contact">Consult Now →</a>
           </div>
         </div>
 
@@ -735,99 +744,97 @@
   </section>
 
   <!-- ================= WHY CHOOSE US ================= -->
-  <section>
+  <section class="why">
     <div class="container">
       <div class="section-title">
-        <h2>Why Choose Uma Associate</h2>
-        <p>
-          We deliver professional, transparent, and result-oriented financial solutions
-          tailored to your personal and business needs.
-        </p>
+        <h2>Why Choose Us</h2>
+        <p>Trusted financial expertise with personalized service</p>
       </div>
 
       <div class="why-grid">
         <div class="why-card">
-          <i class="fa-solid fa-scale-balanced"></i>
-          <h4>Accurate & Compliant</h4>
+          <h3>Expert Advisory</h3>
           <p>
-            Every service is delivered with complete compliance, accuracy, and attention
-            to detail to protect your financial interests.
+            Professional guidance in taxation, finance, compliance and business growth
+            based on practical industry experience.
           </p>
         </div>
+
         <div class="why-card">
-          <i class="fa-solid fa-user-tie"></i>
-          <h4>Personalized Advisory</h4>
+          <h3>Complete Solutions</h3>
           <p>
-            We provide customized financial and tax strategies based on your income,
-            goals, and business structure.
+            From individuals to corporates, we offer end-to-end financial,
+            tax and business compliance services under one roof.
           </p>
         </div>
+
         <div class="why-card">
-          <i class="fa-solid fa-handshake-angle"></i>
-          <h4>Trusted Support</h4>
+          <h3>Transparent Process</h3>
           <p>
-            Our clients rely on us for timely guidance, ethical practices, and dependable
-            financial and compliance services.
+            Clear communication, honest advice and no hidden charges —
+            building trust through ethical practices.
           </p>
         </div>
+
         <div class="why-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <h4>Growth-Oriented Solutions</h4>
+          <h3>Client-Centric Approach</h3>
           <p>
-            We focus on long-term financial stability, tax efficiency, and business growth
-            through practical and strategic advisory.
+            Personalized solutions, timely support and dedicated attention
+            to each client’s financial and business needs.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= LATEST FINANCIAL UPDATES ================= -->
-  <section id="news">
+  <!-- ================= FINANCIAL NEWS ================= -->
+  <section class="news" id="news">
     <div class="container">
       <div class="section-title">
-        <h2>Latest Financial Updates</h2>
-        <p>
-          Stay informed with the latest GST, Insurance, Accounting, and Taxation updates
-          that impact individuals, businesses, and corporates.
-        </p>
+        <h2>Current Financial & Tax Updates</h2>
+        <p>Latest insights to keep you informed and compliant</p>
       </div>
 
       <div class="news-grid">
 
-        <!-- GST Update -->
+        <!-- News 1 -->
         <div class="news-card">
-          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="GST Updates" loading="lazy">
-          <div class="news-content">
-            <h4>Latest GST Compliance Changes</h4>
+          <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1200&q=80" alt="Union Budget">
+          <div class="news-card-content">
+            <h4>Income Tax Regime Updates</h4>
             <p>
-              Important GST return filing rules, e-invoicing updates, and compliance
-              amendments that every business owner should be aware of.
+              The new tax regime continues to gain preference with simplified slabs
+              and standard deduction benefits. Taxpayers should evaluate which regime
+              is more beneficial based on income structure and deductions.
             </p>
+            <span>Updated recently</span>
           </div>
         </div>
 
-        <!-- Insurance Update -->
+        <!-- News 2 -->
         <div class="news-card">
-          <img src="https://images.unsplash.com/photo-1576765607924-9b9c1b0f1b44?auto=format&fit=crop&w=1200&q=80" alt="Insurance Updates" loading="lazy">
-          <div class="news-content">
-            <h4>Health & Insurance Policy Updates</h4>
+          <img src="https://images.unsplash.com/photo-1591696331112-3cfe2dbe6f8b?auto=format&fit=crop&w=1200&q=80" alt="GST">
+          <div class="news-card-content">
+            <h4>GST Compliance & E-Invoicing</h4>
             <p>
-              New IRDA guidelines, premium benefit changes, coverage updates, and best
-              practices for choosing the right insurance policies.
+              E-invoicing and real-time data matching are strengthening GST compliance.
+              Businesses must ensure accurate reporting and timely reconciliation
+              to avoid penalties and notices.
             </p>
+            <span>Updated recently</span>
           </div>
         </div>
 
-        <!-- Accounting Update -->
+        <!-- News 3 -->
         <div class="news-card">
-          <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1200&q=80" alt="Accounting Updates" loading="lazy">
-          <div class="news-content">
-            <h4>Accounting & Compliance Updates</h4>
+          <img src="https://images.unsplash.com/photo-1556742049-908cfed3c6a3?auto=format&fit=crop&w=1200&q=80" alt="Investments">
+          <div class="news-card-content">
+            <h4>Investment Planning for Long-Term Growth</h4>
             <p>
-              Latest accounting standards, audit practices, bookkeeping automation tools,
-              and compliance requirements for growing businesses.
+              SIPs and diversified mutual fund investments remain key strategies
+              for long-term wealth creation, especially in volatile market conditions.
             </p>
+            <span>Updated recently</span>
           </div>
         </div>
 
@@ -835,78 +842,85 @@
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact">
+  <!-- ================= CTA ================= -->
+  <section class="cta">
     <div class="container">
-      <div class="contact-grid">
-
-        <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p><i class="fa-solid fa-location-dot"></i> Location: Gozariya, Gujarat</p>
-          <p><i class="fa-solid fa-phone"></i> +91 95746 65220</p>
-          <p><i class="fa-solid fa-envelope"></i> Umaassociate2020@yahoo.com</p>
-          <p>
-            For expert accounting, taxation, insurance, investment, and corporate finance
-            advisory, connect with Uma Associate & Tax Consultant today.
-          </p>
-        </div>
-
-        <div class="contact-box">
-          <h4>Book Free Consultation</h4>
-          <form onsubmit="sendWhatsAppMessage(event)">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="tel" id="phone" placeholder="Your Phone Number" required>
-            <textarea id="message" placeholder="How can we help you?" required></textarea>
-            <button type="submit"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button>
-          </form>
-        </div>
-
-      </div>
+      <h2>Need Expert Financial Guidance?</h2>
+      <p>
+        Get professional advice on tax, GST, investments, insurance,
+        accounting and corporate finance — absolutely free consultation.
+      </p>
+      <a href="#contact">Book Free Consultation</a>
+      <a href="https://wa.me/919574665220" target="_blank">Chat on WhatsApp</a>
     </div>
   </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <div class="container">
-      <p>© 2026 <span>Uma Associate & Tax Consultant</span>. All Rights Reserved.</p>
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <footer id="contact">
+    <div class="footer-container">
+
+      <!-- About -->
+      <div class="footer-col">
+        <h3>Uma Associate & Tax Consultant</h3>
+        <p>
+          We provide professional taxation, accounting, corporate finance,
+          investment and compliance services with a focus on trust,
+          transparency and long-term client success.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#services">Income Tax & ITR Filing</a></li>
+          <li><a href="#services">GST Registration & Returns</a></li>
+          <li><a href="#services">Accounting & Bookkeeping</a></li>
+          <li><a href="#services">Corporate Finance Advisory</a></li>
+          <li><a href="#services">Investment & Wealth Planning</a></li>
+          <li><a href="#services">Insurance Advisory</a></li>
+          <li><a href="#services">SAP Business Solutions</a></li>
+          <li><a href="#services">TDS & Compliance Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#news">Financial News</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><strong>Contact Person:</strong> Harshil Patel</p>
+        <p><strong>Mobile:</strong> +91 95746 65220</p>
+        <p><strong>Email:</strong> Umaassociate2020@yahoo.com</p>
+        <p>
+          <strong>Office:</strong> Professional financial consulting services
+          for individuals, startups, MSMEs and corporates across India.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span>2026</span> Uma Associate & Tax Consultant. All Rights Reserved.
+      | Designed with professionalism for financial excellence.
     </div>
   </footer>
 
-  <!-- ================= FLOATING WHATSAPP ================= -->
-  <a href="https://wa.me/919574665220" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+  <!-- ================= WHATSAPP FLOAT BUTTON ================= -->
+  <a href="https://wa.me/919574665220" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    ☎
   </a>
-
-  <!-- ================= SCRIPT ================= -->
-  <script>
-    // Mobile Menu Toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-    menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    // WhatsApp Form Submission
-    function sendWhatsAppMessage(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      const text =
-        `Hello Uma Associate,%0A%0A` +
-        `Name: ${name}%0A` +
-        `Email: ${email}%0A` +
-        `Phone: ${phone}%0A` +
-        `Requirement: ${message}`;
-
-      const url = `https://wa.me/919574665220?text=${text}`;
-      window.open(url, '_blank');
-    }
-  </script>
 
 </body>
 </html>
+
