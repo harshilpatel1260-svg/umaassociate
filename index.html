@@ -1,773 +1,1307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uma Associate & Tax Consultant</title>
-  <meta name="description" content="Uma Associate & Tax Consultant – Accounting, Income Tax, GST, Investment, Insurance & Corporate Finance Advisory Services.">
+  <meta name="description" content="Uma Associate & Tax Consultant – Accounting, Income Tax Return Filing, GST Registration & Returns, TDS, MSME, Investment & Insurance Advisory." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📊</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#f6f9ff;color:#222;line-height:1.6}
+    :root{
+      --primary:#0d47a1;
+      --secondary:#1976d2;
+      --accent:#00bfa5;
+      --light:#f5f7fb;
+      --dark:#0b132b;
+      --text:#333;
+      --radius:14px;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+      --gradient:linear-gradient(135deg,#0d47a1,#1976d2,#00bfa5);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
+    ul{list-style:none}
 
-    /* ---------- HEADER ---------- */
-    header{
-      background:linear-gradient(135deg,#0818a8,#0db5d8);
+    .container{width:90%;max-width:1200px;margin:auto}
+    .btn{
+      display:inline-block;
+      padding:12px 26px;
+      border-radius:30px;
+      font-weight:600;
+      background:var(--gradient);
       color:#fff;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      box-shadow:0 4px 15px rgba(0,0,0,.2);
+      border:none;
+      cursor:pointer;
+      transition:.3s;
+      box-shadow:0 8px 18px rgba(0,0,0,.15);
     }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 25px rgba(0,0,0,.2)}
+
+    .btn-outline{
+      background:transparent;
+      color:var(--primary);
+      border:2px solid var(--primary);
+      box-shadow:none;
+    }
+    .btn-outline:hover{background:var(--primary);color:#fff}
+
+    /* ================= HEADER ================= */
+    header{
+      position:fixed;
+      top:0;left:0;width:100%;
+      background:#fff;
+      z-index:999;
+      box-shadow:0 4px 15px rgba(0,0,0,.05);
+    }
+
     .nav{
-      max-width:1200px;
-      margin:auto;
-      padding:14px 20px;
       display:flex;
       align-items:center;
       justify-content:space-between;
+      height:72px;
     }
-    .logo{font-size:22px;font-weight:700}
-    nav ul{list-style:none;display:flex;gap:22px}
-    nav ul li a{color:#fff;font-weight:500;transition:.3s}
-    nav ul li a:hover{color:#ffe600}
-    .menu-btn{display:none;font-size:26px;cursor:pointer}
 
-    /* ---------- HERO ---------- */
-    .hero{
-      background:
-        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-        url("https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80")
-        center/cover no-repeat;
-      min-height:90vh;
+    .logo{
       display:flex;
       align-items:center;
-      color:#fff;
+      gap:10px;
+      font-size:1.3rem;
+      font-weight:700;
+      color:var(--primary);
     }
-    .hero-content{
-      max-width:1200px;
+
+    .logo i{
+      font-size:1.6rem;
+      color:var(--accent);
+    }
+
+    nav ul{
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+
+    nav ul li a{
+      font-weight:500;
+      transition:.3s;
+    }
+
+    nav ul li a:hover{color:var(--secondary)}
+
+    .nav-btns{display:flex;gap:12px}
+
+    .menu-toggle{
+      display:none;
+      font-size:1.6rem;
+      cursor:pointer;
+    }
+
+    /* ================= HERO ================= */
+    .hero{
+      padding-top:110px;
+      background:linear-gradient(135deg,#eef4ff,#f7fbff);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      right:-120px;top:-120px;
+      width:350px;height:350px;
+      background:radial-gradient(circle at center,rgba(25,118,210,.25),transparent 70%);
+      border-radius:50%;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      left:-150px;bottom:-150px;
+      width:380px;height:380px;
+      background:radial-gradient(circle at center,rgba(0,191,165,.25),transparent 70%);
+      border-radius:50%;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:40px;
+      align-items:center;
+      padding:80px 0;
+    }
+
+    .hero h1{
+      font-size:2.6rem;
+      line-height:1.25;
+      color:var(--dark);
+      margin-bottom:16px;
+    }
+
+    .hero h1 span{color:var(--secondary)}
+
+    .hero p{
+      font-size:1.05rem;
+      margin-bottom:24px;
+      max-width:520px;
+    }
+
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+    .hero-card{
+      background:#fff;
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:var(--shadow);
+      position:relative;
+    }
+
+    .hero-stats{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+      margin-top:20px;
+    }
+
+    .stat{
+      background:var(--light);
+      padding:16px;
+      border-radius:12px;
+      text-align:center;
+    }
+
+    .stat h3{color:var(--primary);font-size:1.4rem}
+
+    /* ================= TRUST BAR ================= */
+    .trust{
+      background:#fff;
+      padding:28px 0;
+      border-bottom:1px solid #eee;
+    }
+
+    .trust-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      align-items:center;
+      text-align:center;
+    }
+
+    .trust-item{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      color:#555;
+      font-weight:500;
+    }
+
+    .trust-item i{color:var(--accent);font-size:1.2rem}
+
+    /* ================= SECTION COMMON ================= */
+    section{padding:90px 0}
+
+    .section-title{
+      text-align:center;
+      margin-bottom:55px;
+    }
+
+    .section-title h2{
+      font-size:2.1rem;
+      color:var(--dark);
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      max-width:620px;
       margin:auto;
-      padding:40px 20px;
-    }
-    .hero h1{font-size:44px;margin-bottom:12px}
-    .hero p{max-width:650px;font-size:18px;margin-bottom:24px}
-    .hero .btns{display:flex;gap:14px;flex-wrap:wrap}
-    .btn{
-      padding:12px 26px;border-radius:30px;font-weight:600;border:none;cursor:pointer;
-      transition:.3s;display:inline-block
-    }
-    .btn-primary{background:#ffe600;color:#000}
-    .btn-primary:hover{background:#ffcc00;transform:translateY(-2px)}
-    .btn-outline{background:transparent;color:#fff;border:2px solid #fff}
-    .btn-outline:hover{background:#fff;color:#000;transform:translateY(-2px)}
-
-    /* ---------- COMMON ---------- */
-    section{padding:70px 20px}
-    .container{max-width:1200px;margin:auto}
-    .title{text-align:center;margin-bottom:45px}
-    .title h2{font-size:34px;color:#0818a8;margin-bottom:8px}
-    .title p{color:#555;max-width:700px;margin:auto}
-
-    /* ---------- ABOUT ---------- */
-    .about-grid{
-      display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center
-    }
-    .about-img img{border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.15)}
-    .about h3{font-size:28px;margin-bottom:14px;color:#0818a8}
-    .about p{margin-bottom:10px;color:#444}
-    .about ul{margin-top:12px}
-    .about ul li{
-      list-style:none;margin-bottom:8px;padding-left:22px;position:relative
-    }
-    .about ul li::before{
-      content:"✔";position:absolute;left:0;color:#0db5d8;font-weight:700
+      color:#666;
     }
 
-    /* ---------- SERVICES ---------- */
-    .services{background:#f1f4ff}
+    /* ================= SERVICES ================= */
     .services-grid{
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:26px;
     }
+
     .service-card{
-      background:#fff;border-radius:18px;overflow:hidden;
-      box-shadow:0 8px 25px rgba(0,0,0,.08);
-      transition:.3s;display:flex;flex-direction:column
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      transition:.35s;
+      display:flex;
+      flex-direction:column;
     }
-    .service-card:hover{transform:translateY(-6px);box-shadow:0 12px 35px rgba(0,0,0,.12)}
-    .service-card img{height:180px;object-fit:cover}
-    .service-body{padding:20px;flex:1}
-    .service-body h4{font-size:18px;margin-bottom:8px;color:#0818a8}
-    .service-body p{font-size:14.5px;color:#555}
 
-    /* ---------- CALCULATORS ---------- */
-    .calc-tabs{
-      display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:30px
+    .service-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 18px 35px rgba(0,0,0,.12);
     }
-    .calc-tabs button{
-      padding:10px 18px;border-radius:20px;border:none;
-      background:#e9edff;color:#0818a8;font-weight:600;cursor:pointer;transition:.3s
-    }
-    .calc-tabs button.active,
-    .calc-tabs button:hover{background:#0818a8;color:#fff}
-    .calculator{
-      display:none;background:#fff;border-radius:20px;padding:28px;
-      box-shadow:0 8px 25px rgba(0,0,0,.08);max-width:700px;margin:auto
-    }
-    .calculator.active{display:block}
-    .calculator h3{text-align:center;color:#0818a8;margin-bottom:18px}
-    .calc-grid{
-      display:grid;grid-template-columns:1fr 1fr;gap:16px
-    }
-    .calc-group label{font-size:13px;color:#555}
-    .calc-group input{
-      width:100%;padding:10px 12px;border-radius:10px;border:1px solid #ccc;
-      outline:none;font-size:14px;margin-top:4px
-    }
-    .calc-group input:focus{border-color:#0818a8;box-shadow:0 0 0 2px rgba(8,24,168,.15)}
-    .calc-btn{
-      grid-column:1/-1;margin-top:10px;padding:12px;border-radius:30px;border:none;
-      background:#0818a8;color:#fff;font-weight:600;font-size:15px;cursor:pointer;transition:.3s
-    }
-    .calc-btn:hover{background:#0012a8;transform:translateY(-2px)}
-    .calc-result{
-      margin-top:18px;background:#f5f7ff;border-radius:14px;padding:16px;
-      font-size:14.5px;color:#222
-    }
-    .calc-result strong{color:#0818a8}
 
-    /* ---------- FINANCIAL NEWS ---------- */
-    .news{background:#f8fbff}
-    .news-grid{
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px
+    .service-img{
+      height:170px;
+      background:linear-gradient(135deg,#dbe9ff,#f0f6ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:3.2rem;
+      color:var(--secondary);
     }
-    .news-card{
-      background:#fff;border-radius:18px;overflow:hidden;
-      box-shadow:0 8px 25px rgba(0,0,0,.08);
-      transition:.3s;display:flex;flex-direction:column
-    }
-    .news-card:hover{transform:translateY(-6px);box-shadow:0 12px 35px rgba(0,0,0,.12)}
-    .news-body{padding:18px;flex:1}
-    .news-body h4{font-size:16px;color:#0818a8;margin-bottom:8px}
-    .news-body p{font-size:14px;color:#555;margin-bottom:10px}
-    .news-body a{font-size:13px;color:#0db5d8;font-weight:600}
 
-    /* ---------- WHY US ---------- */
+    .service-content{padding:22px;flex:1;display:flex;flex-direction:column}
+
+    .service-content h3{
+      font-size:1.15rem;
+      color:var(--dark);
+      margin-bottom:8px;
+    }
+
+    .service-content p{font-size:.95rem;color:#666;margin-bottom:14px;flex:1}
+
+    .service-content a{color:var(--secondary);font-weight:600;font-size:.9rem}
+
+    /* ================= WHY US ================= */
+    .why{
+      background:linear-gradient(135deg,#f7fbff,#ffffff);
+    }
+
     .why-grid{
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
     }
+
+    .why-points{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
     .why-card{
-      background:#fff;border-radius:16px;padding:26px 20px;text-align:center;
-      box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s
+      background:#fff;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
     }
-    .why-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
-    .why-card h4{color:#0818a8;margin-bottom:10px}
 
-    /* ---------- CONTACT ---------- */
+    .why-card i{
+      font-size:1.5rem;
+      color:var(--accent);
+      margin-top:2px;
+    }
+
+    /* ================= CALCULATORS ================= */
+    .calc-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:26px;
+    }
+
+    .calc-card{
+      background:#fff;
+      border-radius:18px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .calc-card h3{margin-bottom:12px;color:var(--dark)}
+
+    .calc-card label{font-size:.9rem;color:#555}
+
+    .calc-card input, .calc-card select{
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      margin:6px 0 12px;
+      font-family:inherit;
+    }
+
+    .result{
+      background:var(--light);
+      padding:12px;
+      border-radius:10px;
+      font-weight:600;
+      color:var(--primary);
+      margin-top:10px;
+    }
+
+    /* ================= NEWS ================= */
+    .news-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:26px;
+    }
+
+    .news-card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      transition:.35s;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .news-card:hover{transform:translateY(-5px)}
+
+    .news-img{
+      height:160px;
+      background:linear-gradient(135deg,#e3f2fd,#f1f8ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:2.8rem;
+      color:var(--secondary);
+    }
+
+    .news-content{padding:20px;flex:1;display:flex;flex-direction:column}
+
+    .news-content h4{font-size:1.05rem;margin-bottom:8px;color:var(--dark)}
+
+    .news-content p{font-size:.9rem;color:#666;flex:1}
+
+    .news-content span{font-size:.8rem;color:#999;margin-top:10px}
+
+    /* ================= CTA ================= */
+    .cta{
+      background:var(--gradient);
+      color:#fff;
+      padding:70px 0;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .cta::before{
+      content:"";
+      position:absolute;
+      width:300px;height:300px;
+      background:rgba(255,255,255,.15);
+      border-radius:50%;
+      top:-120px;left:-120px;
+    }
+
+    .cta::after{
+      content:"";
+      position:absolute;
+      width:350px;height:350px;
+      background:rgba(255,255,255,.12);
+      border-radius:50%;
+      bottom:-150px;right:-150px;
+    }
+
+    .cta h2{font-size:2.1rem;margin-bottom:14px}
+    .cta p{max-width:620px;margin:0 auto 22px}
+
+    .cta .btn{
+      background:#fff;
+      color:var(--primary);
+    }
+
+    /* ================= CONTACT ================= */
     .contact-grid{
-      display:grid;grid-template-columns:1fr 1fr;gap:40px
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:40px;
     }
-    .contact-info h3{font-size:26px;margin-bottom:14px;color:#0818a8}
-    .contact-info p{margin-bottom:10px;color:#444}
+
+    .contact-info{
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:var(--shadow);
+    }
+
+    .contact-item{
+      display:flex;
+      gap:14px;
+      margin-bottom:18px;
+      align-items:flex-start;
+    }
+
+    .contact-item i{
+      font-size:1.4rem;
+      color:var(--secondary);
+      margin-top:2px;
+    }
+
     .contact-form{
-      background:#fff;padding:30px;border-radius:20px;
-      box-shadow:0 8px 25px rgba(0,0,0,.08)
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:var(--shadow);
     }
-    .contact-form h3{margin-bottom:14px;color:#0818a8}
-    .form-group{margin-bottom:14px}
-    .form-group input,.form-group textarea{
-      width:100%;padding:11px 13px;border-radius:10px;border:1px solid #ccc;
-      font-size:14px;outline:none
-    }
-    .form-group textarea{resize:none;height:100px}
-    .form-group input:focus,.form-group textarea:focus{
-      border-color:#0818a8;box-shadow:0 0 0 2px rgba(8,24,168,.15)
-    }
-    .contact-form button{
-      width:100%;background:#0818a8;color:#fff;border:none;padding:12px;
-      border-radius:30px;font-size:15px;font-weight:600;cursor:pointer;transition:.3s
-    }
-    .contact-form button:hover{background:#0012a8;transform:translateY(-2px)}
 
-    /* ---------- FOOTER ---------- */
-    footer{background:#0b1220;color:#dcdcdc;padding:50px 20px 20px}
+    .contact-form h3{margin-bottom:12px;color:var(--dark)}
+
+    .contact-form input, .contact-form textarea, .contact-form select{
+      width:100%;
+      padding:11px 12px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      margin-bottom:12px;
+      font-family:inherit;
+    }
+
+    .contact-form textarea{resize:none;height:120px}
+
+    /* ================= FOOTER ================= */
+    footer{
+      background:#0b132b;
+      color:#cbd5e1;
+      padding:70px 0 30px;
+    }
+
     .footer-grid{
-      max-width:1200px;margin:auto;
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:30px;margin-bottom:22px
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1.3fr;
+      gap:40px;
+      margin-bottom:40px;
     }
-    footer h4{margin-bottom:12px;color:#fff}
-    footer p,footer li{font-size:14px;color:#ccc}
-    footer ul{list-style:none}
-    footer ul li{margin-bottom:8px}
-    footer ul li a{color:#ccc;transition:.3s}
+
+    .footer-logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:1.3rem;
+      font-weight:700;
+      color:#fff;
+      margin-bottom:12px;
+    }
+
+    .footer-logo i{color:var(--accent)}
+
+    footer h4{color:#fff;margin-bottom:14px}
+
+    footer ul li{margin-bottom:8px;font-size:.95rem}
+
     footer ul li a:hover{color:#fff}
+
+    .footer-contact p{font-size:.95rem;margin-bottom:10px;display:flex;gap:10px}
+
+    .socials{display:flex;gap:12px;margin-top:12px}
+
+    .socials a{
+      width:38px;height:38px;
+      border-radius:50%;
+      background:rgba(255,255,255,.12);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:.3s;
+    }
+
+    .socials a:hover{background:var(--accent);color:#fff}
+
     .footer-bottom{
-      text-align:center;border-top:1px solid rgba(255,255,255,.1);
-      padding-top:14px;font-size:13px;color:#aaa
+      border-top:1px solid rgba(255,255,255,.1);
+      padding-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:10px;
+      font-size:.85rem;
+      color:#94a3b8;
     }
 
-    /* ---------- WHATSAPP ---------- */
-    .whatsapp{
-      position:fixed;right:18px;bottom:18px;
-      background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-size:28px;
-      box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:999;transition:.3s
-    }
-    .whatsapp:hover{transform:scale(1.08);box-shadow:0 12px 28px rgba(0,0,0,.3)}
+    .footer-bottom a{color:#cbd5e1}
 
-    /* ---------- RESPONSIVE ---------- */
-    @media(max-width:900px){
-      .about-grid,.contact-grid{grid-template-columns:1fr}
-      .hero h1{font-size:34px}
+    /* ================= FLOATING BUTTONS ================= */
+    .whatsapp-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      background:#25d366;
+      color:#fff;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.7rem;
+      box-shadow:0 10px 20px rgba(0,0,0,.25);
+      z-index:999;
+    }
+
+    .top-float{
+      position:fixed;
+      right:18px;
+      bottom:86px;
+      background:var(--primary);
+      color:#fff;
+      width:46px;
+      height:46px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.2rem;
+      box-shadow:0 8px 18px rgba(0,0,0,.2);
+      z-index:999;
+      cursor:pointer;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s;
+    }
+
+    .top-float.show{opacity:1;visibility:visible}
+
+    /* ================= MODAL ================= */
+    .modal{
+      position:fixed;
+      top:0;left:0;width:100%;height:100%;
+      background:rgba(0,0,0,.55);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s;
+      z-index:1000;
+    }
+
+    .modal.show{opacity:1;visibility:visible}
+
+    .modal-box{
+      background:#fff;
+      border-radius:18px;
+      width:92%;
+      max-width:520px;
+      padding:26px;
+      position:relative;
+      box-shadow:0 20px 40px rgba(0,0,0,.25);
+      animation:pop .35s ease;
+    }
+
+    @keyframes pop{from{transform:scale(.9);opacity:.5}to{transform:scale(1);opacity:1}}
+
+    .modal-close{
+      position:absolute;
+      top:12px;right:14px;
+      font-size:1.3rem;
+      cursor:pointer;
+      color:#777;
+    }
+
+    .modal-box h3{margin-bottom:10px;color:var(--dark)}
+
+    /* ================= ADMIN PANEL (HIDDEN DEMO) ================= */
+    .admin-panel{
+      display:none;
+      padding:40px 0;
+      background:#f8fafc;
+    }
+
+    .admin-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+    }
+
+    .admin-card{
+      background:#fff;
+      border-radius:16px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media(max-width:992px){
+      .hero-grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+
+    @media(max-width:768px){
       nav ul{
-        position:absolute;top:65px;right:0;background:#0818a8;
-        width:220px;flex-direction:column;gap:0;overflow:hidden;
-        max-height:0;transition:.4s;border-bottom-left-radius:12px
+        position:absolute;
+        top:72px;left:0;width:100%;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        max-height:0;
+        overflow:hidden;
+        transition:.35s;
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
       }
-      nav ul.show{max-height:400px}
-      nav ul li{border-bottom:1px solid rgba(255,255,255,.2)}
-      nav ul li a{display:block;padding:12px 16px}
-      .menu-btn{display:block}
-      .calc-grid{grid-template-columns:1fr}
+
+      nav ul.show{max-height:380px}
+
+      nav ul li{width:100%}
+
+      nav ul li a{
+        display:block;
+        padding:14px 20px;
+        width:100%;
+      }
+
+      .nav-btns{display:none}
+
+      .menu-toggle{display:block}
+
+      .footer-grid{grid-template-columns:1fr}
+    }
+
+    @media(max-width:480px){
+      .hero h1{font-size:2rem}
+      .section-title h2{font-size:1.7rem}
     }
   </style>
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-  <div class="nav">
-    <div class="logo">Uma Associate & Tax Consultant</div>
-    <div class="menu-btn" id="menuBtn">☰</div>
-    <nav>
-      <ul id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#calculators">Calculators</a></li>
-        <li><a href="#news">Financial News</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Accounting, Tax, Investment & Insurance Solutions You Can Trust</h1>
-    <p>
-      Uma Associate & Tax Consultant provides professional Accounting, Income Tax, GST,
-      Investment Planning, Insurance Advisory, and Corporate Finance solutions to individuals
-      and businesses across India.
-    </p>
-    <div class="btns">
-      <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
-      <a href="#services" class="btn btn-outline">Explore Services</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="container">
-    <div class="title">
-      <h2>About Us</h2>
-      <p>Professional, transparent, and client-focused financial advisory services.</p>
-    </div>
-    <div class="about-grid about">
-      <div class="about-img">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Professional Finance Team">
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Uma Associate & Tax Consultant</span>
       </div>
-      <div>
-        <h3>Uma Associate & Tax Consultant</h3>
-        <p>
-          We provide end-to-end solutions in Accounting, Income Tax Return Filing, GST Compliance,
-          TDS Services, Investment Planning, Insurance Advisory, MSME Registration, and Corporate
-          Financial Consulting.
-        </p>
-        <p>
-          Our approach combines regulatory expertise with strategic financial planning to help
-          individuals and businesses achieve long-term stability and growth.
-        </p>
-        <ul>
-          <li>Complete Accounting & Bookkeeping Solutions</li>
-          <li>Income Tax, GST & TDS Compliance Support</li>
-          <li>Investment Planning & Wealth Management</li>
-          <li>Insurance Advisory for Life, Health & Business</li>
-          <li>Corporate Finance & Business Consulting</li>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#calculators">Calculators</a></li>
+          <li><a href="#news">Financial News</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+
+      <div class="nav-btns">
+        <a href="#contact" class="btn-outline btn">Free Consultation</a>
       </div>
+
+      <div class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <h1>Your Trusted Partner in <span>Accounting, Tax & Financial Growth</span></h1>
+        <p>
+          Uma Associate & Tax Consultant provides professional accounting, income tax, GST, TDS, MSME, investment and insurance advisory services for individuals, startups and businesses.
+        </p>
+        <div class="hero-actions">
+          <button class="btn" onclick="openModal()">Book Free Consultation</button>
+          <a href="#services" class="btn-outline btn">View Services</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>1000+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat">
+            <h3>99%</h3>
+            <p>On-Time Filings</p>
+          </div>
+          <div class="stat">
+            <h3>24x7</h3>
+            <p>Support</p>
+          </div>
+          <div class="stat">
+            <h3>Expert</h3>
+            <p>Professional Advice</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Quick Tax Estimator</h3>
+        <p style="font-size:.9rem;color:#666;margin-bottom:10px">Estimate your income tax in seconds</p>
+        <label>Annual Income (₹)</label>
+        <input type="number" id="quickIncome" placeholder="e.g. 750000" />
+        <label>Regime</label>
+        <select id="quickRegime">
+          <option value="old">Old Regime</option>
+          <option value="new">New Regime</option>
+        </select>
+        <button class="btn" style="width:100%" onclick="quickTax()">Calculate</button>
+        <div id="quickResult" class="result" style="display:none"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST BAR ================= -->
+  <div class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item"><i class="fa-solid fa-shield-check"></i> Trusted Professionals</div>
+      <div class="trust-item"><i class="fa-solid fa-clock"></i> Timely Compliance</div>
+      <div class="trust-item"><i class="fa-solid fa-scale-balanced"></i> Legal & Ethical</div>
+      <div class="trust-item"><i class="fa-solid fa-handshake"></i> Client-Focused</div>
     </div>
   </div>
-</section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" class="services">
-  <div class="container">
-    <div class="title">
-      <h2>Our Services</h2>
-      <p>Complete financial, taxation, investment, and business compliance solutions under one roof.</p>
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Professional Services</h2>
+        <p>Complete financial, taxation and compliance solutions under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-calculator"></i></div>
+          <div class="service-content">
+            <h3>Accounting & Bookkeeping</h3>
+            <p>Accurate bookkeeping, financial statements, reconciliation and accounting support for individuals, firms and companies.</p>
+            <a href="#contact">Get Started →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <div class="service-content">
+            <h3>Income Tax Return Filing</h3>
+            <p>ITR filing for salaried, professionals, businesses, firms and companies with complete tax planning support.</p>
+            <a href="#contact">File Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-receipt"></i></div>
+          <div class="service-content">
+            <h3>GST Registration & Returns</h3>
+            <p>GST registration, monthly/quarterly returns, GST audit and compliance management.</p>
+            <a href="#contact">Register GST →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-file-lines"></i></div>
+          <div class="service-content">
+            <h3>TDS & TCS Returns</h3>
+            <p>Timely filing of TDS/TCS returns, Form 16/16A issuance and complete compliance handling.</p>
+            <a href="#contact">Consult Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-building"></i></div>
+          <div class="service-content">
+            <h3>MSME Registration & Advisory</h3>
+            <p>Udyam registration, MSME benefits guidance and business compliance support.</p>
+            <a href="#contact">Register MSME →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="service-content">
+            <h3>Investment Advisory</h3>
+            <p>Personalized financial planning, SIP, mutual funds, tax-saving investments and wealth growth strategies.</p>
+            <a href="#contact">Start Investing →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="service-content">
+            <h3>Insurance Advisory</h3>
+            <p>Life, health and general insurance advisory to protect your family and business financially.</p>
+            <a href="#contact">Get Insured →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="service-content">
+            <h3>Corporate Finance Services</h3>
+            <p>Business structuring, project reports, CMA data, funding assistance and financial consulting.</p>
+            <a href="#contact">Talk to Expert →</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="services-grid">
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=80" alt="Accounting Services">
-        <div class="service-body">
-          <h4>Accounting & Bookkeeping</h4>
-          <p>
-            Complete accounting solutions including bookkeeping, financial statements,
-            balance sheets, MIS reporting, and compliance-ready records for individuals
-            and businesses.
-          </p>
-        </div>
+  <!-- ================= WHY US ================= -->
+  <section class="why">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Uma Associate?</h2>
+        <p>We combine professional expertise, transparency and personalized service to help you grow confidently.</p>
       </div>
 
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?auto=format&fit=crop&w=900&q=80" alt="Income Tax Services">
-        <div class="service-body">
-          <h4>Income Tax Return Filing</h4>
-          <p>
-            Filing of ITR-1, ITR-2, ITR-3 & ITR-4 under old and new regimes, tax planning,
-            notices handling, refunds, and compliance support.
+      <div class="why-grid">
+        <div>
+          <h3 style="font-size:1.6rem;margin-bottom:14px;color:var(--dark)">Your Growth is Our Priority</h3>
+          <p style="color:#666;margin-bottom:20px">
+            Whether you are an individual taxpayer, startup or established business, we provide reliable, practical and affordable financial solutions tailored to your needs.
           </p>
+
+          <div class="why-points">
+            <div class="why-card">
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <h4>Qualified Professionals</h4>
+                <p style="font-size:.9rem;color:#666">Handled by experienced accounting and tax experts.</p>
+              </div>
+            </div>
+
+            <div class="why-card">
+              <i class="fa-solid fa-stopwatch"></i>
+              <div>
+                <h4>Fast Turnaround</h4>
+                <p style="font-size:.9rem;color:#666">Quick response and timely filings guaranteed.</p>
+              </div>
+            </div>
+
+            <div class="why-card">
+              <i class="fa-solid fa-lock"></i>
+              <div>
+                <h4>100% Data Security</h4>
+                <p style="font-size:.9rem;color:#666">Your financial data is safe and confidential.</p>
+              </div>
+            </div>
+
+            <div class="why-card">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <div>
+                <h4>Personalized Advice</h4>
+                <p style="font-size:.9rem;color:#666">Customized solutions, not generic services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=80" alt="Accounting Services" style="border-radius:20px;box-shadow:var(--shadow)">
         </div>
       </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?auto=format&fit=crop&w=900&q=80" alt="GST Services">
-        <div class="service-body">
-          <h4>GST Registration & Returns</h4>
-          <p>
-            GST registration, monthly/quarterly return filing, reconciliation,
-            audit assistance, notices handling, and compliance management.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1581091012184-5c7f0cbb8c1a?auto=format&fit=crop&w=900&q=80" alt="TDS Services">
-        <div class="service-body">
-          <h4>TDS Return Filing</h4>
-          <p>
-            Accurate TDS computation, quarterly return filing, Form 16/16A issuance,
-            corrections, and end-to-end TDS compliance services.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80" alt="Investment Planning">
-        <div class="service-body">
-          <h4>Investment Planning & Wealth Management</h4>
-          <p>
-            SIPs, mutual funds, long-term investments, retirement planning,
-            goal-based financial planning, and portfolio advisory services.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=900&q=80" alt="Insurance Advisory">
-        <div class="service-body">
-          <h4>Insurance Advisory</h4>
-          <p>
-            Life insurance, health insurance, mediclaim policies, business insurance,
-            risk assessment, and claim assistance with trusted insurers.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80" alt="MSME Services">
-        <div class="service-body">
-          <h4>MSME Registration & Advisory</h4>
-          <p>
-            Udyam registration, MSME benefits guidance, documentation support,
-            government schemes advisory, and business growth assistance.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Corporate Finance">
-        <div class="service-body">
-          <h4>Corporate Finance & Business Advisory</h4>
-          <p>
-            Financial restructuring, business advisory, funding assistance,
-            projections, valuations, and strategic corporate financial planning.
-          </p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= CALCULATORS ================= -->
-<section id="calculators">
-  <div class="container">
-    <div class="title">
-      <h2>Financial Calculators</h2>
-      <p>Use our smart calculators to plan your taxes, investments, and loans effectively.</p>
-    </div>
+  <!-- ================= CALCULATORS ================= -->
+  <section id="calculators">
+    <div class="container">
+      <div class="section-title">
+        <h2>Financial Calculators</h2>
+        <p>Use our smart calculators for quick financial planning and tax estimation.</p>
+      </div>
 
-    <div class="calc-tabs">
-      <button class="active" data-target="taxCalc">Income Tax Calculator</button>
-      <button data-target="sipCalc">SIP Calculator</button>
-      <button data-target="emiCalc">EMI Calculator</button>
-    </div>
-
-    <!-- Income Tax Calculator -->
-    <div class="calculator active" id="taxCalc">
-      <h3>Income Tax Calculator (New Regime – India)</h3>
       <div class="calc-grid">
-        <div class="calc-group">
-          <label>Annual Income (₹)</label>
-          <input type="number" id="taxIncome" placeholder="e.g. 850000">
-        </div>
-        <div class="calc-group">
-          <label>Standard Deduction (₹)</label>
-          <input type="number" id="taxStdDed" value="50000">
-        </div>
-        <button class="calc-btn" onclick="calculateTax()">Calculate Tax</button>
-      </div>
-      <div class="calc-result" id="taxResult">Enter income and click calculate.</div>
-    </div>
-
-    <!-- SIP Calculator -->
-    <div class="calculator" id="sipCalc">
-      <h3>SIP Calculator</h3>
-      <div class="calc-grid">
-        <div class="calc-group">
+        <!-- SIP Calculator -->
+        <div class="calc-card">
+          <h3>SIP Calculator</h3>
           <label>Monthly Investment (₹)</label>
-          <input type="number" id="sipMonthly" placeholder="e.g. 5000">
-        </div>
-        <div class="calc-group">
+          <input type="number" id="sipAmount" placeholder="e.g. 5000">
           <label>Expected Annual Return (%)</label>
           <input type="number" id="sipRate" placeholder="e.g. 12">
+          <label>Investment Period (Years)</label>
+          <input type="number" id="sipYears" placeholder="e.g. 10">
+          <button class="btn" style="width:100%" onclick="calculateSIP()">Calculate</button>
+          <div id="sipResult" class="result" style="display:none"></div>
         </div>
-        <div class="calc-group">
-          <label>Investment Duration (Years)</label>
-          <input type="number" id="sipYears" placeholder="e.g. 15">
-        </div>
-        <button class="calc-btn" onclick="calculateSIP()">Calculate SIP</button>
-      </div>
-      <div class="calc-result" id="sipResult">Enter values and click calculate.</div>
-    </div>
 
-    <!-- EMI Calculator -->
-    <div class="calculator" id="emiCalc">
-      <h3>EMI Calculator</h3>
-      <div class="calc-grid">
-        <div class="calc-group">
+        <!-- EMI Calculator -->
+        <div class="calc-card">
+          <h3>EMI Calculator</h3>
           <label>Loan Amount (₹)</label>
-          <input type="number" id="emiPrincipal" placeholder="e.g. 1000000">
-        </div>
-        <div class="calc-group">
-          <label>Annual Interest Rate (%)</label>
-          <input type="number" id="emiRate" placeholder="e.g. 9">
-        </div>
-        <div class="calc-group">
+          <input type="number" id="emiAmount" placeholder="e.g. 500000">
+          <label>Interest Rate (% per annum)</label>
+          <input type="number" id="emiRate" placeholder="e.g. 10">
           <label>Loan Tenure (Years)</label>
-          <input type="number" id="emiYears" placeholder="e.g. 20">
+          <input type="number" id="emiYears" placeholder="e.g. 5">
+          <button class="btn" style="width:100%" onclick="calculateEMI()">Calculate</button>
+          <div id="emiResult" class="result" style="display:none"></div>
         </div>
-        <button class="calc-btn" onclick="calculateEMI()">Calculate EMI</button>
-      </div>
-      <div class="calc-result" id="emiResult">Enter values and click calculate.</div>
-    </div>
 
-  </div>
-</section>
-
-<!-- ================= FINANCIAL NEWS ================= -->
-<section id="news" class="news">
-  <div class="container">
-    <div class="title">
-      <h2>Latest Financial News</h2>
-      <p>Stay updated with the latest tax, finance, market, and economic news.</p>
-    </div>
-
-    <div class="news-grid" id="newsGrid">
-      <!-- News loaded by JavaScript -->
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY CHOOSE US ================= -->
-<section>
-  <div class="container">
-    <div class="title">
-      <h2>Why Choose Us</h2>
-      <p>Professional expertise, transparent processes, and client-first approach.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <h4>Expert Professionals</h4>
-        <p>Qualified accounting, tax, and finance professionals with practical experience.</p>
-      </div>
-      <div class="why-card">
-        <h4>Personalized Advisory</h4>
-        <p>Tailor-made financial, tax, investment, and insurance solutions for every client.</p>
-      </div>
-      <div class="why-card">
-        <h4>Transparent Pricing</h4>
-        <p>No hidden charges — clear communication and ethical professional practices.</p>
-      </div>
-      <div class="why-card">
-        <h4>End-to-End Compliance</h4>
-        <p>Complete support from registration to filing and regulatory advisory.</p>
-      </div>
-      <div class="why-card">
-        <h4>Business Growth Focus</h4>
-        <p>Strategic financial planning to support long-term business growth.</p>
-      </div>
-      <div class="why-card">
-        <h4>Fast Support</h4>
-        <p>Quick response time and continuous client assistance when you need us.</p>
+        <!-- Income Tax Calculator (Old Regime) -->
+        <div class="calc-card">
+          <h3>Income Tax Calculator (Old Regime)</h3>
+          <label>Annual Income (₹)</label>
+          <input type="number" id="taxIncome" placeholder="e.g. 800000">
+          <button class="btn" style="width:100%" onclick="calculateTax()">Calculate</button>
+          <div id="taxResult" class="result" style="display:none"></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="container">
-    <div class="title">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us for professional accounting, tax, investment, and insurance solutions.</p>
+  <!-- ================= NEWS ================= -->
+  <section id="news" style="background:#f8fafc">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest Financial & Tax News</h2>
+        <p>Stay updated with important taxation, GST and financial market developments.</p>
+      </div>
+
+      <div class="news-grid" id="newsGrid">
+        <!-- News cards generated by JS -->
+      </div>
     </div>
+  </section>
 
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Uma Associate & Tax Consultant</h3>
-        <p><strong>Contact Person:</strong> Harshil Patel</p>
-        <p><strong>Mobile:</strong> +91 95746 65220</p>
-        <p><strong>Email:</strong> Umaassociate2020@yahoo.com</p>
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <div class="container">
+      <h2>Need Expert Tax or Financial Advice?</h2>
+      <p>Book a free consultation today and let our experts guide you with the right financial solutions.</p>
+      <button class="btn" onclick="openModal()">Book Free Consultation</button>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Get in touch for professional accounting, taxation and financial consulting services.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="margin-bottom:12px;color:var(--dark)">Office Details</h3>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <strong>Contact Person:</strong>
+              <p>Harshil Patel</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone:</strong>
+              <p><a href="tel:+919574665220">+91 95746 65220</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email:</strong>
+              <p><a href="mailto:Umaassociate2020@yahoo.com">Umaassociate2020@yahoo.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Location:</strong>
+              <p>Gandhinagar / Ahmedabad, Gujarat</p>
+            </div>
+          </div>
+
+          <div style="margin-top:16px">
+            <a href="https://wa.me/919574665220" target="_blank" class="btn">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Mobile Number" required>
+            <select id="service">
+              <option value="">Select Service</option>
+              <option>Accounting & Bookkeeping</option>
+              <option>Income Tax Return Filing</option>
+              <option>GST Registration & Returns</option>
+              <option>TDS & TCS Returns</option>
+              <option>MSME Registration</option>
+              <option>Investment Advisory</option>
+              <option>Insurance Advisory</option>
+              <option>Corporate Finance</option>
+            </select>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn" style="width:100%">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Uma Associate & Tax Consultant</span>
+          </div>
+          <p style="font-size:.95rem;color:#cbd5e1">
+            Professional accounting, taxation and financial advisory services for individuals and businesses. We focus on compliance, growth and peace of mind.
+          </p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculators">Calculators</a></li>
+            <li><a href="#news">Financial News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Accounting & Bookkeeping</a></li>
+            <li><a href="#services">Income Tax Returns</a></li>
+            <li><a href="#services">GST Services</a></li>
+            <li><a href="#services">TDS & TCS</a></li>
+            <li><a href="#services">MSME Registration</a></li>
+            <li><a href="#services">Investment & Insurance</a></li>
+            <li><a href="#services">Corporate Finance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fa-solid fa-user"></i> Harshil Patel</p>
+          <p><i class="fa-solid fa-phone"></i> +91 95746 65220</p>
+          <p><i class="fa-solid fa-envelope"></i> Umaassociate2020@yahoo.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Gandhinagar / Ahmedabad, Gujarat</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Uma Associate & Tax Consultant. All Rights Reserved.</p>
         <p>
-          We provide professional services in Accounting, Income Tax, GST, TDS,
-          Investment Planning, Insurance Advisory, MSME Registration, and Corporate Finance.
-        </p>
-        <p>
-          Book a free consultation today and let us help you manage your finances efficiently.
+          Designed for Accounting, Taxation & Financial Advisory Services
         </p>
       </div>
+    </div>
+  </footer>
 
-      <div class="contact-form">
-        <h3>Book Free Consultation</h3>
-        <form id="contactForm">
-          <div class="form-group">
-            <input type="text" placeholder="Your Full Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email Address" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" placeholder="Your Mobile Number" required>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Your Requirement / Message" required></textarea>
-          </div>
-          <button type="submit">Submit Request</button>
-        </form>
-        <p id="formStatus" style="margin-top:10px;font-size:13px;"></p>
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <a href="https://wa.me/919574665220" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="top-float" id="topBtn" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal" id="consultModal">
+    <div class="modal-box">
+      <span class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+      <h3>Book Free Consultation</h3>
+      <p style="font-size:.9rem;color:#666;margin-bottom:12px">Fill the form and we will contact you shortly.</p>
+      <form id="modalForm">
+        <input type="text" id="mName" placeholder="Your Name" required>
+        <input type="tel" id="mPhone" placeholder="Your Mobile Number" required>
+        <select id="mService">
+          <option value="">Select Service</option>
+          <option>Accounting & Bookkeeping</option>
+          <option>Income Tax Return Filing</option>
+          <option>GST Registration & Returns</option>
+          <option>TDS & TCS Returns</option>
+          <option>MSME Registration</option>
+          <option>Investment Advisory</option>
+          <option>Insurance Advisory</option>
+          <option>Corporate Finance</option>
+        </select>
+        <textarea id="mMessage" placeholder="Your Requirement"></textarea>
+        <button type="submit" class="btn" style="width:100%">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= ADMIN PANEL (DEMO - HIDDEN) ================= -->
+  <section class="admin-panel" id="admin">
+    <div class="container">
+      <h2 style="margin-bottom:20px">Admin Panel (Demo)</h2>
+      <p style="margin-bottom:30px;color:#666">This is a front-end demo admin panel. For a real dynamic backend, connect with PHP/Node/Database.</p>
+
+      <div class="admin-grid">
+        <div class="admin-card">
+          <h3>Update News</h3>
+          <input type="text" id="adminNewsTitle" placeholder="News Title">
+          <textarea id="adminNewsDesc" placeholder="News Description"></textarea>
+          <button class="btn" onclick="addNews()">Add News</button>
+        </div>
+
+        <div class="admin-card">
+          <h3>Leads (Demo)</h3>
+          <div id="leadsBox" style="font-size:.9rem;color:#666">No leads yet</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h4>Uma Associate & Tax Consultant</h4>
-      <p>
-        Professional Accounting, Taxation, Investment, Insurance, MSME,
-        and Corporate Financial Advisory Services under one roof.
-      </p>
-    </div>
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    // ===== NAV TOGGLE =====
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
 
-    <div>
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="#services">Accounting & Bookkeeping</a></li>
-        <li><a href="#services">Income Tax Return Filing</a></li>
-        <li><a href="#services">GST Registration & Returns</a></li>
-        <li><a href="#services">TDS Compliance</a></li>
-        <li><a href="#services">Investment Planning</a></li>
-        <li><a href="#services">Insurance Advisory</a></li>
-        <li><a href="#services">MSME Registration</a></li>
-        <li><a href="#services">Corporate Finance</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#calculators">Calculators</a></li>
-        <li><a href="#news">Financial News</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>Contact Info</h4>
-      <p><strong>Contact Person:</strong> Harshil Patel</p>
-      <p><strong>Phone:</strong> +91 95746 65220</p>
-      <p><strong>Email:</strong> Umaassociate2020@yahoo.com</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    © <span id="year"></span> Uma Associate & Tax Consultant. All Rights Reserved.
-  </div>
-</footer>
-
-<!-- ================= WHATSAPP FLOAT ================= -->
-<a href="https://wa.me/919574665220" target="_blank" class="whatsapp">💬</a>
-
-<!-- ================= SCRIPT ================= -->
-<script>
-  /* ---------- MOBILE MENU ---------- */
-  const menuBtn = document.getElementById("menuBtn");
-  const navLinks = document.getElementById("navLinks");
-  menuBtn.addEventListener("click",()=>navLinks.classList.toggle("show"));
-  document.querySelectorAll("#navLinks a").forEach(link=>{
-    link.addEventListener("click",()=>navLinks.classList.remove("show"));
-  });
-
-  /* ---------- FOOTER YEAR ---------- */
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  /* ---------- CONTACT FORM (DEMO) ---------- */
-  const form = document.getElementById("contactForm");
-  const statusText = document.getElementById("formStatus");
-  form.addEventListener("submit",function(e){
-    e.preventDefault();
-    statusText.style.color="green";
-    statusText.textContent="Thank you! Your request has been submitted successfully.";
-    form.reset();
-  });
-
-  /* ---------- CALCULATOR TABS ---------- */
-  const tabButtons = document.querySelectorAll(".calc-tabs button");
-  const calculators = document.querySelectorAll(".calculator");
-
-  tabButtons.forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      tabButtons.forEach(b=>b.classList.remove("active"));
-      calculators.forEach(c=>c.classList.remove("active"));
-      btn.classList.add("active");
-      document.getElementById(btn.dataset.target).classList.add("active");
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
     });
-  });
 
-  /* ---------- INCOME TAX CALCULATOR (NEW REGIME INDIA) ---------- */
-  function calculateTax(){
-    const income = Number(document.getElementById("taxIncome").value || 0);
-    const stdDed = Number(document.getElementById("taxStdDed").value || 0);
-    let taxable = Math.max(0, income - stdDed);
-    let tax = 0;
+    // Close menu on link click (mobile)
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => navMenu.classList.remove('show'));
+    });
 
-    // New Regime Slabs (FY 2023-24+)
-    if(taxable <= 300000) tax = 0;
-    else if(taxable <= 600000) tax = (taxable - 300000) * 0.05;
-    else if(taxable <= 900000) tax = 15000 + (taxable - 600000) * 0.10;
-    else if(taxable <= 1200000) tax = 45000 + (taxable - 900000) * 0.15;
-    else if(taxable <= 1500000) tax = 90000 + (taxable - 1200000) * 0.20;
-    else tax = 150000 + (taxable - 1500000) * 0.30;
+    // ===== BACK TO TOP =====
+    const topBtn = document.getElementById('topBtn');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 300){ topBtn.classList.add('show'); }
+      else{ topBtn.classList.remove('show'); }
+    });
 
-    // Rebate u/s 87A (up to 7L taxable income)
-    if(taxable <= 700000) tax = 0;
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
 
-    const cess = tax * 0.04;
-    const totalTax = tax + cess;
+    // ===== MODAL =====
+    const modal = document.getElementById('consultModal');
+    function openModal(){ modal.classList.add('show'); }
+    function closeModal(){ modal.classList.remove('show'); }
 
-    document.getElementById("taxResult").innerHTML =
-      `<strong>Taxable Income:</strong> ₹${taxable.toLocaleString()}<br>
-       <strong>Income Tax:</strong> ₹${tax.toLocaleString()}<br>
-       <strong>Health & Education Cess (4%):</strong> ₹${cess.toLocaleString()}<br>
-       <strong>Total Tax Payable:</strong> ₹${totalTax.toLocaleString()}`;
-  }
+    modal.addEventListener('click', (e) => {
+      if(e.target === modal) closeModal();
+    });
 
-  /* ---------- SIP CALCULATOR ---------- */
-  function calculateSIP(){
-    const P = Number(document.getElementById("sipMonthly").value || 0);
-    const r = Number(document.getElementById("sipRate").value || 0) / 100 / 12;
-    const n = Number(document.getElementById("sipYears").value || 0) * 12;
+    // ===== CONTACT FORM (WhatsApp Auto Submit) =====
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value;
 
-    if(P<=0 || r<=0 || n<=0){
-      document.getElementById("sipResult").innerText = "Please enter valid values.";
-      return;
+      const text = `New Enquiry from Website:%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AService: ${service}%0AMessage: ${message}`;
+      const url = `https://wa.me/919574665220?text=${text}`;
+      window.open(url, '_blank');
+      contactForm.reset();
+    });
+
+    // ===== MODAL FORM (WhatsApp Auto Submit) =====
+    const modalForm = document.getElementById('modalForm');
+    modalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('mName').value;
+      const phone = document.getElementById('mPhone').value;
+      const service = document.getElementById('mService').value;
+      const message = document.getElementById('mMessage').value;
+
+      const text = `Free Consultation Request:%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ARequirement: ${message}`;
+      const url = `https://wa.me/919574665220?text=${text}`;
+      window.open(url, '_blank');
+      modalForm.reset();
+      closeModal();
+    });
+
+    // ===== CALCULATORS =====
+
+    // SIP Calculator
+    function calculateSIP(){
+      const P = parseFloat(document.getElementById('sipAmount').value);
+      const r = parseFloat(document.getElementById('sipRate').value) / 100 / 12;
+      const n = parseFloat(document.getElementById('sipYears').value) * 12;
+
+      if(!P || !r || !n){
+        alert('Please enter all values');
+        return;
+      }
+
+      const FV = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+      const invested = P * n;
+      const gains = FV - invested;
+
+      const result = document.getElementById('sipResult');
+      result.style.display = 'block';
+      result.innerHTML = `Total Investment: ₹${invested.toLocaleString()}<br>Estimated Returns: ₹${gains.toLocaleString()}<br>Future Value: ₹${FV.toLocaleString()}`;
     }
 
-    const FV = P * ((Math.pow(1+r,n)-1)/r) * (1+r);
-    const invested = P * n;
-    const gain = FV - invested;
+    // EMI Calculator
+    function calculateEMI(){
+      const P = parseFloat(document.getElementById('emiAmount').value);
+      const r = parseFloat(document.getElementById('emiRate').value) / 100 / 12;
+      const n = parseFloat(document.getElementById('emiYears').value) * 12;
 
-    document.getElementById("sipResult").innerHTML =
-      `<strong>Total Investment:</strong> ₹${invested.toLocaleString()}<br>
-       <strong>Estimated Returns:</strong> ₹${gain.toLocaleString()}<br>
-       <strong>Future Value:</strong> ₹${Math.round(FV).toLocaleString()}`;
-  }
+      if(!P || !r || !n){
+        alert('Please enter all values');
+        return;
+      }
 
-  /* ---------- EMI CALCULATOR ---------- */
-  function calculateEMI(){
-    const P = Number(document.getElementById("emiPrincipal").value || 0);
-    const r = Number(document.getElementById("emiRate").value || 0) / 100 / 12;
-    const n = Number(document.getElementById("emiYears").value || 0) * 12;
+      const EMI = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      const totalPay = EMI * n;
+      const interest = totalPay - P;
 
-    if(P<=0 || r<=0 || n<=0){
-      document.getElementById("emiResult").innerText = "Please enter valid values.";
-      return;
+      const result = document.getElementById('emiResult');
+      result.style.display = 'block';
+      result.innerHTML = `Monthly EMI: ₹${EMI.toFixed(0).toLocaleString()}<br>Total Interest: ₹${interest.toFixed(0).toLocaleString()}<br>Total Payment: ₹${totalPay.toFixed(0).toLocaleString()}`;
     }
 
-    const EMI = (P * r * Math.pow(1+r,n)) / (Math.pow(1+r,n) - 1);
-    const totalPay = EMI * n;
-    const interest = totalPay - P;
+    // Income Tax Calculator (Old Regime - Basic Slabs)
+    function calculateTax(){
+      const income = parseFloat(document.getElementById('taxIncome').value);
+      if(!income){ alert('Please enter income'); return; }
 
-    document.getElementById("emiResult").innerHTML =
-      `<strong>Monthly EMI:</strong> ₹${Math.round(EMI).toLocaleString()}<br>
-       <strong>Total Interest:</strong> ₹${Math.round(interest).toLocaleString()}<br>
-       <strong>Total Payment:</strong> ₹${Math.round(totalPay).toLocaleString()}`;
-  }
+      let tax = 0;
+      if(income <= 250000) tax = 0;
+      else if(income <= 500000) tax = (income - 250000) * 0.05;
+      else if(income <= 1000000) tax = 12500 + (income - 500000) * 0.2;
+      else tax = 112500 + (income - 1000000) * 0.3;
 
-  /* ---------- FINANCIAL NEWS (AUTO LOAD VIA RSS) ---------- */
-  async function loadNews(){
-    const rssUrl = "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms";
-    const api = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(rssUrl);
+      const cess = tax * 0.04;
+      const totalTax = tax + cess;
 
-    try{
-      const res = await fetch(api);
-      const data = await res.json();
-      const newsGrid = document.getElementById("newsGrid");
-      newsGrid.innerHTML = "";
-
-      data.items.slice(0,6).forEach(item=>{
-        const card = document.createElement("div");
-        card.className = "news-card";
-        card.innerHTML = `
-          <div class="news-body">
-            <h4>${item.title}</h4>
-            <p>${item.description.replace(/<[^>]*>?/gm, "").slice(0,120)}...</p>
-            <a href="${item.link}" target="_blank">Read More →</a>
-          </div>
-        `;
-        newsGrid.appendChild(card);
-      });
-    }catch(err){
-      document.getElementById("newsGrid").innerHTML =
-        "<p style='grid-column:1/-1;text-align:center;color:#555'>Unable to load news. Please refresh later.</p>";
+      const result = document.getElementById('taxResult');
+      result.style.display = 'block';
+      result.innerHTML = `Estimated Tax: ₹${totalTax.toFixed(0).toLocaleString()} (including 4% cess)`;
     }
-  }
-  loadNews();
-</script>
 
-</body>
-</html>
+    // Quick Tax (Hero)
+    function quickTax(){
+      const income = parseFloat(document.getElementById('quickIncome').value);
+      const regime = document.getElementById('quickRegime').value;
+      if(!income){ alert('Please enter income'); return; }
+
+      let tax = 0;
+
+      if(regime === 'old'){
+        if(income <= 250000) tax = 0;
+        else if(income <= 500000) tax = (income - 250000) * 0.05;
+  
