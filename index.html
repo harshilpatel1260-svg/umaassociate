@@ -1,2217 +1,1974 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uma Associate & Tax Consultant | Accounting, GST, Income Tax & Corporate Finance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma Associate & Tax Consultant | Accounting | GST | ITR | TDS</title>
+<meta name="description" content="Uma Associate & Tax Consultant offers Accounting, Income Tax Return Filing, GST Registration & Returns, TDS Filing, Business Compliance, and Financial Advisory Services.">
+<meta name="keywords" content="Accountant in Gandhinagar, GST Filing, ITR Filing, Tax Consultant Ahmedabad, Business Accounting Services">
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Uma Associate & Tax Consultant – Professional Accounting, GST, Income Tax Return Filing, TDS, Corporate Finance, Investment Advisory & Financial News Platform in India." />
-  <meta name="keywords" content="Tax Consultant, GST Filing, Income Tax Return, Accounting Services, CA Firm, GST Consultant Gandhinagar, Ahmedabad Tax Advisor, Corporate Finance Advisory" />
-  <meta name="author" content="Uma Associate & Tax Consultant" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.umaassociate.in" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===================== ROOT & GLOBAL ===================== */
+:root {
+  --primary: #1e40af;
+  --secondary: #0f172a;
+  --accent: #22c55e;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 15px 35px rgba(0,0,0,.08);
+}
 
-  <style>
-    :root{
-      --primary:#0b3c91;
-      --secondary:#1565c0;
-      --accent:#ffcc00;
-      --bg:#f6f8fc;
-      --card:#ffffff;
-      --text:#1f2937;
-      --muted:#4b5563;
-      --shadow:0 12px 35px rgba(0,0,0,.08);
-      --radius:18px;
-    }
+[data-theme="dark"] {
+  --bg: #020617;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --shadow: 0 15px 40px rgba(0,0,0,.6);
+}
 
-    body.dark{
-      --primary:#90caf9;
-      --secondary:#64b5f6;
-      --accent:#ffd54f;
-      --bg:#020617;
-      --card:#020617;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --shadow:0 15px 40px rgba(0,0,0,.6);
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:var(--bg);color:var(--text);line-height:1.7;transition:.4s}
-    img{max-width:100%;display:block}
-    a{text-decoration:none;color:inherit}
+html {
+  scroll-behavior: smooth;
+}
 
-    .container{width:92%;max-width:1350px;margin:auto}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    /* ================= HEADER ================= */
-    header{
-      position:sticky;
-      top:0;
-      z-index:999;
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      box-shadow:0 8px 25px rgba(0,0,0,.25);
-    }
-    nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-      flex-wrap:wrap;
-      gap:10px;
-    }
+/* ===================== UTILITY ===================== */
+.container {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+}
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-size:22px;
-      font-weight:700;
-      letter-spacing:.4px;
-    }
-    .brand img{
-      width:42px;
-      height:42px;
-      background:#fff;
-      border-radius:10px;
-      padding:4px;
-    }
-    .brand span{color:var(--accent)}
+.section {
+  padding: 90px 0;
+}
 
-    .menu{
-      display:flex;
-      gap:18px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .menu a{
-      color:#fff;
-      font-weight:500;
-      opacity:.9;
-      transition:.3s;
-      font-size:14.5px;
-    }
-    .menu a:hover{
-      opacity:1;
-      text-decoration:underline;
-    }
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-    .theme-toggle{
-      background:rgba(255,255,255,.2);
-      border:none;
-      border-radius:50%;
-      width:40px;
-      height:40px;
-      color:#fff;
-      cursor:pointer;
-      font-size:18px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
+.section-title h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 12px;
+}
 
-    /* ================= HERO ================= */
-    .hero{
-      background:
-      linear-gradient(rgba(11,60,145,.9),rgba(11,60,145,.9)),
-      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80')
-      center/cover no-repeat;
-      color:#fff;
-      padding:120px 0 100px;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.2fr .8fr;
-      gap:50px;
-      align-items:center;
-    }
-    .hero h1{
-      font-size:48px;
-      margin-bottom:16px;
-      line-height:1.2;
-      font-weight:700;
-    }
-    .hero p{
-      font-size:18px;
-      margin-bottom:28px;
-      max-width:700px;
-      opacity:.95;
-    }
+.section-title p {
+  color: var(--muted);
+  max-width: 720px;
+  margin-inline: auto;
+}
 
-    .hero-badges{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-bottom:28px;
-    }
-    .badge{
-      background:rgba(255,255,255,.18);
-      padding:7px 14px;
-      border-radius:25px;
-      font-size:13px;
-      font-weight:500;
-    }
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
 
-    .btn{
-      display:inline-block;
-      padding:13px 26px;
-      border-radius:10px;
-      background:var(--accent);
-      color:#000;
-      font-weight:600;
-      margin-right:10px;
-      margin-top:8px;
-      transition:.3s;
-      box-shadow:0 8px 22px rgba(0,0,0,.3);
-    }
-    .btn.secondary{
-      background:#fff;
-      color:var(--primary);
-    }
-    .btn.outline{
-      background:transparent;
-      color:#fff;
-      border:2px solid #fff;
-    }
-    .btn:hover{
-      transform:translateY(-4px);
-      box-shadow:0 12px 28px rgba(0,0,0,.35);
-    }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 
-    .hero-img{
-      border-radius:24px;
-      overflow:hidden;
-      box-shadow:0 20px 50px rgba(0,0,0,.45);
-    }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
 
-    /* ================= COMMON SECTIONS ================= */
-    section{padding:90px 0}
-    .section-title{
-      text-align:center;
-      margin-bottom:70px;
-    }
-    .section-title h2{
-      font-size:38px;
-      color:var(--primary);
-      margin-bottom:12px;
-      font-weight:700;
-    }
-    .section-title p{
-      color:var(--muted);
-      max-width:760px;
-      margin:auto;
-      font-size:16px;
-    }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--primary), #2563eb);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .3s ease;
+  box-shadow: 0 10px 20px rgba(37,99,235,.25);
+}
 
-    /* ================= TRUST BAR ================= */
-    .trust-bar{
-      background:#fff;
-      padding:25px 0;
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
-    }
-    body.dark .trust-bar{background:#020617}
-    .trust-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-      gap:30px;
-      align-items:center;
-      text-align:center;
-    }
-    .trust-item img{
-      height:40px;
-      margin:auto;
-      opacity:.8;
-      filter:grayscale(1);
-      transition:.3s;
-    }
-    .trust-item img:hover{
-      opacity:1;
-      filter:none;
-    }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(37,99,235,.35);
+}
 
-    /* ================= STATS ================= */
-    .stats{
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      padding:70px 0;
-    }
-    .stats-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-      gap:30px;
-      text-align:center;
-    }
-    .stat{
-      padding:20px;
-    }
-    .stat h3{
-      font-size:36px;
-      margin-bottom:6px;
-      color:var(--accent);
-      font-weight:700;
-    }
-    .stat p{
-      font-size:15px;
-      opacity:.95;
-    }
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: none;
+}
 
-    /* ================= ABOUT ================= */
-    .about-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:40px;
-      align-items:stretch;
-    }
-    .about-card{
-      background:var(--card);
-      padding:36px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-    }
-    .about-card h3{
-      margin-bottom:12px;
-      color:var(--primary);
-      font-size:22px;
-    }
-    .about-card p{
-      color:var(--muted);
-      margin-bottom:10px;
-      font-size:15px;
-    }
-    .about-card ul{
-      margin-left:18px;
-      margin-top:8px;
-      color:var(--muted);
-      font-size:15px;
-    }
-    .about-card img{
-      border-radius:14px;
-      margin-top:14px;
-      box-shadow:0 10px 25px rgba(0,0,0,.15);
-    }
+.btn-outline:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
 
-    /* ================= SERVICES ================= */
-    .services{
-      background:#eef3fb;
-    }
-    body.dark .services{background:#020617}
-    .services-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:32px;
-    }
-    .service-card{
-      background:var(--card);
-      padding:34px 30px 36px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      transition:.35s;
-      position:relative;
-      overflow:hidden;
-    }
-    .service-card::before{
-      content:'';
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:6px;
-      background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));
-    }
-    .service-card:hover{
-      transform:translateY(-10px);
-      box-shadow:0 18px 45px rgba(0,0,0,.18);
-    }
-    .service-icon{
-      width:56px;
-      height:56px;
-      border-radius:14px;
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-size:26px;
-      margin-bottom:14px;
-      box-shadow:0 8px 20px rgba(0,0,0,.25);
-    }
-    .service-card h3{
-      color:var(--primary);
-      margin-bottom:10px;
-      font-size:20px;
-    }
-    .service-card p{
-      color:var(--muted);
-      margin-bottom:12px;
-      font-size:15px;
-    }
-    .service-card ul{
-      margin-left:18px;
-      color:var(--muted);
-      font-size:14.5px;
-    }
-    .service-card ul li{
-      margin-bottom:6px;
-    }
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(37,99,235,.12);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
 
-    /* ================= INDUSTRIES ================= */
-    .industries-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:28px;
-    }
-    .industry-card{
-      background:var(--card);
-      padding:28px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      text-align:center;
-      transition:.3s;
-    }
-    .industry-card:hover{
-      transform:translateY(-6px);
-    }
-    .industry-card img{
-      height:70px;
-      margin:auto;
-      margin-bottom:12px;
-    }
-    .industry-card h4{
-      color:var(--primary);
-      margin-bottom:8px;
-      font-size:17px;
-    }
-    .industry-card p{
-      color:var(--muted);
-      font-size:14.5px;
-    }
+/* ===================== HEADER ===================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(255,255,255,.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
 
-    /* ================= PROCESS ================= */
-    .process-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:30px;
-    }
-    .process-step{
-      background:var(--card);
-      padding:30px 26px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      text-align:center;
-      transition:.3s;
-    }
-    .process-step:hover{
-      transform:translateY(-6px);
-    }
-    .process-step span{
-      display:inline-block;
-      width:50px;
-      height:50px;
-      border-radius:50%;
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      line-height:50px;
-      font-weight:700;
-      margin-bottom:12px;
-      font-size:18px;
-      box-shadow:0 8px 20px rgba(0,0,0,.25);
-    }
-    .process-step h4{
-      margin-bottom:8px;
-      color:var(--primary);
-      font-size:17px;
-    }
-    .process-step p{
-      color:var(--muted);
-      font-size:14.5px;
-    }
+[data-theme="dark"] header {
+  background: rgba(2,6,23,.85);
+}
 
-    /* ================= WHY US ================= */
-    .why{
-      background:#eef3fb;
-    }
-    body.dark .why{background:#020617}
-    .why-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:28px;
-    }
-    .why-card{
-      background:linear-gradient(135deg,#e3f2fd,#ffffff);
-      padding:28px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      transition:.3s;
-    }
-    body.dark .why-card{
-      background:#020617;
-    }
-    .why-card:hover{
-      transform:translateY(-6px);
-    }
-    .why-card h4{
-      color:var(--primary);
-      margin-bottom:8px;
-      font-size:17px;
-    }
-    .why-card p{
-      color:var(--muted);
-      font-size:14.5px;
-    }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
 
-    /* ================= TEAM ================= */
-    .team-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:32px;
-    }
-    .team-card{
-      background:var(--card);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      transition:.35s;
-      text-align:center;
-    }
-    .team-card:hover{
-      transform:translateY(-8px);
-    }
-    .team-card img{
-      width:100%;
-      height:300px;
-      object-fit:cover;
-    }
-    .team-content{
-      padding:22px;
-    }
-    .team-content h4{
-      color:var(--primary);
-      margin-bottom:4px;
-      font-size:18px;
-    }
-    .team-content span{
-      display:block;
-      color:var(--secondary);
-      font-size:13px;
-      margin-bottom:8px;
-      font-weight:600;
-    }
-    .team-content p{
-      color:var(--muted);
-      font-size:14px;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text);
+  text-decoration: none;
+}
 
-    /* ================= BLOG ================= */
-    .blog-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:32px;
-    }
-    .blog-card{
-      background:var(--card);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      transition:.35s;
-      display:flex;
-      flex-direction:column;
-    }
-    .blog-card:hover{
-      transform:translateY(-8px);
-      box-shadow:0 20px 45px rgba(0,0,0,.2);
-    }
-    .blog-card img{
-      height:200px;
-      object-fit:cover;
-      width:100%;
-    }
-    .blog-content{
-      padding:22px;
-      display:flex;
-      flex-direction:column;
-      flex:1;
-    }
-    .blog-content span{
-      font-size:12px;
-      color:var(--secondary);
-      font-weight:600;
-      margin-bottom:4px;
-    }
-    .blog-content h4{
-      margin:6px 0 8px;
-      color:var(--primary);
-      font-size:17px;
-      line-height:1.3;
-    }
-    .blog-content p{
-      font-size:14px;
-      color:var(--muted);
-      flex:1;
-    }
-    .blog-content a{
-      display:inline-block;
-      margin-top:14px;
-      color:var(--secondary);
-      font-weight:600;
-      font-size:14px;
-    }
+.logo svg {
+  width: 40px;
+  height: 40px;
+}
 
-    /* ================= CALCULATORS ================= */
-    .calculators{
-      background:#eef3fb;
-    }
-    body.dark .calculators{background:#020617}
-    .calc-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:32px;
-    }
-    .calc-card{
-      background:var(--card);
-      padding:32px 30px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
-    .calc-card h3{
-      margin-bottom:10px;
-      color:var(--primary);
-      font-size:18px;
-    }
-    .calc-card p{
-      color:var(--muted);
-      font-size:13.5px;
-      margin-bottom:6px;
-    }
-    .calc-card input,
-    .calc-card select{
-      width:100%;
-      padding:11px 12px;
-      margin:7px 0;
-      border-radius:8px;
-      border:1px solid #cbd5e1;
-      background:transparent;
-      color:var(--text);
-      font-size:14px;
-    }
-    .calc-card button{
-      margin-top:10px;
-      padding:11px 18px;
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:600;
-      font-size:14px;
-      transition:.3s;
-    }
-    .calc-card button:hover{
-      transform:translateY(-2px);
-      box-shadow:0 8px 20px rgba(0,0,0,.25);
-    }
-    .result{
-      margin-top:12px;
-      font-weight:600;
-      color:#2e7d32;
-      font-size:14px;
-    }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
 
-    /* ================= TESTIMONIALS ================= */
-    .testi-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:32px;
-    }
-    .testi-card{
-      background:var(--card);
-      padding:34px 30px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      transition:.3s;
-    }
-    .testi-card:hover{
-      transform:translateY(-6px);
-    }
-    .testi-card p{
-      font-style:italic;
-      color:var(--muted);
-      font-size:14.5px;
-      line-height:1.7;
-    }
-    .testi-card h4{
-      margin-top:14px;
-      color:var(--primary);
-      font-size:15.5px;
-      font-weight:600;
-    }
-    .stars{
-      color:#ffb300;
-      margin-bottom:8px;
-      font-size:14px;
-    }
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
 
-    /* ================= FAQ ================= */
-    .faq{
-      background:#eef3fb;
-    }
-    body.dark .faq{background:#020617}
-    .faq-grid{
-      max-width:900px;
-      margin:auto;
-    }
-    .faq-item{
-      background:var(--card);
-      padding:26px 28px;
-      border-radius:14px;
-      margin-bottom:18px;
-      box-shadow:var(--shadow);
-      transition:.3s;
-    }
-    .faq-item:hover{
-      transform:translateY(-4px);
-    }
-    .faq-item h4{
-      color:var(--primary);
-      margin-bottom:6px;
-      font-size:16px;
-    }
-    .faq-item p{
-      color:var(--muted);
-      font-size:14.5px;
-      line-height:1.7;
-    }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  transition: .3s ease;
+}
 
-    /* ================= CTA STRIP ================= */
-    .cta-strip{
-      background:
-      linear-gradient(rgba(11,60,145,.9),rgba(11,60,145,.9)),
-      url('https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80')
-      center/cover no-repeat;
-      color:#fff;
-      text-align:center;
-      padding:90px 20px;
-    }
-    .cta-strip h2{
-      font-size:36px;
-      margin-bottom:12px;
-      font-weight:700;
-    }
-    .cta-strip p{
-      font-size:16px;
-      margin-bottom:20px;
-      opacity:.95;
-    }
+.nav-links a:hover::after {
+  width: 100%;
+}
 
-    /* ================= CONTACT ================= */
-    .contact-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-      gap:40px;
-      align-items:start;
-    }
-    .contact-form{
-      background:var(--card);
-      padding:36px 34px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
-    .contact-form h3{
-      margin-bottom:12px;
-      color:var(--primary);
-      font-size:20px;
-    }
-    .contact-form p{
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:10px;
-    }
-    .contact-form input,
-    .contact-form textarea{
-      width:100%;
-      padding:11px 12px;
-      margin:8px 0;
-      border-radius:8px;
-      border:1px solid #cbd5e1;
-      background:transparent;
-      color:var(--text);
-      font-size:14px;
-    }
-    .contact-form button{
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      padding:12px 24px;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:600;
-      margin-top:10px;
-      font-size:14px;
-      transition:.3s;
-    }
-    .contact-form button:hover{
-      transform:translateY(-2px);
-      box-shadow:0 8px 20px rgba(0,0,0,.25);
-    }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    .contact-info{
-      background:var(--card);
-      padding:36px 34px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
-    .contact-info h3{
-      margin-bottom:12px;
-      color:var(--primary);
-      font-size:20px;
-    }
-    .contact-info p{
-      margin-bottom:10px;
-      color:var(--muted);
-      font-size:14.5px;
-    }
-    .contact-info strong{
-      color:var(--text);
-    }
-    .contact-map{
-      margin-top:12px;
-      border-radius:14px;
-      overflow:hidden;
-      box-shadow:0 10px 25px rgba(0,0,0,.15);
-    }
-    .contact-map iframe{
-      width:100%;
-      height:220px;
-      border:0;
-    }
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: .3s ease;
+}
 
-    /* ================= FOOTER ================= */
-    footer{
-      background:#020617;
-      color:#e5e7eb;
-      padding:80px 0 30px;
-    }
-    .footer-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:36px;
-    }
-    footer h4{
-      margin-bottom:12px;
-      color:var(--accent);
-      font-size:16px;
-    }
-    footer p{
-      color:#cbd5f5;
-      font-size:14.5px;
-      line-height:1.7;
-    }
-    footer ul{
-      list-style:none;
-      padding:0;
-    }
-    footer ul li{
-      margin-bottom:8px;
-      font-size:14.5px;
-    }
-    footer ul li a{
-      color:#cbd5f5;
-      transition:.3s;
-    }
-    footer ul li a:hover{
-      color:#fff;
-      text-decoration:underline;
-    }
-    .social-links{
-      display:flex;
-      gap:12px;
-      margin-top:10px;
-    }
-    .social-links a{
-      width:38px;
-      height:38px;
-      border-radius:50%;
-      background:rgba(255,255,255,.15);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-size:18px;
-      transition:.3s;
-    }
-    .social-links a:hover{
-      background:var(--accent);
-      color:#000;
-    }
+.theme-toggle:hover {
+  background: rgba(37,99,235,.1);
+  border-color: var(--primary);
+}
 
-    .footer-bottom{
-      text-align:center;
-      margin-top:40px;
-      border-top:1px solid rgba(255,255,255,.15);
-      padding-top:18px;
-      font-size:13.5px;
-      color:#94a3b8;
-    }
+/* ===================== HERO ===================== */
+.hero {
+  position: relative;
+  padding: 110px 0 140px;
+  overflow: hidden;
+}
 
-    /* ================= WHATSAPP FLOAT ================= */
-    .whatsapp-float{
-      position:fixed;
-      bottom:22px;
-      right:22px;
-      background:#25d366;
-      color:#fff;
-      width:62px;
-      height:62px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:30px;
-      box-shadow:0 12px 28px rgba(0,0,0,.4);
-      z-index:2000;
-      transition:.3s;
-    }
-    .whatsapp-float:hover{
-      transform:translateY(-4px);
-      box-shadow:0 16px 35px rgba(0,0,0,.45);
-    }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(37,99,235,.15), transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(34,197,94,.15), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(59,130,246,.12), transparent 45%);
+  z-index: -1;
+}
 
-    /* ================= RESPONSIVE ================= */
-    @media(max-width:980px){
-      .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-      }
-      .hero p{
-        margin:auto;
-      }
-      .hero-img{
-        max-width:520px;
-        margin:auto;
-      }
-    }
-    @media(max-width:640px){
-      .hero h1{
-        font-size:34px;
-      }
-      .section-title h2{
-        font-size:28px;
-      }
-      .menu{
-        gap:12px;
-        font-size:13px;
-      }
-    }
-  </style>
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 26px;
+  margin-bottom: 4px;
+  color: var(--primary);
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: linear-gradient(135deg, var(--primary), #2563eb);
+  color: #fff;
+  padding: 16px 22px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(37,99,235,.4);
+  font-weight: 500;
+}
+
+/* ===================== TRUST BAR ===================== */
+.trust {
+  padding: 30px 0;
+  background: linear-gradient(135deg, rgba(37,99,235,.05), rgba(34,197,94,.05));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-item {
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.trust-item i {
+  font-size: 28px;
+  color: var(--primary);
+}
+
+/* ===================== ABOUT ===================== */
+.about-img {
+  position: relative;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.2);
+}
+
+.about-card {
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  max-width: 260px;
+}
+
+.about-card h4 {
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+/* ===================== SERVICES ===================== */
+.service-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  box-shadow: var(--shadow);
+  transition: .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: auto -40% -40% auto;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(37,99,235,.12), transparent 60%);
+  transition: .4s ease;
+}
+
+.service-card:hover::before {
+  inset: auto -20% -20% auto;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.18);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(37,99,235,.12);
+  color: var(--primary);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+/* ===================== WHY CHOOSE US ===================== */
+.why {
+  background: linear-gradient(135deg, rgba(37,99,235,.04), rgba(34,197,94,.04));
+}
+
+.why-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 18px;
+  transition: .3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0,0,0,.18);
+}
+
+.why-icon {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+/* ===================== PROCESS ===================== */
+.process-step {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.process-step span {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(37,99,235,.12);
+}
+
+.process-step h4 {
+  margin-bottom: 8px;
+}
+
+/* ===================== PRICING ===================== */
+.pricing-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: .35s ease;
+  position: relative;
+}
+
+.pricing-card.popular {
+  border: 2px solid var(--primary);
+  transform: scale(1.03);
+}
+
+.pricing-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 70px rgba(0,0,0,.2);
+}
+
+.pricing-card h3 {
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 12px 0 20px;
+  color: var(--primary);
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 26px;
+}
+
+.pricing-card li {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+/* ===================== CTA ===================== */
+.cta {
+  background: linear-gradient(135deg, var(--primary), #2563eb);
+  color: #fff;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.cta h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 12px;
+}
+
+.cta p {
+  opacity: .9;
+  margin-bottom: 26px;
+}
+
+.cta .btn {
+  background: #fff;
+  color: var(--primary);
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+/* ===================== TESTIMONIALS ===================== */
+.testimonial-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: .3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+
+.testimonial-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.testimonial-top img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-stars {
+  color: #facc15;
+  font-size: 14px;
+}
+
+/* ===================== BLOG ===================== */
+.blog-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: .3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content span {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.blog-content h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.blog-content a {
+  margin-top: auto;
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===================== CALCULATORS ===================== */
+.calc-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.calc-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.calc-card h4 {
+  margin-bottom: 14px;
+}
+
+.calc-group {
+  margin-bottom: 12px;
+}
+
+.calc-group label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.calc-group input,
+.calc-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-top: 4px;
+  background: transparent;
+  color: var(--text);
+}
+
+.calc-result {
+  background: rgba(37,99,235,.1);
+  color: var(--primary);
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ===================== FAQ ===================== */
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.faq-question {
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.faq-answer {
+  padding: 0 22px 18px;
+  display: none;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* ===================== CONTACT ===================== */
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.contact-info-item i {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 14px;
+}
+
+.contact-form label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  margin-top: 4px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background: linear-gradient(135deg, #020617, #020617);
+  color: #cbd5f5;
+  padding: 70px 0 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+.footer h4 {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  transition: .3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+}
+
+/* ===================== FLOATING BUTTONS ===================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 20px 40px rgba(37,211,102,.45);
+  z-index: 999;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 26px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(37,99,235,.4);
+  display: none;
+  z-index: 999;
+}
+
+/* ===================== ANIMATIONS ===================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .7s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 992px) {
+  .hero-grid,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .calc-wrapper,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    order: -1;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ===================== HEADER ===================== -->
 <header>
-  <div class="container">
-    <nav>
-      <div class="brand">
-        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Uma Associate Logo">
-        Uma <span>Associate</span>
-      </div>
+  <div class="container navbar">
+    <a href="#" class="logo">
+      <!-- LOGO SVG -->
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="14" fill="url(#g1)"/>
+        <path d="M18 42L28 18H36L46 42H39L36.5 36H27.5L25 42H18ZM29.5 31H34.5L32 24L29.5 31Z" fill="white"/>
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="64" y2="64">
+            <stop stop-color="#2563eb"/>
+            <stop offset="1" stop-color="#1e40af"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      Uma Associate
+    </a>
 
-      <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Us</a>
-        <a href="#team">Team</a>
-        <a href="#blog">Blog</a>
-        <a href="#calculators">Calculators</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="themeToggle">🌙</button>
-      </div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#calculators">Calculators</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
     </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="#contact" class="btn">Free Consultation</a>
+    </div>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===================== HERO ===================== -->
 <section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
+  <div class="container hero-grid">
+    <div class="fade-up">
+      <span class="badge">Trusted Tax & Accounting Partner</span>
+      <h1>Professional Accounting, Tax & Compliance Services for Individuals & Businesses</h1>
+      <p>
+        Uma Associate & Tax Consultant provides expert services in Accounting, Income Tax Return Filing,
+        GST Registration & Returns, TDS Filing, Payroll, ROC Compliance, and Business Advisory —
+        helping clients stay compliant, save taxes, and grow with confidence.
+      </p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Get Free Consultation</a>
+        <a href="#services" class="btn btn-outline">View Our Services</a>
+      </div>
 
-      <div>
-        <h1>Trusted Accounting, Tax & Financial Advisory Partner</h1>
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>1000+</h3>
+          <p>Returns Filed</p>
+        </div>
+        <div class="stat">
+          <h3>300+</h3>
+          <p>Business Clients</p>
+        </div>
+        <div class="stat">
+          <h3>99%</h3>
+          <p>Compliance Accuracy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img fade-up">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="Accounting & Tax Services">
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i> 100% Confidential & Secure
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST BAR ===================== -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><i class="fa-solid fa-building-columns"></i> Government Compliance</div>
+    <div class="trust-item"><i class="fa-solid fa-file-invoice-dollar"></i> Accurate Tax Filing</div>
+    <div class="trust-item"><i class="fa-solid fa-briefcase"></i> Business Advisory</div>
+    <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> Data Security</div>
+    <div class="trust-item"><i class="fa-solid fa-headset"></i> Dedicated Support</div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <div class="container grid-2">
+    <div class="about-img fade-up">
+      <img src="https://images.unsplash.com/photo-1581091870622-2c1b7f44f9b7?auto=format&fit=crop&w=900&q=80" alt="About Uma Associate">
+      <div class="about-card">
+        <h4>3+ Years Experience</h4>
+        <p>Professional accounting & taxation services with personalized guidance.</p>
+      </div>
+    </div>
+
+    <div class="fade-up">
+      <span class="badge">About Us</span>
+      <h2>Trusted Accounting & Tax Consultancy in Gujarat</h2>
+      <p>
+        Uma Associate & Tax Consultant is a professional accounting and taxation firm founded with the
+        vision of making compliance simple, affordable, and reliable for individuals, startups, SMEs,
+        and growing enterprises.
+      </p>
+      <p>
+        With strong expertise in Income Tax, GST, TDS, Payroll, Accounting, and Business Advisory,
+        we help our clients reduce risks, optimize tax planning, and focus on business growth while we
+        take care of compliance.
+      </p>
+
+      <ul style="margin:18px 0 26px; list-style:none; display:grid; gap:10px;">
+        <li><i class="fa-solid fa-check" style="color:var(--accent); margin-right:8px;"></i> Dedicated Relationship Manager</li>
+        <li><i class="fa-solid fa-check" style="color:var(--accent); margin-right:8px;"></i> Transparent Pricing</li>
+        <li><i class="fa-solid fa-check" style="color:var(--accent); margin-right:8px;"></i> Timely Compliance & Filing</li>
+        <li><i class="fa-solid fa-check" style="color:var(--accent); margin-right:8px;"></i> Personalized Tax Planning</li>
+      </ul>
+
+      <a href="#contact" class="btn">Talk to Our Expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">Our Services</span>
+      <h2>Complete Accounting, Tax & Compliance Solutions</h2>
+      <p>
+        From individuals to enterprises, we provide end-to-end accounting, taxation, and compliance
+        services tailored to your business needs.
+      </p>
+    </div>
+
+    <div class="grid-4">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
+        <h3>Income Tax Return Filing</h3>
         <p>
-          Uma Associate & Tax Consultant delivers professional accounting, GST, income tax,
-          corporate finance and investment advisory services with accuracy, integrity
-          and modern financial expertise. We simplify compliance, optimize taxation
-          and empower businesses and individuals to grow confidently.
+          Accurate and timely filing of ITR for individuals, professionals, firms, and companies with
+          expert tax planning support to minimize tax liability.
         </p>
-
-        <div class="hero-badges">
-          <div class="badge">✔ GST & Income Tax Experts</div>
-          <div class="badge">✔ Business Compliance Specialists</div>
-          <div class="badge">✔ Corporate Finance Advisory</div>
-          <div class="badge">✔ Investment & Wealth Planning</div>
-          <div class="badge">✔ Startup & MSME Consultants</div>
-          <div class="badge">✔ Payroll & HR Compliance</div>
-        </div>
-
-        <a href="#contact" class="btn">Free Consultation</a>
-        <a href="https://wa.me/919574665220" class="btn secondary">WhatsApp Now</a>
-        <a href="#services" class="btn outline">Explore Services</a>
       </div>
 
-      <div class="hero-img">
-        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" alt="Accounting & Tax Services">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-receipt"></i></div>
+        <h3>GST Registration & Returns</h3>
+        <p>
+          Complete GST services including registration, monthly/quarterly returns, reconciliation,
+          audit support, and notices handling.
+        </p>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUST BAR ================= -->
-<section class="trust-bar">
-  <div class="container">
-    <div class="trust-grid">
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ministry_of_Finance_India.svg/512px-Ministry_of_Finance_India.svg.png" alt="Government">
-      </div>
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Goods_and_Services_Tax_logo.svg/512px-Goods_and_Services_Tax_logo.svg.png" alt="GST">
-      </div>
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Reserve_Bank_of_India_logo.svg/512px-Reserve_Bank_of_India_logo.svg.png" alt="RBI">
-      </div>
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Income_Tax_Department_India_logo.svg/512px-Income_Tax_Department_India_logo.svg.png" alt="Income Tax">
-      </div>
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Startup_India_logo.svg/512px-Startup_India_logo.svg.png" alt="Startup India">
-      </div>
-      <div class="trust-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/MSME_India_Logo.svg/512px-MSME_India_Logo.svg.png" alt="MSME">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= STATS ================= -->
-<section class="stats">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat">
-        <h3>12+</h3>
-        <p>Professional Service Categories</p>
-      </div>
-      <div class="stat">
-        <h3>800+</h3>
-        <p>Satisfied Clients Served</p>
-      </div>
-      <div class="stat">
-        <h3>2500+</h3>
-        <p>Tax Returns & Filings Completed</p>
-      </div>
-      <div class="stat">
-        <h3>99%</h3>
-        <p>Client Satisfaction Rate</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="container">
-    <div class="section-title">
-      <h2>About Uma Associate & Tax Consultant</h2>
-      <p>
-        Your trusted partner for accounting, taxation, compliance, corporate finance
-        and personal financial advisory services — delivering accuracy, integrity and growth.
-      </p>
-    </div>
-
-    <div class="about-grid">
-
-      <div class="about-card">
-        <div>
-          <h3>Who We Are</h3>
-          <p>
-            Uma Associate & Tax Consultant is a professional accounting and financial advisory
-            firm delivering accurate, ethical and growth-oriented solutions to individuals,
-            professionals, startups, SMEs and corporates across India.
-          </p>
-          <p>
-            We simplify finance and compliance by offering end-to-end services under one roof —
-            from bookkeeping and taxation to business advisory and wealth management.
-          </p>
-          <ul>
-            <li>Trusted financial compliance partner</li>
-            <li>Client-focused advisory approach</li>
-            <li>Technology-driven accounting systems</li>
-            <li>Transparent pricing & ethical practices</li>
-            <li>Dedicated relationship managers</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Professional Accounting Team">
-      </div>
-
-      <div class="about-card">
-        <div>
-          <h3>Our Vision</h3>
-          <p>
-            To become the most trusted financial partner for individuals and businesses by
-            delivering smart, compliant and growth-focused financial solutions through modern
-            tools and professional expertise.
-          </p>
-          <p>
-            We aim to empower our clients with financial clarity, tax efficiency and
-            long-term wealth creation strategies.
-          </p>
-          <ul>
-            <li>Be India’s most reliable accounting advisory brand</li>
-            <li>Deliver measurable financial value to clients</li>
-            <li>Promote ethical and transparent practices</li>
-            <li>Adopt future-ready financial technologies</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Business Growth Strategy">
-      </div>
-
-      <div class="about-card">
-        <div>
-          <h3>Our Mission</h3>
-          <p>
-            Our mission is to deliver accurate accounting, proactive tax planning,
-            seamless GST compliance, responsible investment advisory and strategic
-            corporate finance solutions while maintaining the highest standards of
-            professionalism and confidentiality.
-          </p>
-          <p>
-            We believe in building long-term relationships through trust, results and
-            consistent service excellence.
-          </p>
-          <ul>
-            <li>Ensure 100% statutory compliance for clients</li>
-            <li>Reduce tax burden through smart planning</li>
-            <li>Support business growth with financial insights</li>
-            <li>Deliver timely and error-free services</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=800&q=80" alt="Financial Advisory Meeting">
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Professional Services</h2>
-      <p>
-        Complete accounting, tax, finance and compliance solutions under one roof —
-        designed to simplify your financial life and business operations.
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <!-- Accounting -->
-      <div class="service-card">
-        <div class="service-icon">📘</div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
         <h3>Accounting & Bookkeeping</h3>
         <p>
-          Comprehensive accounting solutions ensuring accurate financial records,
-          transparency and business control.
+          End-to-end accounting solutions including bookkeeping, financial statements, MIS reports,
+          and cloud-based accounting support.
         </p>
-        <ul>
-          <li>Daily bookkeeping & ledger maintenance</li>
-          <li>Profit & loss statement and balance sheet</li>
-          <li>Bank reconciliation statements</li>
-          <li>Cash flow & budgeting reports</li>
-          <li>Accounting software setup (Tally, Zoho, Busy)</li>
-          <li>MIS reporting & financial analysis</li>
-          <li>Year-end finalization & audit preparation</li>
-        </ul>
       </div>
 
-      <!-- Income Tax -->
-      <div class="service-card">
-        <div class="service-icon">💰</div>
-        <h3>Income Tax Services</h3>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+        <h3>TDS Return Filing</h3>
         <p>
-          End-to-end income tax compliance and advisory for individuals, professionals,
-          startups and businesses.
+          TDS computation, challan payment, quarterly return filing, Form 16/16A generation, and
+          rectification support.
         </p>
-        <ul>
-          <li>Income tax return filing (ITR 1 to 7)</li>
-          <li>Tax planning & tax saving advisory</li>
-          <li>Advance tax & self assessment tax</li>
-          <li>Notice handling & assessment support</li>
-          <li>Capital gains computation & advisory</li>
-          <li>Refund tracking & rectification filing</li>
-          <li>Faceless assessment & appeal support</li>
-        </ul>
       </div>
 
-      <!-- GST -->
-      <div class="service-card">
-        <div class="service-icon">🧾</div>
-        <h3>GST Services</h3>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Payroll Management</h3>
         <p>
-          Complete GST compliance and advisory solutions for businesses of all sizes.
+          Complete payroll processing including salary computation, payslip generation, PF, ESI,
+          and statutory compliance.
         </p>
-        <ul>
-          <li>GST registration & amendment</li>
-          <li>Monthly/quarterly returns (GSTR-1, 3B, 9, 9C)</li>
-          <li>Input tax credit reconciliation (2B vs books)</li>
-          <li>GST audit support</li>
-          <li>GST notice reply & compliance management</li>
-          <li>E-invoicing & e-way bill solutions</li>
-          <li>GST advisory & transaction structuring</li>
-        </ul>
       </div>
 
-      <!-- TDS -->
-      <div class="service-card">
-        <div class="service-icon">📑</div>
-        <h3>TDS & Statutory Compliance</h3>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <h3>ROC & Company Compliance</h3>
         <p>
-          Complete TDS compliance solutions ensuring timely deduction, payment and reporting.
+          Company incorporation, annual ROC filings, director KYC, LLP compliance, and regulatory
+          advisory services.
         </p>
-        <ul>
-          <li>TDS return filing (24Q, 26Q, 27Q, 27EQ)</li>
-          <li>TDS challan generation & payment</li>
-          <li>Form 16 & 16A issuance</li>
-          <li>TDS reconciliation & correction returns</li>
-          <li>Lower/nil deduction certificate assistance</li>
-          <li>Notices & demand resolution</li>
-          <li>Compliance calendar management</li>
-        </ul>
       </div>
 
-      <!-- Business Registration -->
-      <div class="service-card">
-        <div class="service-icon">🏢</div>
-        <h3>Business Registration & Compliance</h3>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Business Advisory</h3>
         <p>
-          End-to-end business formation and statutory compliance support across India.
+          Strategic financial advisory including business structuring, tax planning, funding support,
+          budgeting, and growth consulting.
         </p>
-        <ul>
-          <li>Proprietorship, partnership, LLP & company registration</li>
-          <li>MSME / Udyam registration</li>
-          <li>PAN, TAN & professional tax registration</li>
-          <li>ROC filings & annual returns</li>
-          <li>Shops & establishment registration</li>
-          <li>Start-up India & DPIIT registration</li>
-          <li>Ongoing statutory compliance management</li>
-        </ul>
       </div>
 
-      <!-- Corporate Finance -->
-      <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3>Corporate Finance & Advisory</h3>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Tax Notices & Assessment</h3>
         <p>
-          Strategic financial advisory solutions for startups, SMEs and corporates.
+          Professional representation for income tax and GST notices, assessment proceedings,
+          appeals, and departmental hearings.
         </p>
-        <ul>
-          <li>Business financial planning & forecasting</li>
-          <li>Project reports & CMA data preparation</li>
-          <li>Loan, funding & working capital advisory</li>
-          <li>Business valuation & feasibility studies</li>
-          <li>Mergers, acquisitions & restructuring support</li>
-          <li>Investor pitch deck & financial modelling</li>
-          <li>Management consulting & strategy advisory</li>
-        </ul>
       </div>
-
-      <!-- Investment Advisory -->
-      <div class="service-card">
-        <div class="service-icon">📈</div>
-        <h3>Personal Financial Advisory</h3>
-        <p>
-          Holistic personal finance solutions to secure your financial future.
-        </p>
-        <ul>
-          <li>Tax-efficient investment planning</li>
-          <li>Mutual funds & SIP advisory</li>
-          <li>Insurance planning (life & health)</li>
-          <li>Retirement & pension planning</li>
-          <li>Wealth management & asset allocation</li>
-          <li>Goal-based financial planning</li>
-          <li>Education & marriage financial planning</li>
-        </ul>
-      </div>
-
-      <!-- Payroll -->
-      <div class="service-card">
-        <div class="service-icon">👨‍💼</div>
-        <h3>Payroll & HR Compliance</h3>
-        <p>
-          Complete payroll processing and statutory compliance solutions for organizations.
-        </p>
-        <ul>
-          <li>Salary processing & payslip generation</li>
-          <li>PF, ESIC & labour law compliance</li>
-          <li>Payroll accounting & reporting</li>
-          <li>Statutory returns & registers</li>
-          <li>Employee tax computation</li>
-          <li>Gratuity, bonus & leave encashment advisory</li>
-          <li>HR compliance audits</li>
-        </ul>
-      </div>
-
-      <!-- Audit -->
-      <div class="service-card">
-        <div class="service-icon">🛡️</div>
-        <h3>Audit & Assurance</h3>
-        <p>
-          Professional audit and assurance services ensuring transparency and compliance.
-        </p>
-        <ul>
-          <li>Statutory audit support</li>
-          <li>Tax audit assistance</li>
-          <li>Internal audit & process review</li>
-          <li>Concurrent audit</li>
-          <li>Stock & revenue audit</li>
-          <li>Compliance & risk assessment</li>
-          <li>Due diligence & forensic audit support</li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= INDUSTRIES ================= -->
-<section id="industries">
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="section why">
   <div class="container">
-    <div class="section-title">
-      <h2>Industries We Serve</h2>
+    <div class="section-title fade-up">
+      <span class="badge">Why Choose Us</span>
+      <h2>What Makes Uma Associate Different</h2>
       <p>
-        We serve a wide range of industries with tailored accounting, tax and financial
-        solutions designed to meet sector-specific compliance and growth needs.
+        We combine professional expertise, personalized service, and technology-driven solutions to
+        deliver unmatched accounting and tax consulting experiences.
       </p>
     </div>
 
-    <div class="industries-grid">
-
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1903/1903162.png" alt="Retail">
-        <h4>Retail & Wholesale</h4>
-        <p>GST compliance, inventory accounting, vendor reconciliation and margin analysis for traders.</p>
+    <div class="grid-3">
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <div>
+          <h4>Trusted & Confidential</h4>
+          <p>
+            Your financial data is handled with strict confidentiality and enterprise-grade security
+            standards.
+          </p>
+        </div>
       </div>
 
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" alt="Manufacturing">
-        <h4>Manufacturing</h4>
-        <p>Cost accounting, GST audits, inventory valuation and working capital management.</p>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+        <div>
+          <h4>On-Time Compliance</h4>
+          <p>
+            We ensure timely filings and submissions so that you never face penalties or legal issues.
+          </p>
+        </div>
       </div>
 
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3126/3126647.png" alt="IT & Software">
-        <h4>IT & Software</h4>
-        <p>Transfer pricing support, international taxation, startup compliance and payroll services.</p>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-rupee-sign"></i></div>
+        <div>
+          <h4>Cost-Effective Solutions</h4>
+          <p>
+            Transparent pricing and affordable packages designed for startups, SMEs, and professionals.
+          </p>
+        </div>
       </div>
 
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4205/4205850.png" alt="Healthcare">
-        <h4>Healthcare & Pharma</h4>
-        <p>GST advisory, regulatory compliance, accounting and tax planning for healthcare providers.</p>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h4>Dedicated Support</h4>
+          <p>
+            Get a dedicated relationship manager for all your accounting and compliance needs.
+          </p>
+        </div>
       </div>
 
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Education">
-        <h4>Education & Institutions</h4>
-        <p>Accounting, trust compliance, audit support and income tax advisory for institutions.</p>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-gear"></i></div>
+        <div>
+          <h4>Technology Driven</h4>
+          <p>
+            Cloud accounting, automated workflows, and real-time reporting for better decision making.
+          </p>
+        </div>
       </div>
 
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995485.png" alt="Real Estate">
-        <h4>Real Estate & Construction</h4>
-        <p>Project accounting, GST advisory, capital gains planning and compliance management.</p>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+        <div>
+          <h4>Proven Expertise</h4>
+          <p>
+            Backed by years of professional experience and hundreds of satisfied clients.
+          </p>
+        </div>
       </div>
-
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3449/3449601.png" alt="Hospitality">
-        <h4>Hospitality & Tourism</h4>
-        <p>Accounting, GST compliance, payroll services and financial performance analysis.</p>
-      </div>
-
-      <div class="industry-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2694/2694213.png" alt="Startups">
-        <h4>Startups & MSMEs</h4>
-        <p>Business registration, accounting setup, tax planning and investor advisory.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= PROCESS ================= -->
-<section id="process">
+<!-- ===================== PROCESS ===================== -->
+<section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2>Our Working Process</h2>
+    <div class="section-title fade-up">
+      <span class="badge">Our Process</span>
+      <h2>Simple, Transparent & Efficient Workflow</h2>
       <p>
-        A simple, transparent and professional workflow to ensure accurate,
-        timely and compliant service delivery for every client.
+        We follow a structured approach to ensure smooth onboarding, timely compliance, and
+        continuous advisory support for our clients.
       </p>
     </div>
 
-    <div class="process-grid">
-
-      <div class="process-step">
-        <span>1</span>
-        <h4>Initial Consultation</h4>
+    <div class="grid-4">
+      <div class="process-step fade-up">
+        <span>01</span>
+        <h4>Consultation</h4>
         <p>
-          We understand your business, income profile, financial needs and compliance
-          requirements through a detailed discussion.
+          Understand your business requirements, compliance needs, and objectives through a
+          detailed consultation.
         </p>
       </div>
 
-      <div class="process-step">
-        <span>2</span>
-        <h4>Documentation Collection</h4>
+      <div class="process-step fade-up">
+        <span>02</span>
+        <h4>Documentation</h4>
         <p>
-          Required documents are collected securely and reviewed thoroughly
-          for accuracy and completeness.
+          Collect required documents and data securely using digital channels and cloud tools.
         </p>
       </div>
 
-      <div class="process-step">
-        <span>3</span>
-        <h4>Analysis & Planning</h4>
+      <div class="process-step fade-up">
+        <span>03</span>
+        <h4>Execution</h4>
         <p>
-          Our experts analyse your financial data and design the most efficient
-          tax, compliance and accounting strategy.
+          Our experts execute filings, accounting, and compliance processes with accuracy and
+          efficiency.
         </p>
       </div>
 
-      <div class="process-step">
-        <span>4</span>
-        <h4>Processing & Preparation</h4>
+      <div class="process-step fade-up">
+        <span>04</span>
+        <h4>Review & Support</h4>
         <p>
-          Accounting, tax returns, GST filings and reports are prepared using
-          latest laws and best practices.
+          Final review, submission, and continuous post-filing support including notices handling
+          and advisory.
         </p>
       </div>
-
-      <div class="process-step">
-        <span>5</span>
-        <h4>Review & Client Approval</h4>
-        <p>
-          All filings and reports are reviewed internally and shared with clients
-          for confirmation before submission.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <span>6</span>
-        <h4>Submission & Filing</h4>
-        <p>
-          Final returns and compliance forms are submitted to authorities
-          within statutory deadlines.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <span>7</span>
-        <h4>Post-Filing Support</h4>
-        <p>
-          Continuous support for notices, assessments, refunds and future
-          compliance requirements.
-        </p>
-      </div>
-
-      <div class="process-step">
-        <span>8</span>
-        <h4>Ongoing Advisory</h4>
-        <p>
-          Regular financial and tax advisory to improve profitability,
-          compliance and long-term growth.
-        </p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= WHY US ================= -->
-<section id="why" class="why">
+<!-- ===================== PRICING ===================== -->
+<section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2>Why Choose Uma Associate & Tax Consultant</h2>
+    <div class="section-title fade-up">
+      <span class="badge">Pricing Plans</span>
+      <h2>Affordable & Transparent Service Packages</h2>
       <p>
-        Trusted by individuals, professionals and businesses for reliable,
-        accurate and growth-focused financial solutions.
+        Choose a plan that fits your business size and compliance requirements. Custom pricing
+        available on request.
       </p>
     </div>
 
-    <div class="why-grid">
-
-      <div class="why-card">
-        <h4>Expertise & Accuracy</h4>
-        <p>
-          Highly skilled professionals ensure accurate accounting,
-          compliant tax filing and strategic financial advice.
-        </p>
+    <div class="grid-3">
+      <div class="pricing-card fade-up">
+        <h3>Starter</h3>
+        <p>For Individuals & Freelancers</p>
+        <div class="price">₹999<span style="font-size:14px;">/year*</span></div>
+        <ul>
+          <li>Income Tax Return Filing</li>
+          <li>Basic Tax Consultation</li>
+          <li>Email Support</li>
+          <li>Compliance Reminders</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Get Started</a>
       </div>
 
-      <div class="why-card">
-        <h4>Personalized Advisory</h4>
-        <p>
-          Customized financial solutions tailored to your business size,
-          industry, income structure and financial goals.
-        </p>
+      <div class="pricing-card popular fade-up">
+        <h3>Business</h3>
+        <p>For Small Businesses & Professionals</p>
+        <div class="price">₹4,999<span style="font-size:14px;">/year*</span></div>
+        <ul>
+          <li>ITR + GST Returns</li>
+          <li>Monthly Accounting</li>
+          <li>Dedicated Manager</li>
+          <li>WhatsApp Support</li>
+        </ul>
+        <a href="#contact" class="btn">Most Popular</a>
       </div>
 
-      <div class="why-card">
-        <h4>Timely Compliance</h4>
-        <p>
-          Proactive compliance management ensures all returns and filings
-          are completed before statutory deadlines.
-        </p>
+      <div class="pricing-card fade-up">
+        <h3>Enterprise</h3>
+        <p>For Growing Companies</p>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Complete Accounting & Compliance</li>
+          <li>Payroll + ROC Filings</li>
+          <li>Tax Planning & Advisory</li>
+          <li>Priority Support</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
       </div>
-
-      <div class="why-card">
-        <h4>Transparent Pricing</h4>
-        <p>
-          Clear service packages, fair pricing and zero hidden charges —
-          complete transparency in billing.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <h4>Technology Driven</h4>
-        <p>
-          Modern accounting tools, cloud platforms and automation
-          for faster, accurate and paperless service delivery.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <h4>Long-Term Partnership</h4>
-        <p>
-          We focus on building long-term relationships through trust,
-          consistent results and dedicated client support.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <h4>Confidentiality & Ethics</h4>
-        <p>
-          Highest standards of data security, confidentiality and
-          ethical professional conduct.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <h4>Pan-India Services</h4>
-        <p>
-          Serving clients across India with digital-first processes
-          and remote compliance solutions.
-        </p>
-      </div>
-
     </div>
+
+    <p style="text-align:center; font-size:13px; color:var(--muted); margin-top:16px;">
+      *Pricing indicative only. Final charges depend on business size and complexity.
+    </p>
   </div>
 </section>
 
-<!-- ================= TEAM ================= -->
-<section id="team">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Leadership & Expert Team</h2>
-      <p>
-        Our experienced professionals are dedicated to delivering
-        accurate, compliant and value-driven financial solutions.
-      </p>
-    </div>
-
-    <div class="team-grid">
-
-      <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=800&q=80" alt="Founder">
-        <div class="team-content">
-          <h4>Harshil Patel</h4>
-          <span>Founder & Managing Consultant</span>
-          <p>
-            M.Com qualified finance professional with strong expertise
-            in accounting, taxation, GST compliance and business advisory.
-            Dedicated to delivering practical, growth-oriented financial solutions.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b8f8e1c?auto=format&fit=crop&w=800&q=80" alt="Tax Manager">
-        <div class="team-content">
-          <h4>Senior Tax Consultant</h4>
-          <span>Income Tax & GST Specialist</span>
-          <p>
-            Expert in direct and indirect taxation, assessments, notices handling,
-            and advanced GST compliance for businesses and professionals.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=800&q=80" alt="Accounts Manager">
-        <div class="team-content">
-          <h4>Accounts Manager</h4>
-          <span>Accounting & Payroll Expert</span>
-          <p>
-            Specialist in bookkeeping, financial reporting, payroll processing
-            and statutory compliance management across multiple industries.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Finance Advisor">
-        <div class="team-content">
-          <h4>Financial Advisory Head</h4>
-          <span>Investment & Wealth Planner</span>
-          <p>
-            Certified investment advisor providing goal-based financial planning,
-            retirement solutions and wealth management strategies.
-          </p>
-        </div>
-      </div>
-
-    </div>
+<!-- ===================== CTA ===================== -->
+<section class="cta">
+  <div class="container fade-up">
+    <h2>Need Expert Accounting & Tax Support?</h2>
+    <p>
+      Book your free consultation today and let our experts handle your compliance while you
+      focus on growing your business.
+    </p>
+    <a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Get Free Consultation</a>
   </div>
 </section>
 
-<!-- ================= BLOG ================= -->
-<section id="blog">
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2>Latest Financial News & Blog</h2>
-      <p>
-        Stay updated with income tax, GST, business compliance, finance and investment
-        news along with expert insights and practical guidance.
-      </p>
-    </div>
-
-    <div class="blog-grid">
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Union Budget">
-        <div class="blog-content">
-          <span>Budget & Tax</span>
-          <h4>Union Budget 2026 Highlights for Taxpayers & Businesses</h4>
-          <p>
-            Key income tax slab changes, deductions updates, startup incentives
-            and MSME support measures announced in the latest Union Budget.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="GST Updates">
-        <div class="blog-content">
-          <span>GST Compliance</span>
-          <h4>New GST Return Filing Rules & ITC Reconciliation Updates</h4>
-          <p>
-            Latest GST amendments impacting GSTR-1, GSTR-3B reconciliation,
-            ITC restrictions and late fee provisions.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b8f8e1c?auto=format&fit=crop&w=800&q=80" alt="Income Tax Notice">
-        <div class="blog-content">
-          <span>Income Tax</span>
-          <h4>Income Tax Notice Handling: Best Practices & Compliance Tips</h4>
-          <p>
-            Expert guidance on scrutiny notices, AIS/TIS reconciliation,
-            faceless assessment and grievance redressal.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80" alt="Investment Market">
-        <div class="blog-content">
-          <span>Investment</span>
-          <h4>Mutual Fund & SIP Market Trends: Smart Investment Strategies</h4>
-          <p>
-            Latest trends in equity, debt and hybrid mutual funds along with
-            SIP performance insights and portfolio allocation tips.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=800&q=80" alt="Startup Compliance">
-        <div class="blog-content">
-          <span>Startup Advisory</span>
-          <h4>Compliance Checklist for Startups & New Businesses in India</h4>
-          <p>
-            Complete guide on registrations, GST, income tax, ROC compliance
-            and financial reporting for startups.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1565373677928-9d55f17fa9b8?auto=format&fit=crop&w=800&q=80" alt="Corporate Finance">
-        <div class="blog-content">
-          <span>Corporate Finance</span>
-          <h4>Working Capital Management: Improve Cash Flow & Stability</h4>
-          <p>
-            Best practices to manage receivables, payables, inventory and
-            short-term financing efficiently.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Audit Advisory">
-        <div class="blog-content">
-          <span>Audit & Compliance</span>
-          <h4>How Internal Audit Improves Business Controls & Profitability</h4>
-          <p>
-            Learn how internal audits help businesses identify risks,
-            strengthen controls and improve operational efficiency.
-          </p>
-          <a href="#">Read More →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= CALCULATORS ================= -->
-<section id="calculators" class="calculators">
-  <div class="container">
-    <div class="section-title">
-      <h2>Financial Calculators</h2>
-      <p>
-        Free online calculators to help you make informed financial,
-        tax and investment decisions with confidence.
-      </p>
-    </div>
-
-    <div class="calc-grid">
-
-      <!-- EMI -->
-      <div class="calc-card">
-        <h3>EMI Calculator</h3>
-        <p>Calculate your monthly loan installment amount.</p>
-        <input type="number" id="emiAmount" placeholder="Loan Amount (₹)" />
-        <input type="number" id="emiRate" placeholder="Interest Rate (% p.a.)" />
-        <input type="number" id="emiTenure" placeholder="Tenure (Years)" />
-        <button onclick="calculateEMI()">Calculate EMI</button>
-        <div class="result" id="emiResult"></div>
-      </div>
-
-      <!-- SIP -->
-      <div class="calc-card">
-        <h3>SIP Calculator</h3>
-        <p>Estimate the future value of your SIP investments.</p>
-        <input type="number" id="sipAmount" placeholder="Monthly Investment (₹)" />
-        <input type="number" id="sipRate" placeholder="Expected Return (% p.a.)" />
-        <input type="number" id="sipYears" placeholder="Investment Period (Years)" />
-        <button onclick="calculateSIP()">Calculate Maturity</button>
-        <div class="result" id="sipResult"></div>
-      </div>
-
-      <!-- Income Tax -->
-      <div class="calc-card">
-        <h3>Income Tax Calculator (New Regime)</h3>
-        <p>Estimate your annual income tax liability.</p>
-        <input type="number" id="taxIncome" placeholder="Annual Taxable Income (₹)" />
-        <button onclick="calculateTax()">Calculate Tax</button>
-        <div class="result" id="taxResult"></div>
-      </div>
-
-      <!-- HRA -->
-      <div class="calc-card">
-        <h3>HRA Exemption Calculator</h3>
-        <p>Calculate your eligible house rent allowance exemption.</p>
-        <input type="number" id="hraSalary" placeholder="Basic Salary (₹)" />
-        <input type="number" id="hraReceived" placeholder="HRA Received (₹)" />
-        <input type="number" id="hraRent" placeholder="Annual Rent Paid (₹)" />
-        <button onclick="calculateHRA()">Calculate Exemption</button>
-        <div class="result" id="hraResult"></div>
-      </div>
-
-      <!-- FD -->
-      <div class="calc-card">
-        <h3>Fixed Deposit (FD) Calculator</h3>
-        <p>Estimate maturity amount on your fixed deposits.</p>
-        <input type="number" id="fdAmount" placeholder="Deposit Amount (₹)" />
-        <input type="number" id="fdRate" placeholder="Interest Rate (% p.a.)" />
-        <input type="number" id="fdYears" placeholder="Tenure (Years)" />
-        <button onclick="calculateFD()">Calculate Maturity</button>
-        <div class="result" id="fdResult"></div>
-      </div>
-
-      <!-- GST -->
-      <div class="calc-card">
-        <h3>GST Calculator</h3>
-        <p>Calculate GST and total invoice value.</p>
-        <input type="number" id="gstAmount" placeholder="Amount (₹)" />
-        <select id="gstRate">
-          <option value="5">5%</option>
-          <option value="12">12%</option>
-          <option value="18">18%</option>
-          <option value="28">28%</option>
-        </select>
-        <button onclick="calculateGST()">Calculate GST</button>
-        <div class="result" id="gstResult"></div>
-      </div>
-
-      <!-- CAGR -->
-      <div class="calc-card">
-        <h3>CAGR Calculator</h3>
-        <p>Calculate compound annual growth rate of your investments.</p>
-        <input type="number" id="cagrInitial" placeholder="Initial Investment (₹)" />
-        <input type="number" id="cagrFinal" placeholder="Final Value (₹)" />
-        <input type="number" id="cagrYears" placeholder="Number of Years" />
-        <button onclick="calculateCAGR()">Calculate CAGR</button>
-        <div class="result" id="cagrResult"></div>
-      </div>
-
-      <!-- Retirement -->
-      <div class="calc-card">
-        <h3>Retirement Corpus Calculator</h3>
-        <p>Estimate the corpus required for a comfortable retirement.</p>
-        <input type="number" id="retMonthly" placeholder="Monthly Expenses (₹)" />
-        <input type="number" id="retYears" placeholder="Years After Retirement" />
-        <input type="number" id="retRate" placeholder="Expected Return (% p.a.)" />
-        <button onclick="calculateRetirement()">Calculate Corpus</button>
-        <div class="result" id="retResult"></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= TESTIMONIALS ================= -->
-<section id="testimonials">
-  <div class="container">
-    <div class="section-title">
+    <div class="section-title fade-up">
+      <span class="badge">Testimonials</span>
       <h2>What Our Clients Say</h2>
       <p>
-        Trusted by individuals, professionals and businesses for reliable
-        accounting, tax and financial advisory services.
+        Trusted by professionals, startups, and businesses across Gujarat for reliable
+        accounting and taxation services.
       </p>
     </div>
 
-    <div class="testi-grid">
-
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
+    <div class="grid-3">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-top">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+          <div>
+            <strong>Rahul Mehta</strong>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
         <p>
-          "Uma Associate has been handling our GST and income tax filings for over
-          three years. Their service is accurate, timely and extremely professional.
-          We never worry about compliance anymore."
+          Uma Associate handled my GST and ITR filings very professionally. Their team is responsive,
+          knowledgeable, and always available for guidance. Highly recommended.
         </p>
-        <h4>— Retail Business Owner</h4>
       </div>
 
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-top">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+          <div>
+            <strong>Neha Shah</strong>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
         <p>
-          "Very reliable accounting support and excellent tax planning advice.
-          Highly recommended for professionals, freelancers and startups."
+          Excellent service for accounting and compliance. They simplified everything and ensured
+          timely filings. Great experience working with Uma Associate.
         </p>
-        <h4>— Chartered Professional</h4>
       </div>
 
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-top">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Client">
+          <div>
+            <strong>Amit Patel</strong>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
         <p>
-          "Their team helped us streamline compliance, reduce tax burden and
-          improve cash flow management. Great experience working with Uma Associate."
+          Best tax consultant in Gandhinagar. Professional, transparent pricing, and excellent support
+          throughout the year.
         </p>
-        <h4>— Manufacturing Company Director</h4>
       </div>
-
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          "Fast response, transparent pricing and complete compliance support.
-          Easily the best tax consultant firm we have worked with."
-        </p>
-        <h4>— Startup Founder</h4>
-      </div>
-
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          "Their investment advisory and financial planning services helped me
-          structure my savings better and plan for retirement confidently."
-        </p>
-        <h4>— Salaried Professional</h4>
-      </div>
-
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>
-          "Excellent GST advisory and audit support. Their guidance saved us
-          from heavy penalties and compliance risks."
-        </p>
-        <h4>— Logistics Business Owner</h4>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= FAQ ================= -->
-<section id="faq" class="faq">
+<!-- ===================== BLOG ===================== -->
+<section class="section" id="blog">
   <div class="container">
-    <div class="section-title">
+    <div class="section-title fade-up">
+      <span class="badge">Latest Blog</span>
+      <h2>Tax, GST & Finance Knowledge Hub</h2>
+      <p>
+        Stay updated with the latest changes in income tax, GST laws, business compliance,
+        and financial planning tips.
+      </p>
+    </div>
+
+    <div class="grid-3" id="blogContainer"></div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a href="#" class="btn btn-outline" id="loadMoreBlogs">Load More Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALCULATORS ===================== -->
+<section class="section" id="calculators">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">Financial Calculators</span>
+      <h2>Smart Tools for Financial Planning</h2>
+      <p>
+        Use our calculators to estimate tax, EMI, and investments easily and make informed
+        financial decisions.
+      </p>
+    </div>
+
+    <div class="calc-wrapper">
+      <!-- EMI Calculator -->
+      <div class="calc-card fade-up">
+        <h4>EMI Calculator</h4>
+        <div class="calc-group">
+          <label>Loan Amount (₹)</label>
+          <input type="number" id="emiAmount" placeholder="e.g. 500000">
+        </div>
+        <div class="calc-group">
+          <label>Interest Rate (% p.a.)</label>
+          <input type="number" id="emiRate" placeholder="e.g. 9">
+        </div>
+        <div class="calc-group">
+          <label>Tenure (Years)</label>
+          <input type="number" id="emiYears" placeholder="e.g. 5">
+        </div>
+        <button class="btn btn-outline" onclick="calculateEMI()">Calculate EMI</button>
+        <div class="calc-result" id="emiResult">Monthly EMI: ₹0</div>
+      </div>
+
+      <!-- SIP Calculator -->
+      <div class="calc-card fade-up">
+        <h4>SIP Calculator</h4>
+        <div class="calc-group">
+          <label>Monthly Investment (₹)</label>
+          <input type="number" id="sipAmount" placeholder="e.g. 5000">
+        </div>
+        <div class="calc-group">
+          <label>Expected Return (% p.a.)</label>
+          <input type="number" id="sipRate" placeholder="e.g. 12">
+        </div>
+        <div class="calc-group">
+          <label>Duration (Years)</label>
+          <input type="number" id="sipYears" placeholder="e.g. 10">
+        </div>
+        <button class="btn btn-outline" onclick="calculateSIP()">Calculate SIP</button>
+        <div class="calc-result" id="sipResult">Maturity Value: ₹0</div>
+      </div>
+
+      <!-- Income Tax Calculator -->
+      <div class="calc-card fade-up">
+        <h4>Income Tax Calculator</h4>
+        <div class="calc-group">
+          <label>Annual Income (₹)</label>
+          <input type="number" id="taxIncome" placeholder="e.g. 800000">
+        </div>
+        <div class="calc-group">
+          <label>Regime</label>
+          <select id="taxRegime">
+            <option value="new">New Regime</option>
+            <option value="old">Old Regime</option>
+          </select>
+        </div>
+        <button class="btn btn-outline" onclick="calculateTax()">Calculate Tax</button>
+        <div class="calc-result" id="taxResult">Estimated Tax: ₹0</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">FAQs</span>
       <h2>Frequently Asked Questions</h2>
       <p>
-        Common questions related to accounting, taxation, GST compliance
-        and financial advisory services.
+        Get quick answers to common questions related to income tax, GST, accounting,
+        and business compliance.
       </p>
     </div>
 
-    <div class="faq-grid">
-
-      <div class="faq-item">
-        <h4>Who should file income tax return?</h4>
-        <p>
-          Any individual, professional or business whose income exceeds the
-          basic exemption limit or meets other specified conditions under the
-          Income Tax Act should file an income tax return every year.
-        </p>
+    <div style="max-width:900px; margin-inline:auto;">
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          <span>Who needs to file Income Tax Return in India?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Any individual or entity whose income exceeds the basic exemption limit, or who wants
+          to claim refunds, carry forward losses, or comply with statutory requirements, should
+          file an Income Tax Return.
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h4>What is GST registration and who needs it?</h4>
-        <p>
-          GST registration is mandatory for businesses whose turnover exceeds
-          prescribed limits or those involved in inter-state supply, e-commerce
-          or notified categories under GST law.
-        </p>
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          <span>Is GST registration mandatory for small businesses?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          GST registration is mandatory if your aggregate turnover exceeds the threshold limit
+          prescribed by the government or if you are involved in interstate supply or e-commerce.
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h4>What are the benefits of professional accounting services?</h4>
-        <p>
-          Professional accounting ensures accurate financial records, better
-          cash flow control, improved compliance, informed business decisions
-          and reduced risk of penalties.
-        </p>
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          <span>What documents are required for ITR filing?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          PAN, Aadhaar, Form 16, bank statements, investment proofs, and other income-related
+          documents are typically required for filing ITR.
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h4>Can you help with income tax and GST notices?</h4>
-        <p>
-          Yes. We provide complete support for income tax and GST notices,
-          replies, assessments, appeals and ongoing compliance management.
-        </p>
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          <span>How long does GST registration take?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          GST registration usually takes 3–7 working days if all documents are submitted correctly
+          and verification is successful.
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h4>Do you provide investment and financial planning advice?</h4>
-        <p>
-          Yes. We offer personalized financial planning, mutual fund advisory,
-          insurance planning, retirement solutions and wealth management services.
-        </p>
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          <span>Can you handle tax notices and assessments?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Yes, we provide professional representation for income tax and GST notices, assessments,
+          appeals, and departmental hearings.
+        </div>
       </div>
-
-      <div class="faq-item">
-        <h4>Do you provide accounting services for startups and SMEs?</h4>
-        <p>
-          Absolutely. We specialize in providing accounting, compliance,
-          tax planning and financial advisory services for startups, SMEs
-          and growing businesses.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h4>Do you offer payroll and HR compliance services?</h4>
-        <p>
-          Yes. We handle payroll processing, PF/ESIC compliance, labour law
-          filings and employee tax computations for organizations of all sizes.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h4>How can I get started with your services?</h4>
-        <p>
-          You can call us, WhatsApp us, or submit the enquiry form on this website.
-          Our team will connect with you for a free initial consultation.
-        </p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= CTA STRIP ================= -->
-<section class="cta-strip">
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact">
   <div class="container">
-    <h2>Looking for Reliable Accounting & Tax Support?</h2>
-    <p>
-      Get professional consultation today and simplify your financial compliance
-      while maximizing savings and business growth.
-    </p>
-    <a href="#contact" class="btn secondary">Book Free Consultation</a>
-    <a href="https://wa.me/919574665220" class="btn outline">Chat on WhatsApp</a>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contact Us</h2>
+    <div class="section-title fade-up">
+      <span class="badge">Contact Us</span>
+      <h2>Get in Touch with Uma Associate</h2>
       <p>
-        Get in touch for professional accounting, tax and financial advisory services.
-        We respond quickly and provide personalized guidance.
+        Have questions or need professional accounting and tax support? Reach out to us and
+        our team will get back to you shortly.
       </p>
     </div>
 
-    <div class="contact-grid">
+    <div class="grid-2">
+      <div class="contact-card fade-up">
+        <h3 style="margin-bottom:14px;">Contact Information</h3>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 95746 65220</p>
+            </div>
+          </div>
 
-      <div class="contact-form">
-        <h3>Send Enquiry</h3>
-        <p>
-          Fill the form below and our team will connect with you shortly.
-          Your details are safe and confidential.
-        </p>
-        <form onsubmit="sendWhatsApp(); return false;">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" />
-          <input type="tel" id="phone" placeholder="Your Mobile Number" required />
-          <textarea id="message" rows="4" placeholder="Your Requirement" required></textarea>
-          <button type="submit">Send on WhatsApp</button>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>Umaassociate2020@yahoo.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Office</strong>
+              <p>Gandhinagar, Gujarat, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:22px;">
+          <iframe
+            src="https://maps.google.com/maps?q=Gandhinagar%20Gujarat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="220"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="contact-card fade-up">
+        <h3 style="margin-bottom:14px;">Send Us a Message</h3>
+        <form class="contact-form" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" id="email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Your Phone</label>
+            <input type="tel" id="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p id="formStatus" style="margin-top:10px; font-size:13px; color:var(--muted);"></p>
         </form>
       </div>
-
-      <div class="contact-info">
-        <h3>Office Details</h3>
-        <p><strong>Firm:</strong> Uma Associate & Tax Consultant</p>
-        <p><strong>Contact Person:</strong> Harshil Patel</p>
-        <p><strong>Mobile:</strong> +91 95746 65220</p>
-        <p><strong>Email:</strong> Umaassociate2020@yahoo.com</p>
-        <p>
-          <strong>Services:</strong>
-          Accounting, Income Tax, GST, TDS, Corporate Finance,
-          Investment & Insurance Advisory, Payroll, Audit Support
-        </p>
-        <p><strong>Working Hours:</strong> Monday – Saturday | 10:00 AM – 7:00 PM</p>
-        <p><strong>Location:</strong> India</p>
-
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps?q=India&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ===================== FOOTER ===================== -->
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-
-      <div>
-        <h4>About Uma Associate</h4>
-        <p>
-          Uma Associate & Tax Consultant is a professional accounting and financial
-          advisory firm delivering accurate, ethical and growth-oriented financial
-          solutions to individuals, professionals and businesses across India.
-        </p>
+  <div class="container footer-grid footer">
+    <div>
+      <div class="footer-logo">
+        <!-- Footer Logo -->
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="14" fill="url(#g2)"/>
+          <path d="M18 42L28 18H36L46 42H39L36.5 36H27.5L25 42H18ZM29.5 31H34.5L32 24L29.5 31Z" fill="white"/>
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="64" y2="64">
+              <stop stop-color="#2563eb"/>
+              <stop offset="1" stop-color="#1e40af"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Uma Associate
       </div>
-
-      <div>
-        <h4>Our Services</h4>
-        <ul>
-          <li>Accounting & Bookkeeping</li>
-          <li>Income Tax Return Filing</li>
-          <li>GST Registration & Returns</li>
-          <li>TDS Compliance</li>
-          <li>Corporate Finance Advisory</li>
-          <li>Investment & Wealth Planning</li>
-          <li>Payroll & HR Compliance</li>
-          <li>Audit & Assurance</li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#calculators">Calculators</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact Us</h4>
-        <p>📞 +91 95746 65220</p>
-        <p>📧 Umaassociate2020@yahoo.com</p>
-        <p>📍 India</p>
-        <div class="social-links">
-          <a href="#">🌐</a>
-          <a href="#">📘</a>
-          <a href="#">💼</a>
-          <a href="#">📸</a>
-        </div>
-      </div>
-
+      <p>
+        Uma Associate & Tax Consultant is a professional accounting and taxation firm providing
+        reliable, transparent, and affordable compliance solutions to individuals, startups,
+        and businesses across Gujarat.
+      </p>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2026 Uma Associate & Tax Consultant. All Rights Reserved.</p>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#calculators">Calculators</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+
+    <div>
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Income Tax Return</a></li>
+        <li><a href="#">GST Registration</a></li>
+        <li><a href="#">Accounting & Bookkeeping</a></li>
+        <li><a href="#">TDS Returns</a></li>
+        <li><a href="#">Payroll Management</a></li>
+        <li><a href="#">ROC Compliance</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact Info</h4>
+      <ul>
+        <li>📞 +91 95746 65220</li>
+        <li>📧 Umaassociate2020@yahoo.com</li>
+        <li>📍 Gandhinagar, Gujarat</li>
+      </ul>
+      <div class="footer-social" style="margin-top:14px;">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Uma Associate & Tax Consultant. All Rights Reserved.</p>
+    <p>Designed with ❤️ for Professional Businesses</p>
   </div>
 </footer>
 
-<!-- ================= WHATSAPP FLOAT ================= -->
-<a href="https://wa.me/919574665220" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+<!-- ===================== FLOATING BUTTONS ===================== -->
+<a href="https://wa.me/919574665220" class="whatsapp-float" target="_blank" aria-label="WhatsApp Chat">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-<!-- ================= SCRIPTS ================= -->
+<div class="back-to-top" id="backToTop">
+  <i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===================== JAVASCRIPT ===================== -->
 <script>
-  /* ========== DARK / LIGHT THEME ========== */
-  const toggleBtn = document.getElementById('themeToggle');
-  const body = document.body;
+/* ===================== THEME TOGGLE ===================== */
+const themeToggle = document.getElementById('themeToggle');
+const htmlEl = document.documentElement;
+const savedTheme = localStorage.getItem('theme');
 
-  function setTheme(mode){
-    if(mode === 'dark'){
-      body.classList.add('dark');
-      toggleBtn.textContent = '☀️';
-      localStorage.setItem('theme','dark');
-    } else {
-      body.classList.remove('dark');
-      toggleBtn.textContent = '🌙';
-      localStorage.setItem('theme','light');
+if (savedTheme) {
+  htmlEl.setAttribute('data-theme', savedTheme);
+  themeToggle.innerHTML = savedTheme === 'dark'
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = htmlEl.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  htmlEl.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  themeToggle.innerHTML = newTheme === 'dark'
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+});
+
+/* ===================== FADE-UP ANIMATION ===================== */
+const faders = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
     }
-  }
-
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  setTheme(savedTheme);
-
-  toggleBtn.addEventListener('click',()=>{
-    const current = body.classList.contains('dark') ? 'dark' : 'light';
-    setTheme(current === 'dark' ? 'light' : 'dark');
   });
+}, { threshold: 0.2 });
 
-  /* ========== WHATSAPP FORM ========== */
-  function sendWhatsApp(){
-    const name=document.getElementById('name').value;
-    const email=document.getElementById('email').value;
-    const phone=document.getElementById('phone').value;
-    const message=document.getElementById('message').value;
+faders.forEach(el => observer.observe(el));
 
-    const text=`Hello Uma Associate,%0A%0AName: ${name}%0AEmail: ${email}%0AMobile: ${phone}%0ARequirement: ${message}`;
-    window.open(`https://wa.me/919574665220?text=${text}`,'_blank');
+/* ===================== BACK TO TOP ===================== */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    backToTop.style.display = 'grid';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ===================== FAQ TOGGLE ===================== */
+document.querySelectorAll('.faq-item').forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+    const icon = question.querySelector('i');
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+  });
+});
+
+/* ===================== CONTACT FORM (DEMO) ===================== */
+function submitForm(e) {
+  e.preventDefault();
+  const status = document.getElementById('formStatus');
+  status.textContent = "Thank you! Your message has been received. We will contact you shortly.";
+  status.style.color = "green";
+  e.target.reset();
+}
+
+/* ===================== EMI CALCULATOR ===================== */
+function calculateEMI() {
+  const P = parseFloat(document.getElementById('emiAmount').value);
+  const annualRate = parseFloat(document.getElementById('emiRate').value);
+  const years = parseFloat(document.getElementById('emiYears').value);
+
+  if (!P || !annualRate || !years) {
+    document.getElementById('emiResult').textContent = "Please enter all values.";
+    return;
   }
 
-  /* ========== CALCULATORS ========== */
-  function calculateEMI(){
-    const P=parseFloat(document.getElementById('emiAmount').value);
-    const r=parseFloat(document.getElementById('emiRate').value)/12/100;
-    const n=parseFloat(document.getElementById('emiTenure').value)*12;
-    const emi=(P*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
-    document.getElementById('emiResult').innerText =
-      isFinite(emi) ? `Monthly EMI: ₹${emi.toFixed(2)}` : 'Please enter valid values';
+  const r = annualRate / 12 / 100;
+  const n = years * 12;
+  const emi = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  document.getElementById('emiResult').textContent = "Monthly EMI: ₹" + emi.toFixed(2);
+}
+
+/* ===================== SIP CALCULATOR ===================== */
+function calculateSIP() {
+  const P = parseFloat(document.getElementById('sipAmount').value);
+  const annualRate = parseFloat(document.getElementById('sipRate').value);
+  const years = parseFloat(document.getElementById('sipYears').value);
+
+  if (!P || !annualRate || !years) {
+    document.getElementById('sipResult').textContent = "Please enter all values.";
+    return;
   }
 
-  function calculateSIP(){
-    const P=parseFloat(document.getElementById('sipAmount').value);
-    const r=parseFloat(document.getElementById('sipRate').value)/12/100;
-    const n=parseFloat(document.getElementById('sipYears').value)*12;
-    const fv=P*((Math.pow(1+r,n)-1)/r)*(1+r);
-    document.getElementById('sipResult').innerText =
-      isFinite(fv) ? `Estimated Maturity Value: ₹${fv.toFixed(2)}` : 'Please enter valid values';
+  const r = annualRate / 12 / 100;
+  const n = years * 12;
+  const futureValue = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+  document.getElementById('sipResult').textContent = "Maturity Value: ₹" + futureValue.toFixed(2);
+}
+
+/* ===================== INCOME TAX CALCULATOR ===================== */
+function calculateTax() {
+  const income = parseFloat(document.getElementById('taxIncome').value);
+  const regime = document.getElementById('taxRegime').value;
+
+  if (!income) {
+    document.getElementById('taxResult').textContent = "Please enter income.";
+    return;
   }
 
-  function calculateTax(){
-    const income=parseFloat(document.getElementById('taxIncome').value);
-    let tax=0;
-    if(income<=300000){tax=0}
-    else if(income<=600000){tax=(income-300000)*0.05}
-    else if(income<=900000){tax=15000+(income-600000)*0.10}
-    else if(income<=1200000){tax=45000+(income-900000)*0.15}
-    else if(income<=1500000){tax=90000+(income-1200000)*0.20}
-    else{tax=150000+(income-1500000)*0.30}
-    document.getElementById('taxResult').innerText =
-      isFinite(tax) ? `Estimated Tax Payable: ₹${tax.toFixed(2)}` : 'Please enter valid income';
+  let tax = 0;
+
+  if (regime === 'new') {
+    if (income <= 300000) tax = 0;
+    else if (income <= 600000) tax = (income - 300000) * 0.05;
+    else if (income <= 900000) tax = 15000 + (income - 600000) * 0.10;
+    else if (income <= 1200000) tax = 45000 + (income - 900000) * 0.15;
+    else if (income <= 1500000) tax = 90000 + (income - 1200000) * 0.20;
+    else tax = 150000 + (income - 1500000) * 0.30;
+  } else {
+    if (income <= 250000) tax = 0;
+    else if (income <= 500000) tax = (income - 250000) * 0.05;
+    else if (income <= 1000000) tax = 12500 + (income - 500000) * 0.20;
+    else tax = 112500 + (income - 1000000) * 0.30;
   }
 
-  function calculateHRA(){
-    const salary=parseFloat(document.getElementById('hraSalary').value);
-    const hraReceived=parseFloat(document.getElementById('hraReceived').value);
-    const rent=parseFloat(document.getElementById('hraRent').value);
-    const exempt=Math.min(hraReceived, rent-0.10*salary, 0.40*salary);
-    document.getElementById('hraResult').innerText =
-      isFinite(exempt) ? `Estimated HRA Exemption: ₹${Math.max(0,exempt).toFixed(2)}` : 'Please enter valid values';
-  }
+  tax = tax * 1.04; // Including 4% cess
+  document.getElementById('taxResult').textContent = "Estimated Tax: ₹" + tax.toFixed(2);
+}
 
-  function calculateFD(){
-    const P=parseFloat(document.getElementById('fdAmount').value);
-    const r=parseFloat(document.getElementById('fdRate').value)/100;
-    const t=parseFloat(document.getElementById('fdYears').value);
-    const A=P*Math.pow(1+r,t);
-    document.getElementById('fdResult').innerText =
-      isFinite(A) ? `Maturity Amount: ₹${A.toFixed(2)}` : 'Please enter valid values';
+/* ===================== BLOG SYSTEM (AUTO POSTS) ===================== */
+const blogPosts = [
+  {
+    title: "Income Tax Return Filing FY 2025-26: Complete Guide",
+    category: "Income Tax",
+    excerpt: "Learn who needs to file ITR, important due dates, documents required, and common mistakes to avoid while filing your income tax return in India.",
+    image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "GST Compliance Checklist for Small Businesses in India",
+    category: "GST",
+    excerpt: "A step-by-step GST compliance checklist covering registration, returns, reconciliation, audits, and notices handling for small businesses.",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "Old vs New Tax Regime: Which One Should You Choose?",
+    category: "Tax Planning",
+    excerpt: "Compare old and new tax regimes in India with examples, deductions, exemptions, and scenarios to choose the most beneficial option.",
+    image: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "TDS Returns: Due Dates, Forms & Common Errors",
+    category: "TDS",
+    excerpt: "Understand TDS return filing process, applicable forms, due dates, and how to avoid penalties and notices with proper compliance.",
+    image: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "How to Save Income Tax Legally in India – Top Strategies",
+    category: "Tax Saving",
+    excerpt: "Discover legal tax saving strategies under sections 80C, 80D, HRA, home loan benefits, and investment planning for individuals.",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "GST Audit & Annual Return (GSTR-9/9C): Explained",
+    category: "GST",
+    excerpt: "Complete guide to GST annual return and audit including applicability, due dates, documentation, and penalties for non-compliance.",
+    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "Payroll Compliance in India: PF, ESI & Salary Structure",
+    category: "Payroll",
+    excerpt: "Understand payroll compliance requirements including PF, ESI, professional tax, and salary structuring best practices.",
+    image: "https://images.unsplash.com/photo-1556740714-a8395b3bf30f?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "ROC Compliance for Companies & LLPs: Annual Filings Guide",
+    category: "ROC",
+    excerpt: "Learn about mandatory ROC filings, forms, due dates, penalties, and compliance best practices for companies and LLPs.",
+    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80",
+    link: "#"
+  },
+  {
+    title: "Cash Flow Management Tips for Small Businesses",
+    category: "Business Finance",
+    excerpt: "Practical tips to manage cash flow, working capital, receivables, and expenses for business sustainability and growth.",
+    image: "https://images.unsplash.com/photo-1554224155-6d7f1b3b2c58?auto=format&fit=crop&w=800&q=80",
+    link: "#"
   }
+];
 
-  function calculateGST(){
-    const amount=parseFloat(document.getElementById('gstAmount').value);
-    const rate=parseFloat(document.getElementById('gstRate').value);
-    const gst=amount*rate/100;
-    const total=amount+gst;
-    document.getElementById('gstResult').innerText =
-      isFinite(total) ? `GST: ₹${gst.toFixed(2)} | Total Amount: ₹${total.toFixed(2)}` : 'Please enter valid amount';
-  }
+let blogIndex = 0;
+const blogContainer = document.getElementById('blogContainer');
+const loadMoreBtn = document.getElementById('loadMoreBlogs');
 
-  function calculateCAGR(){
-    const initial=parseFloat(document.getElementById('cagrInitial').value);
-    const finalVal=parseFloat(document.getElementById('cagrFinal').value);
-    const years=parseFloat(document.getElementById('cagrYears').value);
-    const cagr=(Math.pow(finalVal/initial,1/years)-1)*100;
-    document.getElementById('cagrResult').innerText =
-      isFinite(cagr) ? `CAGR: ${cagr.toFixed(2)}% per annum` : 'Please enter valid values';
+function loadBlogs() {
+  const postsToShow = blogPosts.slice(blogIndex, blogIndex + 3);
+  postsToShow.forEach(post => {
+    const card = document.createElement('div');
+    card.className = 'blog-card fade-up show';
+    card.innerHTML = `
+      <img src="${post.image}" alt="${post.title}">
+      <div class="blog-content">
+        <span>${post.category}</span>
+        <h4>${post.title}</h4>
+        <p>${post.excerpt}</p>
+        <a href="${post.link}">Read More →</a>
+      </div>
+    `;
+    blogContainer.appendChild(card);
+  });
+  blogIndex += 3;
+  if (blogIndex >= blogPosts.length) {
+    loadMoreBtn.style.display = 'none';
   }
+}
 
-  function calculateRetirement(){
-    const monthly=parseFloat(document.getElementById('retMonthly').value);
-    const years=parseFloat(document.getElementById('retYears').value);
-    const rate=parseFloat(document.getElementById('retRate').value)/100;
-    const corpus=(monthly*12*years)/(rate||1);
-    document.getElementById('retResult').innerText =
-      isFinite(corpus) ? `Estimated Retirement Corpus: ₹${corpus.toFixed(2)}` : 'Please enter valid values';
-  }
+loadBlogs();
+loadMoreBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  loadBlogs();
+});
 </script>
 
 </body>
