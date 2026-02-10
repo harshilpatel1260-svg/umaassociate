@@ -1,2349 +1,2596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uma Associate & Corporate Finance Consultants | Enterprise Financial Solutions</title>
-<meta name="description" content="Uma Associate & Corporate Finance Consultants – Accounting, GST, Income Tax, Corporate Finance, Startup Advisory, Investment Planning, Business Consulting in Gandhinagar Gujarat">
-<meta name="keywords" content="Accountant in Gandhinagar, GST Consultant, Income Tax Filing, Corporate Finance Advisory, Business Valuation, Investment Advisory, Startup Consultant Gujarat">
-<meta name="author" content="Uma Associate">
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135679.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uma Associate & Tax Consultant | Accounting, GST, Income Tax & Compliance Experts</title>
+  <meta name="description" content="Uma Associate & Tax Consultant provides professional accounting, GST registration & return filing, income tax returns, TDS, payroll, company compliance, business advisory & financial consulting services in India.">
+  <meta name="keywords" content="Accounting Services, GST Consultant, Income Tax Filing, TDS Returns, Company Compliance, Business Advisory, Financial Consultant India">
+  <meta name="author" content="Uma Associate & Tax Consultant">
 
-<style>
-/* ============================
-   ROOT VARIABLES & THEME
-===============================*/
-:root{
---primary:#0a2540;
---secondary:#1abc9c;
---accent:#ffb703;
---bg:#f8fafc;
---dark:#0b1320;
---text:#1f2937;
---muted:#6b7280;
---card:#ffffff;
---border:#e5e7eb;
---shadow:0 15px 40px rgba(0,0,0,.1);
---radius:22px;
-}
-[data-theme="dark"]{
---bg:#0b1320;
---text:#e5e7eb;
---muted:#9ca3af;
---card:#111827;
---border:#1f2937;
---shadow:0 15px 40px rgba(0,0,0,.5);
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);line-height:1.75;}
-a{text-decoration:none;color:inherit;}
-img{max-width:100%;display:block;}
-ul{list-style:none;}
-.container{max-width:1320px;margin:auto;padding:0 20px;}
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-/* ============================
-   HEADER / NAVBAR
-===============================*/
-header{
-position:sticky;
-top:0;
-z-index:999;
-background:linear-gradient(120deg,#081b33,#0a2540);
-color:#fff;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:14px 0;
-}
-.logo{
-font-size:28px;
-font-weight:800;
-letter-spacing:1px;
-}
-.logo span{color:var(--secondary);}
-nav ul{
-display:flex;
-gap:22px;
-align-items:center;
-flex-wrap:wrap;
-}
-nav ul li a{
-font-weight:500;
-font-size:14px;
-padding:6px 10px;
-border-radius:20px;
-transition:.3s;
-}
-nav ul li a:hover{
-background:rgba(255,255,255,.15);
-color:var(--secondary);
-}
-.theme-toggle{
-cursor:pointer;
-background:#fff;
-color:#000;
-width:36px;
-height:36px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:15px;
-}
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-/* ============================
-   HERO SECTION
-===============================*/
-.hero{
-min-height:100vh;
-display:grid;
-grid-template-columns:1.3fr 1fr;
-gap:40px;
-align-items:center;
-padding:70px 0;
-background:
-linear-gradient(rgba(8,27,51,.85),rgba(8,27,51,.9)),
-url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-color:#fff;
-}
-.hero h1{
-font-size:52px;
-line-height:1.15;
-margin-bottom:15px;
-}
-.hero h1 span{color:var(--secondary);}
-.hero p{
-font-size:18px;
-margin-bottom:25px;
-max-width:650px;
-}
-.hero-actions{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-}
-.btn{
-padding:14px 28px;
-border-radius:40px;
-border:none;
-cursor:pointer;
-font-size:14px;
-font-weight:600;
-transition:.3s;
-display:inline-flex;
-align-items:center;
-gap:8px;
-}
-.btn-primary{
-background:var(--secondary);
-color:#fff;
-}
-.btn-primary:hover{background:#159a80;}
-.btn-outline{
-background:transparent;
-border:2px solid #fff;
-color:#fff;
-}
-.btn-outline:hover{
-background:#fff;
-color:#000;
-}
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-/* Hero Trust Bar */
-.trust-bar{
-margin-top:40px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:20px;
-}
-.trust-item{
-background:rgba(255,255,255,.12);
-padding:18px;
-border-radius:16px;
-text-align:center;
-backdrop-filter:blur(4px);
-}
-.trust-item h3{
-font-size:28px;
-color:var(--secondary);
-}
-.trust-item p{
-font-size:13px;
-opacity:.85;
-}
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1995/1995474.png">
 
-/* ============================
-   NEWS TICKER
-===============================*/
-.news-ticker{
-background:linear-gradient(120deg,var(--secondary),#1dd3b0);
-color:#000;
-padding:10px 0;
-overflow:hidden;
-white-space:nowrap;
-font-size:14px;
-font-weight:600;
-}
-.news-track{
-display:inline-block;
-padding-left:100%;
-animation:ticker 28s linear infinite;
-}
-.news-track span{
-margin-right:60px;
-}
-@keyframes ticker{
-0%{transform:translateX(0);}
-100%{transform:translateX(-100%);}
-}
+  <style>
+    :root {
+      --primary: #0b5ed7;
+      --secondary: #198754;
+      --accent: #ffc107;
+      --dark: #0a0a0a;
+      --light: #f8f9fa;
+      --text-dark: #222;
+      --text-light: #eee;
+      --gradient: linear-gradient(135deg, #0b5ed7, #198754);
+      --radius: 16px;
+      --shadow: 0 12px 35px rgba(0,0,0,0.12);
+      --shadow-soft: 0 6px 20px rgba(0,0,0,0.08);
+    }
 
-/* ============================
-   SECTION COMMON
-===============================*/
-section{padding:100px 0;}
-.section-title{
-text-align:center;
-margin-bottom:70px;
-}
-.section-title h2{
-font-size:38px;
-margin-bottom:10px;
-color:var(--primary);
-}
-.section-title p{
-max-width:780px;
-margin:auto;
-font-size:16px;
-color:var(--muted);
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-/* ============================
-   ABOUT SECTION
-===============================*/
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-.about img{
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-}
-.about-content h3{
-font-size:30px;
-margin-bottom:15px;
-color:var(--primary);
-}
-.about-content p{margin-bottom:16px;}
-.about-badges{
-margin-top:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:16px;
-}
-.badge{
-background:var(--card);
-padding:14px 16px;
-border-radius:14px;
-box-shadow:var(--shadow);
-display:flex;
-align-items:center;
-gap:10px;
-font-size:14px;
-}
-.badge i{color:var(--secondary);font-size:18px;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
 
-/* ============================
-   SERVICES SECTION
-===============================*/
-.services-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-.service-card{
-background:var(--card);
-padding:30px 26px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-transition:.4s;
-position:relative;
-overflow:hidden;
-}
-.service-card::before{
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(120deg,transparent,var(--secondary));
-opacity:.06;
-}
-.service-card:hover{
-transform:translateY(-12px);
-box-shadow:0 25px 60px rgba(0,0,0,.25);
-}
-.service-card i{
-font-size:42px;
-color:var(--secondary);
-margin-bottom:14px;
-}
-.service-card h4{
-font-size:20px;
-margin-bottom:10px;
-color:var(--primary);
-}
-.service-card p{
-font-size:14px;
-color:var(--muted);
-margin-bottom:10px;
-}
-.service-card ul{
-padding-left:18px;
-font-size:13px;
-}
-.service-card ul li{margin-bottom:6px;}
+    body.dark {
+      background: #0b0d12;
+      color: var(--text-light);
+    }
 
-/* ============================
-   CORPORATE FINANCE MEGA
-===============================*/
-.corp-finance{
-background:linear-gradient(120deg,#eef7ff,#e0fdfb);
-}
-[data-theme="dark"] .corp-finance{
-background:linear-gradient(120deg,#0b1320,#0f1c35);
-}
-.corp-hero{
-display:grid;
-grid-template-columns:1.2fr 1fr;
-gap:60px;
-align-items:center;
-margin-bottom:80px;
-}
-.corp-hero img{
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-}
-.corp-hero h3{
-font-size:34px;
-margin-bottom:15px;
-color:var(--primary);
-}
-.corp-hero p{margin-bottom:16px;}
-.corp-points{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:18px;
-margin-top:20px;
-}
-.corp-point{
-background:var(--card);
-padding:16px 18px;
-border-radius:14px;
-box-shadow:var(--shadow);
-display:flex;
-align-items:center;
-gap:10px;
-font-size:14px;
-}
-.corp-point i{color:var(--secondary);}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-/* Corporate Finance Services */
-.corp-services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-.corp-card{
-background:var(--card);
-border-radius:var(--radius);
-padding:32px 28px;
-box-shadow:var(--shadow);
-transition:.4s;
-position:relative;
-overflow:hidden;
-}
-.corp-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,.3);
-}
-.corp-card i{
-font-size:44px;
-color:var(--secondary);
-margin-bottom:15px;
-}
-.corp-card h4{
-font-size:21px;
-margin-bottom:10px;
-color:var(--primary);
-}
-.corp-card p{
-font-size:14px;
-color:var(--muted);
-margin-bottom:12px;
-}
-.corp-card ul{
-padding-left:18px;
-font-size:13px;
-}
-.corp-card ul li{margin-bottom:6px;}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-/* Corporate Finance Case Studies */
-.case-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-margin-top:60px;
-}
-.case-card{
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-overflow:hidden;
-transition:.4s;
-}
-.case-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,.25);
-}
-.case-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-.case-body{
-padding:22px;
-}
-.case-body h5{
-font-size:18px;
-margin-bottom:8px;
-color:var(--primary);
-}
-.case-body p{
-font-size:13px;
-color:var(--muted);
-margin-bottom:10px;
-}
-.case-body span{
-display:inline-block;
-font-size:12px;
-font-weight:600;
-color:var(--secondary);
-}
+    ul {
+      list-style: none;
+    }
 
-/* ============================
-   INDUSTRIES SERVED
-===============================*/
-.industries-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:24px;
-}
-.industry{
-background:var(--card);
-padding:24px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-text-align:center;
-transition:.3s;
-}
-.industry:hover{transform:translateY(-8px);}
-.industry i{
-font-size:38px;
-color:var(--secondary);
-margin-bottom:12px;
-}
-.industry h4{
-font-size:17px;
-margin-bottom:8px;
-color:var(--primary);
-}
-.industry p{
-font-size:13px;
-color:var(--muted);
-}
+    .container {
+      width: 100%;
+      max-width: 1250px;
+      margin: auto;
+      padding: 0 20px;
+    }
 
-/* ============================
-   WHY CHOOSE US
-===============================*/
-.why-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:30px;
-}
-.why-card{
-background:var(--card);
-padding:30px 26px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-transition:.3s;
-text-align:center;
-}
-.why-card:hover{transform:translateY(-10px);}
-.why-card i{
-font-size:44px;
-color:var(--secondary);
-margin-bottom:15px;
-}
-.why-card h4{
-font-size:19px;
-margin-bottom:10px;
-color:var(--primary);
-}
-.why-card p{
-font-size:14px;
-color:var(--muted);
-}
+    .section {
+      padding: 90px 0;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* ============================
-   PROCESS TIMELINE
-===============================*/
-.timeline{
-position:relative;
-max-width:1000px;
-margin:auto;
-}
-.timeline::before{
-content:'';
-position:absolute;
-left:50%;
-top:0;
-bottom:0;
-width:4px;
-background:var(--secondary);
-transform:translateX(-50%);
-}
-.timeline-item{
-position:relative;
-width:50%;
-padding:20px 40px;
-}
-.timeline-item:nth-child(odd){left:0;text-align:right;}
-.timeline-item:nth-child(even){left:50%;}
-.timeline-content{
-background:var(--card);
-padding:22px 24px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-}
-.timeline-content h4{
-margin-bottom:8px;
-color:var(--primary);
-}
-.timeline-content p{
-font-size:14px;
-color:var(--muted);
-}
-.timeline-dot{
-position:absolute;
-top:28px;
-width:18px;
-height:18px;
-border-radius:50%;
-background:var(--secondary);
-left:calc(50% - 9px);
-}
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-/* ============================
-   TEAM SECTION
-===============================*/
-.team-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:30px;
-}
-.team-card{
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-overflow:hidden;
-transition:.4s;
-}
-.team-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,.3);
-}
-.team-card img{
-width:100%;
-height:260px;
-object-fit:cover;
-}
-.team-body{
-padding:22px;
-text-align:center;
-}
-.team-body h4{
-font-size:18px;
-margin-bottom:4px;
-color:var(--primary);
-}
-.team-body p{
-font-size:13px;
-color:var(--muted);
-margin-bottom:10px;
-}
-.team-social{
-display:flex;
-justify-content:center;
-gap:10px;
-}
-.team-social a{
-width:34px;
-height:34px;
-border-radius:50%;
-background:var(--bg);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:14px;
-color:var(--secondary);
-transition:.3s;
-}
-.team-social a:hover{
-background:var(--secondary);
-color:#fff;
-}
+    .section-title span {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background: rgba(11,94,215,0.1);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
 
-/* ============================
-   ACHIEVEMENTS / STATS
-===============================*/
-.stats{
-background:linear-gradient(120deg,var(--secondary),#1dd3b0);
-color:#000;
-border-radius:var(--radius);
-padding:70px 40px;
-box-shadow:0 25px 60px rgba(0,0,0,.35);
-}
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:30px;
-text-align:center;
-}
-.stat-box h3{
-font-size:40px;
-margin-bottom:6px;
-}
-.stat-box p{
-font-size:14px;
-font-weight:600;
-}
+    body.dark .section-title span {
+      background: rgba(255,255,255,0.1);
+      color: var(--accent);
+    }
 
-/* ============================
-   TESTIMONIALS
-===============================*/
-.testimonials{
-background:
-linear-gradient(rgba(8,27,51,.92),rgba(8,27,51,.96)),
-url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-color:#fff;
-}
-.test-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-.test-card{
-background:rgba(255,255,255,.12);
-padding:30px;
-border-radius:var(--radius);
-backdrop-filter:blur(4px);
-}
-.test-card p{
-font-size:14px;
-margin-bottom:12px;
-}
-.test-card h5{
-font-size:16px;
-color:var(--secondary);
-}
-.test-card span{
-font-size:12px;
-opacity:.8;
-}
+    .section-title h2 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
 
-/* ============================
-   FAQ SECTION
-===============================*/
-.faq-grid{
-max-width:900px;
-margin:auto;
-display:grid;
-gap:16px;
-}
-.faq-item{
-background:var(--card);
-border-radius:14px;
-box-shadow:var(--shadow);
-overflow:hidden;
-}
-.faq-q{
-padding:18px 22px;
-cursor:pointer;
-display:flex;
-justify-content:space-between;
-align-items:center;
-font-weight:600;
-}
-.faq-a{
-max-height:0;
-overflow:hidden;
-padding:0 22px;
-font-size:14px;
-color:var(--muted);
-transition:.4s;
-}
-.faq-item.active .faq-a{
-max-height:200px;
-padding:0 22px 18px;
-}
-.faq-item i{color:var(--secondary);}
+    .section-title p {
+      max-width: 750px;
+      margin: auto;
+      color: #555;
+    }
 
-/* ============================
-   TOOLS / CALCULATORS
-===============================*/
-.tools-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-.tool-card{
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:30px;
-}
-.tool-card h4{
-margin-bottom:10px;
-color:var(--primary);
-}
-.tool-card p{
-font-size:14px;
-color:var(--muted);
-margin-bottom:14px;
-}
-.tool-card input,
-.tool-card select{
-width:100%;
-padding:10px 12px;
-border-radius:10px;
-border:1px solid var(--border);
-margin-bottom:10px;
-font-size:14px;
-}
-.tool-card button{
-width:100%;
-padding:10px;
-border:none;
-border-radius:12px;
-background:var(--secondary);
-color:#fff;
-font-weight:600;
-cursor:pointer;
-}
-.tool-card button:hover{background:#159a80;}
-.tool-result{
-margin-top:10px;
-font-size:14px;
-font-weight:600;
-color:var(--primary);
-}
+    body.dark .section-title p {
+      color: #ccc;
+    }
 
-/* ============================
-   CAREERS SECTION
-===============================*/
-.career-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-.career-card{
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:28px;
-transition:.3s;
-}
-.career-card:hover{transform:translateY(-8px);}
-.career-card h4{
-margin-bottom:6px;
-color:var(--primary);
-}
-.career-card p{
-font-size:13px;
-color:var(--muted);
-margin-bottom:8px;
-}
-.career-card span{
-font-size:12px;
-font-weight:600;
-color:var(--secondary);
-display:inline-block;
-margin-bottom:12px;
-}
-.career-card button{
-padding:8px 16px;
-border-radius:20px;
-border:none;
-background:var(--secondary);
-color:#fff;
-font-size:13px;
-font-weight:600;
-cursor:pointer;
-}
-.career-card button:hover{background:#159a80;}
+    /* =========================
+       HEADER / NAVBAR
+    ========================= */
 
-/* ============================
-   CLIENT PORTAL (UI DEMO)
-===============================*/
-.portal{
-background:linear-gradient(120deg,#eef7ff,#e0fdfb);
-border-radius:var(--radius);
-padding:70px 40px;
-}
-[data-theme="dark"] .portal{
-background:linear-gradient(120deg,#0b1320,#0f1c35);
-}
-.portal-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-.portal-box{
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:28px;
-}
-.portal-box h4{
-margin-bottom:12px;
-color:var(--primary);
-}
-.portal-box input{
-width:100%;
-padding:10px 12px;
-border-radius:10px;
-border:1px solid var(--border);
-margin-bottom:12px;
-}
-.portal-box button{
-width:100%;
-padding:10px;
-border:none;
-border-radius:12px;
-background:var(--secondary);
-color:#fff;
-font-weight:600;
-cursor:pointer;
-}
-.portal-box button:hover{background:#159a80;}
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      transition: 0.4s;
+    }
 
-/* ============================
-   BLOG / INSIGHTS
-===============================*/
-.blog-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-.blog-card{
-background:var(--card);
-border-radius:var(--radius);
-overflow:hidden;
-box-shadow:var(--shadow);
-transition:.4s;
-}
-.blog-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,.25);
-}
-.blog-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-.blog-body{
-padding:22px;
-}
-.blog-body h4{
-font-size:18px;
-margin-bottom:8px;
-color:var(--primary);
-}
-.blog-body p{
-font-size:14px;
-color:var(--muted);
-margin-bottom:10px;
-}
-.blog-body a{
-font-size:13px;
-font-weight:600;
-color:var(--secondary);
-}
+    header.scrolled {
+      background: rgba(255,255,255,0.92);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+      backdrop-filter: blur(12px);
+    }
 
-/* ============================
-   DOWNLOAD CENTER
-===============================*/
-.download-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:24px;
-}
-.download-card{
-background:var(--card);
-padding:22px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-display:flex;
-align-items:center;
-gap:12px;
-transition:.3s;
-}
-.download-card:hover{transform:translateY(-6px);}
-.download-card i{
-font-size:28px;
-color:var(--secondary);
-}
-.download-card h5{
-font-size:15px;
-margin-bottom:4px;
-color:var(--primary);
-}
-.download-card p{
-font-size:12px;
-color:var(--muted);
-}
-.download-card a{
-margin-left:auto;
-font-size:13px;
-font-weight:600;
-color:var(--secondary);
-}
+    body.dark header.scrolled {
+      background: rgba(15,18,25,0.9);
+    }
 
-/* ============================
-   CONTACT SECTION
-===============================*/
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:flex-start;
-}
-.contact-info h3{
-font-size:28px;
-margin-bottom:12px;
-color:var(--primary);
-}
-.contact-info p{margin-bottom:20px;}
-.contact-details div{
-display:flex;
-align-items:center;
-gap:12px;
-margin-bottom:14px;
-font-size:14px;
-}
-.contact-details i{
-color:var(--secondary);
-font-size:18px;
-}
-.contact-form{
-background:var(--card);
-padding:36px 32px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-}
-.contact-form h4{
-margin-bottom:14px;
-font-size:20px;
-color:var(--primary);
-}
-.contact-form input,
-.contact-form textarea{
-width:100%;
-padding:12px 14px;
-border-radius:12px;
-border:1px solid var(--border);
-margin-bottom:14px;
-font-size:14px;
-outline:none;
-}
-.contact-form button{
-width:100%;
-padding:12px;
-border:none;
-border-radius:14px;
-background:var(--secondary);
-color:#fff;
-font-size:15px;
-font-weight:600;
-cursor:pointer;
-}
-.contact-form button:hover{background:#159a80;}
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
 
-/* ============================
-   FOOTER
-===============================*/
-footer{
-background:#081b33;
-color:#fff;
-padding:80px 0 30px;
-}
-.footer-grid{
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1fr;
-gap:40px;
-}
-.footer-col h4{
-margin-bottom:14px;
-font-size:18px;
-}
-.footer-col p{
-font-size:14px;
-opacity:.85;
-margin-bottom:12px;
-}
-.footer-col ul li{
-margin-bottom:10px;
-font-size:14px;
-opacity:.85;
-}
-.footer-col ul li a:hover{color:var(--secondary);}
-.footer-social{
-display:flex;
-gap:12px;
-margin-top:14px;
-}
-.footer-social a{
-width:38px;
-height:38px;
-border-radius:50%;
-background:rgba(255,255,255,.15);
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
-transition:.3s;
-}
-.footer-social a:hover{
-background:var(--secondary);
-color:#000;
-}
-.footer-bottom{
-text-align:center;
-margin-top:40px;
-font-size:13px;
-opacity:.8;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--primary);
+    }
 
-/* ============================
-   FLOATING BUTTONS
-===============================*/
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25d366;
-color:#fff;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-box-shadow:0 15px 35px rgba(0,0,0,.35);
-z-index:999;
-transition:.3s;
-}
-.whatsapp-float:hover{
-transform:scale(1.1);
-background:#1ebe57;
-}
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
 
-.chatbot-btn{
-position:fixed;
-bottom:20px;
-left:20px;
-background:var(--secondary);
-color:#fff;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-box-shadow:0 15px 35px rgba(0,0,0,.35);
-cursor:pointer;
-z-index:999;
-}
+    body.dark .logo {
+      color: #fff;
+    }
 
-.chatbot-box{
-position:fixed;
-bottom:95px;
-left:20px;
-width:340px;
-background:var(--card);
-border-radius:var(--radius);
-box-shadow:0 25px 60px rgba(0,0,0,.4);
-display:none;
-flex-direction:column;
-overflow:hidden;
-z-index:999;
-}
-.chatbot-header{
-background:var(--secondary);
-color:#fff;
-padding:12px 14px;
-font-size:14px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-.chatbot-messages{
-padding:14px;
-height:260px;
-overflow-y:auto;
-font-size:13px;
-}
-.chatbot-messages div{
-margin-bottom:10px;
-}
-.chatbot-input{
-display:flex;
-border-top:1px solid var(--border);
-}
-.chatbot-input input{
-flex:1;
-border:none;
-padding:10px 12px;
-outline:none;
-font-size:13px;
-}
-.chatbot-input button{
-border:none;
-background:var(--secondary);
-color:#fff;
-padding:0 16px;
-cursor:pointer;
-}
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
 
-/* ============================
-   RESPONSIVE
-===============================*/
-@media(max-width:1000px){
-.hero{grid-template-columns:1fr;}
-.about{grid-template-columns:1fr;}
-.corp-hero{grid-template-columns:1fr;}
-.contact-grid{grid-template-columns:1fr;}
-.portal-grid{grid-template-columns:1fr;}
-.footer-grid{grid-template-columns:1fr 1fr;}
-.timeline::before{left:20px;}
-.timeline-item{width:100%;left:0;text-align:left;padding-left:60px;}
-.timeline-dot{left:20px;}
-}
-@media(max-width:550px){
-.hero h1{font-size:36px;}
-.section-title h2{font-size:30px;}
-}
-</style>
+    nav ul li a {
+      font-weight: 500;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.35s ease;
+    }
+
+    .btn-primary {
+      background: var(--gradient);
+      color: #fff;
+      box-shadow: 0 12px 25px rgba(11,94,215,0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px rgba(11,94,215,0.45);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    body.dark .btn-outline {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    body.dark .btn-outline:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 18px;
+    }
+
+    body.dark .theme-toggle {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .theme-toggle:hover {
+      transform: rotate(15deg);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 26px;
+      height: 3px;
+      background: #000;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    body.dark .hamburger span {
+      background: #fff;
+    }
+
+    /* =========================
+       HERO SECTION
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 90px;
+      background: radial-gradient(circle at 20% 20%, rgba(11,94,215,0.15), transparent 40%),
+                  radial-gradient(circle at 80% 0%, rgba(25,135,84,0.15), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(255,193,7,0.15), transparent 40%);
+    }
+
+    body.dark .hero {
+      background: radial-gradient(circle at 20% 20%, rgba(11,94,215,0.2), transparent 40%),
+                  radial-gradient(circle at 80% 0%, rgba(25,135,84,0.2), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(255,193,7,0.15), transparent 40%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    body.dark .hero-content h1 span {
+      background: linear-gradient(135deg, #6ea8fe, #8df2c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 28px;
+      color: #555;
+    }
+
+    body.dark .hero-content p {
+      color: #ccc;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 24px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.9);
+      padding: 18px 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      min-width: 140px;
+    }
+
+    body.dark .stat {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .stat h3 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    body.dark .stat h3 {
+      color: var(--accent);
+    }
+
+    .stat p {
+      font-size: 14px;
+      margin-top: 4px;
+      color: #666;
+    }
+
+    body.dark .stat p {
+      color: #ccc;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img.main {
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .floating-card {
+      position: absolute;
+      background: #fff;
+      padding: 16px 20px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    body.dark .floating-card {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .floating-card i {
+      font-size: 22px;
+      color: var(--primary);
+    }
+
+    body.dark .floating-card i {
+      color: var(--accent);
+    }
+
+    .floating-card.one {
+      top: 20%;
+      left: -40px;
+    }
+
+    .floating-card.two {
+      bottom: 15%;
+      right: -30px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* =========================
+       TRUSTED BY / BRANDS
+    ========================= */
+
+    .brands {
+      padding: 40px 0;
+      background: rgba(11,94,215,0.03);
+    }
+
+    body.dark .brands {
+      background: rgba(255,255,255,0.03);
+    }
+
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 30px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .brand {
+      opacity: 0.6;
+      transition: 0.3s;
+      filter: grayscale(100%);
+    }
+
+    .brand:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    /* =========================
+       ABOUT SECTION
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      background: var(--gradient);
+      color: #fff;
+      padding: 22px 26px;
+      border-radius: 22px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge h3 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .experience-badge p {
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    .about-content h3 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      margin-bottom: 16px;
+      color: #555;
+    }
+
+    body.dark .about-content p {
+      color: #ccc;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 26px;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 20px 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: 0.35s ease;
+    }
+
+    body.dark .feature {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .feature i {
+      font-size: 26px;
+      color: var(--primary);
+      margin-top: 2px;
+    }
+
+    body.dark .feature i {
+      color: var(--accent);
+    }
+
+    .feature h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    body.dark .feature p {
+      color: #ccc;
+    }
+
+    /* =========================
+       SERVICES SECTION
+    ========================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    body.dark .service-card {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--gradient);
+      opacity: 0;
+      transition: 0.4s;
+      z-index: 0;
+    }
+
+    .service-card:hover::before {
+      opacity: 0.08;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      background: rgba(11,94,215,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    body.dark .service-icon {
+      background: rgba(255,255,255,0.1);
+      color: var(--accent);
+    }
+
+    .service-card h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+      flex-grow: 1;
+    }
+
+    body.dark .service-card p {
+      color: #ccc;
+    }
+
+    .service-card ul {
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card ul li {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #555;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    body.dark .service-card ul li {
+      color: #ddd;
+    }
+
+    .service-card ul li::before {
+      content: '\f058';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 12px;
+      color: var(--secondary);
+    }
+
+    body.dark .service-card ul li::before {
+      color: var(--accent);
+    }
+
+    .service-card .btn {
+      align-self: flex-start;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* =========================
+       PROCESS / HOW IT WORKS
+    ========================= */
+
+    .process {
+      background: linear-gradient(135deg, rgba(11,94,215,0.04), rgba(25,135,84,0.04));
+    }
+
+    body.dark .process {
+      background: linear-gradient(135deg, rgba(11,94,215,0.1), rgba(25,135,84,0.1));
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      counter-reset: step;
+    }
+
+    .process-step {
+      background: #fff;
+      border-radius: 24px;
+      padding: 30px 26px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      transition: 0.35s ease;
+    }
+
+    body.dark .process-step {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .process-step:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+
+    .process-step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: -18px;
+      right: 20px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--gradient);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .process-step h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    body.dark .process-step p {
+      color: #ccc;
+    }
+
+    /* =========================
+       WHY CHOOSE US
+    ========================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .why-content h3 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .why-content p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    body.dark .why-content p {
+      color: #ccc;
+    }
+
+    .why-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .why-item {
+      background: #fff;
+      padding: 20px 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: 0.35s ease;
+    }
+
+    body.dark .why-item {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .why-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .why-item i {
+      font-size: 24px;
+      color: var(--primary);
+      margin-top: 2px;
+    }
+
+    body.dark .why-item i {
+      color: var(--accent);
+    }
+
+    .why-item h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .why-item p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    body.dark .why-item p {
+      color: #ccc;
+    }
+
+    .why-image img {
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    /* =========================
+       STATS / COUNTERS
+    ========================= */
+
+    .stats-section {
+      background: var(--gradient);
+      color: #fff;
+      padding: 70px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .counter {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .stats-grid p {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* =========================
+       TEAM SECTION
+    ========================= */
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: 0.4s ease;
+      text-align: center;
+      position: relative;
+    }
+
+    body.dark .team-card {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow);
+    }
+
+    .team-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-image img {
+      width: 100%;
+      transition: 0.4s ease;
+    }
+
+    .team-card:hover .team-image img {
+      transform: scale(1.08);
+    }
+
+    .team-social {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,0.6));
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 14px;
+      padding-bottom: 18px;
+      opacity: 0;
+      transition: 0.35s;
+    }
+
+    .team-card:hover .team-social {
+      opacity: 1;
+    }
+
+    .team-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .team-social a:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-4px);
+    }
+
+    .team-content {
+      padding: 24px 20px;
+    }
+
+    .team-content h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .team-content p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    body.dark .team-content p {
+      color: #ccc;
+    }
+
+    /* =========================
+       TESTIMONIALS
+    ========================= */
+
+    .testimonials {
+      background: linear-gradient(135deg, rgba(11,94,215,0.05), rgba(25,135,84,0.05));
+    }
+
+    body.dark .testimonials {
+      background: linear-gradient(135deg, rgba(11,94,215,0.1), rgba(25,135,84,0.1));
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+      padding: 34px 30px;
+      position: relative;
+      height: 100%;
+      transition: 0.35s ease;
+    }
+
+    body.dark .testimonial-card {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+
+    .testimonial-quote {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    body.dark .testimonial-quote {
+      color: var(--accent);
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 22px;
+    }
+
+    body.dark .testimonial-text {
+      color: #ccc;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testimonial-author img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-author h5 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .testimonial-author span {
+      font-size: 13px;
+      color: #777;
+    }
+
+    body.dark .testimonial-author span {
+      color: #bbb;
+    }
+
+    /* =========================
+       FAQ SECTION
+    ========================= */
+
+    .faq-grid {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    body.dark .faq-item {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .faq-question:hover {
+      background: rgba(11,94,215,0.05);
+    }
+
+    body.dark .faq-question:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .faq-question i {
+      transition: 0.3s;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 22px 18px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    body.dark .faq-answer p {
+      color: #ccc;
+    }
+
+    /* =========================
+       BLOG SECTION
+    ========================= */
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    body.dark .blog-card {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow);
+    }
+
+    .blog-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .blog-card:hover .blog-image img {
+      transform: scale(1.08);
+    }
+
+    .blog-content {
+      padding: 26px 24px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .blog-meta {
+      display: flex;
+      gap: 16px;
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    body.dark .blog-meta {
+      color: #bbb;
+    }
+
+    .blog-content h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.4;
+      flex-grow: 0;
+    }
+
+    .blog-content p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    body.dark .blog-content p {
+      color: #ccc;
+    }
+
+    .blog-content a.read-more {
+      font-weight: 600;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.3s;
+    }
+
+    body.dark .blog-content a.read-more {
+      color: var(--accent);
+    }
+
+    .blog-content a.read-more:hover {
+      gap: 10px;
+    }
+
+    /* =========================
+       NEWSLETTER / CTA
+    ========================= */
+
+    .cta {
+      background: var(--gradient);
+      color: #fff;
+      border-radius: 40px;
+      padding: 70px 50px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before,
+    .cta::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      filter: blur(40px);
+    }
+
+    .cta::before {
+      width: 220px;
+      height: 220px;
+      top: -80px;
+      left: -80px;
+    }
+
+    .cta::after {
+      width: 260px;
+      height: 260px;
+      bottom: -100px;
+      right: -100px;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta h3 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      font-size: 16px;
+      opacity: 0.95;
+      margin-bottom: 24px;
+    }
+
+    .cta form {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .cta input {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 18px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .cta button {
+      padding: 14px 28px;
+      border-radius: 50px;
+      border: none;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background: #222;
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       CONTACT SECTION
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    .contact-info h3 {
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .contact-info p {
+      color: #555;
+      margin-bottom: 26px;
+    }
+
+    body.dark .contact-info p {
+      color: #ccc;
+    }
+
+    .contact-cards {
+      display: grid;
+      gap: 16px;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      padding: 18px 20px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      transition: 0.35s ease;
+    }
+
+    body.dark .contact-card {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card i {
+      font-size: 22px;
+      color: var(--primary);
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(11,94,215,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body.dark .contact-card i {
+      color: var(--accent);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .contact-card h5 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      font-size: 14px;
+      color: #555;
+    }
+
+    body.dark .contact-card p,
+    body.dark .contact-card a {
+      color: #ddd;
+    }
+
+    .contact-form {
+      background: #fff;
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+      padding: 34px 30px;
+    }
+
+    body.dark .contact-form {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .contact-form h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .contact-form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      outline: none;
+      font-family: inherit;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    body.dark .contact-form input,
+    body.dark .contact-form textarea {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    .contact-form textarea {
+      grid-column: 1 / -1;
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(11,94,215,0.15);
+    }
+
+    body.dark .contact-form input:focus,
+    body.dark .contact-form textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255,193,7,0.2);
+    }
+
+    .contact-form button {
+      grid-column: 1 / -1;
+      padding: 14px 0;
+      border-radius: 50px;
+      border: none;
+      background: var(--gradient);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    /* =========================
+       MAP SECTION
+    ========================= */
+
+    .map iframe {
+      width: 100%;
+      height: 420px;
+      border: 0;
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #0b0d12;
+      color: #ddd;
+      padding: 80px 0 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer::before,
+    footer::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      filter: blur(60px);
+    }
+
+    footer::before {
+      width: 260px;
+      height: 260px;
+      top: -120px;
+      left: -120px;
+    }
+
+    footer::after {
+      width: 300px;
+      height: 300px;
+      bottom: -140px;
+      right: -140px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 40px;
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+
+    .footer-logo img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+    }
+
+    .footer-about p {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 18px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .footer-social a:hover {
+      background: var(--primary);
+      transform: translateY(-4px);
+    }
+
+    .footer-column h5 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      font-size: 14px;
+      color: #bbb;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+      padding-left: 6px;
+    }
+
+    .footer-contact li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .footer-contact i {
+      color: var(--primary);
+      margin-top: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-bottom p {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer-bottom a {
+      font-size: 13px;
+      color: #aaa;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* =========================
+       FLOATING BUTTONS
+    ========================= */
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      z-index: 9999;
+      transition: 0.35s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.4);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 96px;
+      right: 24px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+      z-index: 9998;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.35s ease;
+    }
+
+    .scroll-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-top:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.4);
+    }
+
+    /* =========================
+       AI CHATBOT WIDGET (DEMO)
+    ========================= */
+
+    .chatbot-widget {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--gradient);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+      z-index: 9999;
+      transition: 0.35s ease;
+    }
+
+    .chatbot-widget:hover {
+      transform: translateY(-6px) scale(1.05);
+    }
+
+    .chatbot-box {
+      position: fixed;
+      bottom: 100px;
+      left: 24px;
+      width: 320px;
+      max-height: 420px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+      z-index: 9999;
+    }
+
+    body.dark .chatbot-box {
+      background: #0f1320;
+    }
+
+    .chatbot-header {
+      background: var(--gradient);
+      color: #fff;
+      padding: 14px 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .chatbot-messages {
+      flex: 1;
+      padding: 14px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .chatbot-message {
+      margin-bottom: 10px;
+      max-width: 80%;
+      padding: 8px 12px;
+      border-radius: 12px;
+      line-height: 1.4;
+    }
+
+    .chatbot-message.bot {
+      background: rgba(11,94,215,0.1);
+      color: #000;
+      align-self: flex-start;
+    }
+
+    body.dark .chatbot-message.bot {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+
+    .chatbot-message.user {
+      background: var(--primary);
+      color: #fff;
+      align-self: flex-end;
+    }
+
+    .chatbot-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    body.dark .chatbot-input {
+      border-top-color: rgba(255,255,255,0.2);
+    }
+
+    .chatbot-input input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    body.dark .chatbot-input input {
+      background: transparent;
+      color: #fff;
+    }
+
+    .chatbot-input button {
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 0 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .chatbot-input button:hover {
+      background: #084298;
+    }
+
+    /* =========================
+       RESPONSIVE DESIGN
+    ========================= */
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .about-grid,
+      .why-grid,
+      .contact-grid,
+      .cta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 900px) {
+      nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 280px;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 90px 24px;
+        gap: 20px;
+        box-shadow: var(--shadow);
+        transition: 0.4s ease;
+        z-index: 9998;
+      }
+
+      body.dark nav ul {
+        background: #0f1320;
+      }
+
+      nav ul.active {
+        right: 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .hero-stats {
+        gap: 14px;
+      }
+
+      .stat {
+        min-width: 120px;
+        padding: 14px 16px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 50px 30px;
+      }
+
+      .cta h3 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<div class="container navbar">
-<div class="logo">Uma <span>Associate</span></div>
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#corporate-finance">Corporate Finance</a></li>
-<li><a href="#industries">Industries</a></li>
-<li><a href="#careers">Careers</a></li>
-<li><a href="#tools">Tools</a></li>
-<li><a href="#blog">Insights</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><div class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></div></li>
-</ul>
-</nav>
-</div>
-</header>
-
-<!-- NEWS TICKER -->
-<div class="news-ticker">
-<div class="news-track">
-<span>📢 GST Return Filing Deadlines Updated for FY 2025-26 – Avoid Penalties by Filing on Time</span>
-<span>📢 New Income Tax Slabs Announced – Check How It Impacts Your Tax Planning</span>
-<span>📢 Startup India Registration Benefits Expanded for MSMEs</span>
-<span>📢 Corporate Finance Advisory Now Available for Fundraising & Valuation</span>
-<span>📢 Uma Associate Now Offering Virtual Consultations Across Gujarat</span>
-</div>
-</div>
-
-<!-- HERO -->
-<section class="hero" id="home">
-<div class="container">
-<div>
-<h1>Enterprise-Grade <span>Corporate Finance</span> & Tax Consulting Solutions</h1>
-<p>Uma Associate & Corporate Finance Consultants delivers comprehensive accounting, taxation, compliance, and strategic finance advisory services designed to help individuals, startups, SMEs, and corporates achieve financial clarity, regulatory excellence, and sustainable growth.</p>
-
-<div class="hero-actions">
-<a href="#contact" class="btn btn-primary"><i class="fas fa-phone"></i> Book Free Consultation</a>
-<a href="#services" class="btn btn-outline"><i class="fas fa-briefcase"></i> View Our Services</a>
-</div>
-
-<div class="trust-bar">
-<div class="trust-item">
-<h3>750+</h3>
-<p>Happy Clients</p>
-</div>
-<div class="trust-item">
-<h3>12+</h3>
-<p>Years Experience</p>
-</div>
-<div class="trust-item">
-<h3>99%</h3>
-<p>Compliance Accuracy</p>
-</div>
-<div class="trust-item">
-<h3>24/7</h3>
-<p>Client Support</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<div class="container">
-<div class="section-title">
-<h2>About Uma Associate</h2>
-<p>Trusted financial advisors delivering ethical, accurate, and growth-oriented accounting, taxation, compliance, and corporate finance services across Gujarat.</p>
-</div>
-
-<div class="about">
-<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=80" alt="Uma Associate Office">
-<div class="about-content">
-<h3>Your Long-Term Financial Growth Partner</h3>
-<p>Uma Associate & Corporate Finance Consultants is a professionally managed accounting and advisory firm headquartered in Gandhinagar, Gujarat, delivering integrated financial, taxation, and compliance solutions to individuals, professionals, startups, MSMEs, and corporates.</p>
-<p>Our core objective is to simplify complex regulatory frameworks, optimize tax efficiency, improve financial performance, and empower business owners with strategic insights that drive sustainable growth.</p>
-
-<div class="about-badges">
-<div class="badge"><i class="fas fa-check-circle"></i> Chartered Accounting Support</div>
-<div class="badge"><i class="fas fa-check-circle"></i> GST & Income Tax Specialists</div>
-<div class="badge"><i class="fas fa-check-circle"></i> Corporate Finance Advisory</div>
-<div class="badge"><i class="fas fa-check-circle"></i> Startup & MSME Experts</div>
-<div class="badge"><i class="fas fa-check-circle"></i> Transparent Pricing Model</div>
-<div class="badge"><i class="fas fa-check-circle"></i> 100% Data Confidentiality</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-<div class="container">
-<div class="section-title">
-<h2>Our Core Professional Services</h2>
-<p>End-to-end accounting, taxation, compliance, and business advisory solutions designed to support every stage of your financial journey.</p>
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-<i class="fas fa-calculator"></i>
-<h4>Accounting & Bookkeeping</h4>
-<p>Accurate financial record-keeping and reporting solutions that provide complete visibility into your business performance and statutory compliance.</p>
-<ul>
-<li>Daily Transaction Recording</li>
-<li>Ledger & Trial Balance Preparation</li>
-<li>Bank Reconciliation Statements</li>
-<li>Profit & Loss & Balance Sheet</li>
-<li>MIS Reports & Cash Flow Statements</li>
-<li>Cloud Accounting Setup & Support</li>
-</ul>
-</div>
-
-<div class="service-card">
-<i class="fas fa-file-invoice-dollar"></i>
-<h4>Income Tax Advisory & Compliance</h4>
-<p>Comprehensive income tax services for individuals, professionals, firms, and companies to ensure accuracy, efficiency, and peace of mind.</p>
-<ul>
-<li>Individual & Business ITR Filing</li>
-<li>Tax Planning & Savings Advisory</li>
-<li>Advance Tax Computation</li>
-<li>Scrutiny Assessment Representation</li>
-<li>Income Tax Notice Handling</li>
-<li>Refund Follow-ups & Rectification</li>
-</ul>
-</div>
-
-<div class="service-card">
-<i class="fas fa-receipt"></i>
-<h4>GST Registration & Compliance</h4>
-<p>Complete GST compliance lifecycle management including registration, returns, reconciliation, audit, and litigation support.</p>
-<ul>
-<li>GST Registration & Amendments</li>
-<li>Monthly/Quarterly GST Returns</li>
-<li>GSTR-2B vs Books Reconciliation</li>
-<li>GST Audit & Annual Return Filing</li>
-<li>Input Tax Credit Optimization</li>
-<li>GST Notice & Assessment Support</li>
-</ul>
-</div>
-
-<div class="service-card">
-<i class="fas fa-university"></i>
-<h4>TDS, Payroll & Labor Compliance</h4>
-<p>End-to-end payroll processing and statutory compliance services ensuring timely deductions and filings under applicable laws.</p>
-<ul>
-<li>TDS Deduction & Quarterly Returns</li>
-<li>Salary Structure Design & Planning</li>
-<li>Form 16/24Q Preparation</li>
-<li>PF, ESI & Labor Law Compliance</li>
-<li>Employee Tax Computation</li>
-<li>Payroll MIS & Reporting</li>
-</ul>
-</div>
-
-<div class="service-card">
-<i class="fas fa-rocket"></i>
-<h4>Startup & Business Registrations</h4>
-<p>Complete business formation, statutory registrations, and compliance setup to help entrepreneurs launch and scale confidently.</p>
-<ul>
-<li>Proprietorship Registration</li>
-<li>Partnership, LLP & Company Formation</li>
-<li>MSME / Udyam Registration</li>
-<li>PAN, TAN & Professional Tax</li>
-<li>Import Export Code (IEC)</li>
-<li>Startup India Recognition</li>
-</ul>
-</div>
-
-<div class="service-card">
-<i class="fas fa-briefcase"></i>
-<h4>Regulatory & Compliance Services</h4>
-<p>Comprehensive statutory and regulatory compliance solutions to ensure zero penalties and governance excellence.</p>
-<ul>
-<li>ROC Annual Filings</li>
-<li>Statutory Audit Coordination</li>
-<li>Internal Control Reviews</li>
-<li>Compliance Health Checkups</li>
-<li>Secretarial Compliance</li>
-<li>Risk Management Advisory</li>
-</ul>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CORPORATE FINANCE -->
-<section id="corporate-finance" class="corp-finance">
-<div class="container">
-<div class="section-title">
-<h2>Corporate Finance Advisory</h2>
-<p>Strategic financial planning, capital structuring, and transaction advisory services designed to maximize business value and long-term growth.</p>
-</div>
-
-<div class="corp-hero">
-<div>
-<h3>Transforming Financial Strategy into Sustainable Business Growth</h3>
-<p>Our Corporate Finance Advisory practice supports businesses at every stage — from early-stage funding and working capital optimization to mergers, acquisitions, restructuring, and exit planning.</p>
-<p>We combine technical financial expertise with real-world business understanding to deliver practical, measurable outcomes for promoters, founders, investors, and stakeholders.</p>
-
-<div class="corp-points">
-<div class="corp-point"><i class="fas fa-chart-line"></i> Financial Modeling & Forecasting</div>
-<div class="corp-point"><i class="fas fa-wallet"></i> Working Capital Optimization</div>
-<div class="corp-point"><i class="fas fa-handshake"></i> Fundraising & Investor Pitch Support</div>
-<div class="corp-point"><i class="fas fa-building"></i> Business Valuation Services</div>
-<div class="corp-point"><i class="fas fa-balance-scale"></i> Mergers & Acquisitions Advisory</div>
-<div class="corp-point"><i class="fas fa-exchange-alt"></i> Business Restructuring & Turnaround</div>
-<div class="corp-point"><i class="fas fa-file-contract"></i> Due Diligence & Risk Assessment</div>
-<div class="corp-point"><i class="fas fa-coins"></i> Capital Structuring & Debt Advisory</div>
-</div>
-
-<a href="#contact" class="btn btn-primary" style="margin-top:25px;">Consult Our Corporate Finance Expert</a>
-</div>
-
-<img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1100&q=80" alt="Corporate Finance Advisory">
-</div>
-
-<!-- CORPORATE FINANCE SERVICES -->
-<div class="corp-services">
-
-<div class="corp-card">
-<i class="fas fa-chart-area"></i>
-<h4>Financial Modeling & Forecasting</h4>
-<p>Development of detailed, scenario-based financial models that support strategic planning, fundraising, valuation, and performance management.</p>
-<ul>
-<li>Integrated 3-Statement Financial Models</li>
-<li>Cash Flow Projections & Scenario Analysis</li>
-<li>Sensitivity & Stress Testing</li>
-<li>Budgeting & Variance Analysis</li>
-<li>Long-Term Strategic Forecasting</li>
-<li>Investment Appraisal & Feasibility Studies</li>
-</ul>
-</div>
-
-<div class="corp-card">
-<i class="fas fa-wallet"></i>
-<h4>Working Capital & Cash Flow Advisory</h4>
-<p>Optimization of cash conversion cycles, receivables management, inventory planning, and payables strategy to improve liquidity and profitability.</p>
-<ul>
-<li>Receivables & Credit Policy Design</li>
-<li>Inventory Management Optimization</li>
-<li>Payables & Vendor Negotiation Strategy</li>
-<li>Cash Flow Forecasting</li>
-<li>Short-Term Financing Solutions</li>
-<li>Liquidity Risk Management</li>
-</ul>
-</div>
-
-<div class="corp-card">
-<i class="fas fa-handshake"></i>
-<h4>Fundraising & Capital Advisory</h4>
-<p>End-to-end advisory support for raising equity or debt capital from investors, venture capital firms, private equity funds, and banks.</p>
-<ul>
-<li>Investor Pitch Deck Creation</li>
-<li>Information Memorandum Preparation</li>
-<li>Valuation & Capital Structuring</li>
-<li>Investor Shortlisting & Negotiation</li>
-<li>Term Sheet Review & Support</li>
-<li>Transaction Closure Assistance</li>
-</ul>
-</div>
-
-<div class="corp-card">
-<i class="fas fa-building"></i>
-<h4>Business Valuation Services</h4>
-<p>Independent, defensible valuations for fundraising, M&A, restructuring, financial reporting, taxation, and regulatory compliance.</p>
-<ul>
-<li>DCF, Comparable & Asset-Based Valuation</li>
-<li>Startup & MSME Valuation</li>
-<li>Fair Value & Regulatory Valuation</li>
-<li>Valuation for Fundraising & Exit</li>
-<li>Share Purchase & Transfer Valuation</li>
-<li>Strategic Business Review</li>
-</ul>
-</div>
-
-<div class="corp-card">
-<i class="fas fa-balance-scale"></i>
-<h4>Mergers & Acquisitions Advisory</h4>
-<p>Buy-side and sell-side advisory services covering target identification, valuation, due diligence, structuring, negotiation, and closure.</p>
-<ul>
-<li>Target Screening & Deal Origination</li>
-<li>Strategic Fit & Synergy Analysis</li>
-<li>Financial & Tax Due Diligence</li>
-<li>Transaction Structuring & Negotiation</li>
-<li>SPA Review & Closure Support</li>
-<li>Post-Merger Integration Planning</li>
-</ul>
-</div>
-
-<div class="corp-card">
-<i class="fas fa-exchange-alt"></i>
-<h4>Business Restructuring & Turnaround</h4>
-<p>Strategic and financial restructuring solutions designed to restore profitability, improve cash flow, and stabilize distressed businesses.</p>
-<ul>
-<li>Financial Restructuring Strategy</li>
-<li>Debt Rescheduling & Negotiation</li>
-<li>Cost Optimization Programs</li>
-<li>Operational Efficiency Improvement</li>
-<li>Turnaround & Revival Planning</li>
-<li>Performance Monitoring Frameworks</li>
-</ul>
-</div>
-
-</div>
-
-<!-- CORPORATE FINANCE CASE STUDIES -->
-<div class="section-title" style="margin-top:90px;">
-<h2>Corporate Finance Case Studies</h2>
-<p>Real-world success stories demonstrating how our strategic financial advisory has delivered measurable value for our clients.</p>
-</div>
-
-<div class="case-grid">
-
-<div class="case-card">
-<img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1000&q=80" alt="Manufacturing Case">
-<div class="case-body">
-<h5>Working Capital Optimization – Manufacturing Company</h5>
-<p>Improved cash conversion cycle by 42% and unlocked ₹3.2 crore in free cash flow through receivables management, inventory optimization, and vendor renegotiation.</p>
-<span>Result: 18% EBITDA Margin Improvement</span>
-</div>
-</div>
-
-<div class="case-card">
-<img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1000&q=80" alt="Startup Fundraising">
-<div class="case-body">
-<h5>Startup Fundraising – SaaS Technology Company</h5>
-<p>Advised on valuation, pitch deck, financial modeling, and investor negotiations resulting in successful Series-A funding of ₹12 crore from institutional investors.</p>
-<span>Result: Successful Equity Raise</span>
-</div>
-</div>
-
-<div class="case-card">
-<img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1000&q=80" alt="Retail Expansion">
-<div class="case-body">
-<h5>Business Expansion Strategy – Retail Chain</h5>
-<p>Developed multi-year expansion plan, store-level profitability models, and financing strategy enabling rapid expansion across three states.</p>
-<span>Result: 2.5x Revenue Growth</span>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- INDUSTRIES -->
-<section id="industries">
-<div class="container">
-<div class="section-title">
-<h2>Industries We Serve</h2>
-<p>We deliver specialized financial, taxation, and advisory solutions across diverse industries and business models.</p>
-</div>
-
-<div class="industries-grid">
-<div class="industry"><i class="fas fa-industry"></i><h4>Manufacturing</h4><p>Cost accounting, inventory valuation, GST compliance, working capital optimization, and capacity expansion advisory.</p></div>
-<div class="industry"><i class="fas fa-store"></i><h4>Retail & Trading</h4><p>Inventory control, GST planning, margin optimization, cash flow forecasting, and expansion strategy.</p></div>
-<div class="industry"><i class="fas fa-laptop-code"></i><h4>IT & SaaS</h4><p>Startup compliance, valuation, fundraising advisory, ESOP structuring, and investor reporting.</p></div>
-<div class="industry"><i class="fas fa-hospital"></i><h4>Healthcare</h4><p>Regulatory compliance, accounting, tax planning, project finance, and hospital financial management.</p></div>
-<div class="industry"><i class="fas fa-building"></i><h4>Real Estate & Construction</h4><p>Project accounting, GST structuring, joint development advisory, and real estate taxation.</p></div>
-<div class="industry"><i class="fas fa-truck"></i><h4>Logistics & Transportation</h4><p>Fleet accounting, GST compliance, cost optimization, and working capital management.</p></div>
-<div class="industry"><i class="fas fa-seedling"></i><h4>Agribusiness</h4><p>Subsidy advisory, compliance support, accounting, and business expansion strategy.</p></div>
-<div class="industry"><i class="fas fa-graduation-cap"></i><h4>Education & Training</h4><p>Trust compliance, accounting, GST planning, and financial sustainability advisory.</p></div>
-<div class="industry"><i class="fas fa-hotel"></i><h4>Hospitality</h4><p>Revenue management, GST compliance, payroll structuring, and profitability optimization.</p></div>
-<div class="industry"><i class="fas fa-globe"></i><h4>Export & Import</h4><p>IEC registration, GST refunds, customs advisory, and foreign trade compliance.</p></div>
-<div class="industry"><i class="fas fa-users"></i><h4>Professional Services</h4><p>Tax planning, compliance management, accounting, and cash flow optimization.</p></div>
-<div class="industry"><i class="fas fa-rocket"></i><h4>Startups & MSMEs</h4><p>Business registration, compliance setup, fundraising advisory, and strategic finance support.</p></div>
-</div>
-</div>
-</section>
-
-<!-- WHY CHOOSE -->
-<section>
-<div class="container">
-<div class="section-title">
-<h2>Why Choose Uma Associate</h2>
-<p>We combine technical excellence, business understanding, and client-centric service delivery to create long-term financial value.</p>
-</div>
-
-<div class="why-grid">
-<div class="why-card">
-<i class="fas fa-award"></i>
-<h4>Qualified Finance Professionals</h4>
-<p>Experienced accountants and finance advisors delivering accurate, compliant, and strategic solutions.</p>
-</div>
-<div class="why-card">
-<i class="fas fa-shield-alt"></i>
-<h4>100% Data Confidentiality</h4>
-<p>Strict confidentiality protocols and secure handling of sensitive financial information.</p>
-</div>
-<div class="why-card">
-<i class="fas fa-clock"></i>
-<h4>On-Time Compliance</h4>
-<p>Proactive reminders and disciplined execution ensure zero penalties and regulatory peace of mind.</p>
-</div>
-<div class="why-card">
-<i class="fas fa-user-friends"></i>
-<h4>Client-Centric Approach</h4>
-<p>Customized advisory solutions aligned with your business objectives and growth plans.</p>
-</div>
-<div class="why-card">
-<i class="fas fa-rupee-sign"></i>
-<h4>Transparent Pricing</h4>
-<p>Clear, upfront, and fair pricing with no hidden costs or surprises.</p>
-</div>
-<div class="why-card">
-<i class="fas fa-lightbulb"></i>
-<h4>Strategic Advisory Mindset</h4>
-<p>Beyond compliance, we provide actionable insights that enhance profitability and sustainability.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- PROCESS TIMELINE -->
-<section>
-<div class="container">
-<div class="section-title">
-<h2>Our Engagement Process</h2>
-<p>A structured, transparent, and result-oriented service delivery framework designed to maximize client value.</p>
-</div>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Discovery & Consultation</h4>
-<p>We begin with an in-depth discussion to understand your business model, financial structure, compliance status, and growth objectives.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Diagnostic Assessment</h4>
-<p>Our experts review your financial statements, compliance framework, operational processes, and risk areas to identify improvement opportunities.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Solution Design & Proposal</h4>
-<p>We develop a customized accounting, taxation, and corporate finance solution aligned with your regulatory requirements and strategic objectives.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Execution & Compliance Management</h4>
-<p>Our team executes the agreed scope of services with precision, accuracy, and strict adherence to statutory timelines.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Monitoring & Advisory Support</h4>
-<p>We provide continuous monitoring, reporting, and advisory support to optimize financial performance and ensure sustained compliance.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<h4>Growth & Strategic Expansion</h4>
-<p>As your business evolves, we partner with you to support expansion, restructuring, fundraising, acquisitions, and long-term value creation.</p>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- TEAM -->
-<section>
-<div class="container">
-<div class="section-title">
-<h2>Meet Our Leadership Team</h2>
-<p>A dedicated team of finance professionals committed to delivering excellence, integrity, and strategic value.</p>
-</div>
-
-<div class="team-grid">
-
-<div class="team-card">
-<img src="https://images.unsplash.com/photo-1603415526960-f7e0328d38b0?auto=format&fit=crop&w=900&q=80" alt="Founder">
-<div class="team-body">
-<h4>Harshil Patel</h4>
-<p>Founder & Managing Partner</p>
-<p style="font-size:12px;">M.Com | 3+ Years Accounting Experience | GST & Tax Specialist</p>
-<div class="team-social">
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-</div>
-
-<div class="team-card">
-<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80" alt="Senior Accountant">
-<div class="team-body">
-<h4>Neha Shah</h4>
-<p>Senior Accountant</p>
-<p style="font-size:12px;">Expert in Accounting, GST Compliance & MIS Reporting</p>
-<div class="team-social">
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-</div>
-
-<div class="team-card">
-<img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=900&q=80" alt="Corporate Finance Analyst">
-<div class="team-body">
-<h4>Amit Mehta</h4>
-<p>Corporate Finance Analyst</p>
-<p style="font-size:12px;">Specialist in Financial Modeling, Valuation & Fundraising Advisory</p>
-<div class="team-social">
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-</div>
-
-<div class="team-card">
-<img src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?auto=format&fit=crop&w=900&q=80" alt="Compliance Manager">
-<div class="team-body">
-<h4>Pooja Desai</h4>
-<p>Compliance Manager</p>
-<p style="font-size:12px;">Expert in ROC Compliance, Payroll & Regulatory Filings</p>
-<div class="team-social">
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- STATS / ACHIEVEMENTS -->
-<section>
-<div class="container">
-<div class="stats">
-<div class="stats-grid">
-<div class="stat-box">
-<h3>750+</h3>
-<p>Clients Served</p>
-</div>
-<div class="stat-box">
-<h3>1200+</h3>
-<p>Projects Completed</p>
-</div>
-<div class="stat-box">
-<h3>99%</h3>
-<p>Compliance Accuracy</p>
-</div>
-<div class="stat-box">
-<h3>15+</h3>
-<p>Professional Experts</p>
-</div>
-<div class="stat-box">
-<h3>10+</h3>
-<p>Industry Awards</p>
-</div>
-<div class="stat-box">
-<h3>24/7</h3>
-<p>Client Support</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-<div class="container">
-<div class="section-title">
-<h2 style="color:#fff;">Client Testimonials</h2>
-<p style="color:#ddd;">Trusted by businesses, startups, and professionals across Gujarat for compliance excellence and strategic financial advisory.</p>
-</div>
-
-<div class="test-grid">
-<div class="test-card">
-<p>"Uma Associate transformed our accounting system and GST compliance framework. Their professionalism and responsiveness are outstanding."</p>
-<h5>Rajesh Patel</h5>
-<span>Manufacturing Business Owner, Gandhinagar</span>
-</div>
-<div class="test-card">
-<p>"Their corporate finance advisory helped us raise funding and restructure operations. Highly recommended for growing businesses."</p>
-<h5>Neha Shah</h5>
-<span>Startup Founder, Ahmedabad</span>
-</div>
-<div class="test-card">
-<p>"Accurate, timely, and transparent — Uma Associate is our trusted partner for all tax and compliance matters."</p>
-<h5>Amit Mehta</h5>
-<span>Retail Business Owner, Gujarat</span>
-</div>
-<div class="test-card">
-<p>"Excellent support during GST assessments and income tax scrutiny. The team handled everything smoothly and professionally."</p>
-<h5>Pooja Desai</h5>
-<span>Professional Consultant</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- FAQ -->
-<section>
-<div class="container">
-<div class="section-title">
-<h2>Frequently Asked Questions</h2>
-<p>Answers to common queries about our accounting, taxation, compliance, and corporate finance services.</p>
-</div>
-
-<div class="faq-grid">
-
-<div class="faq-item">
-<div class="faq-q" onclick="toggleFaq(this)">
-<span>What accounting software do you support?</span>
-<i class="fas fa-plus"></i>
-</div>
-<div class="faq-a">
-<p>We support Tally, Busy, Zoho Books, QuickBooks, and other popular accounting platforms, including customized ERP accounting systems.</p>
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="toggleFaq(this)">
-<span>Do you provide virtual/remote accounting services?</span>
-<i class="fas fa-plus"></i>
-</div>
-<div class="faq-a">
-<p>Yes, we provide secure remote accounting, GST compliance, tax filing, and corporate finance advisory services across India.</p>
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="toggleFaq(this)">
-<span>Can you assist startups with fundraising?</span>
-<i class="fas fa-plus"></i>
-</div>
-<div class="faq-a">
-<p>Absolutely. We support startups with valuation, financial modeling, pitch deck creation, investor negotiations, and transaction closure.</p>
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="toggleFaq(this)">
-<span>Do you handle income tax notices and scrutiny cases?</span>
-<i class="fas fa-plus"></i>
-</div>
-<div class="faq-a">
-<p>Yes, we provide complete representation support for income tax notices, assessments, appeals, and rectification matters.</p>
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="toggleFaq(this)">
-<span>What industries do you specialize in?</span>
-<i class="fas fa-plus"></i>
-</div>
-<div class="faq-a">
-<p>We serve manufacturing, retail, IT/tech, healthcare, real estate, logistics, hospitality, professional services, startups, and MSMEs.</p>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- TOOLS / CALCULATORS -->
-<section id="tools">
-<div class="container">
-<div class="section-title">
-<h2>Financial Tools & Calculators</h2>
-<p>Free business tools to help you make informed financial decisions and improve planning accuracy.</p>
-</div>
-
-<div class="tools-grid">
-
-<div class="tool-card">
-<h4>EMI Calculator</h4>
-<p>Calculate your monthly loan EMI based on loan amount, interest rate, and tenure.</p>
-<input type="number" id="emiAmount" placeholder="Loan Amount (₹)">
-<input type="number" id="emiRate" placeholder="Interest Rate (% per annum)">
-<input type="number" id="emiTenure" placeholder="Tenure (years)">
-<button onclick="calculateEMI()">Calculate EMI</button>
-<div class="tool-result" id="emiResult"></div>
-</div>
-
-<div class="tool-card">
-<h4>Income Tax Estimator</h4>
-<p>Estimate your annual income tax liability based on your taxable income and applicable slabs.</p>
-<input type="number" id="taxIncome" placeholder="Annual Taxable Income (₹)">
-<select id="taxRegime">
-<option value="new">New Tax Regime</option>
-<option value="old">Old Tax Regime</option>
-</select>
-<button onclick="calculateTax()">Estimate Tax</button>
-<div class="tool-result" id="taxResult"></div>
-</div>
-
-<div class="tool-card">
-<h4>GST Interest Calculator</h4>
-<p>Calculate GST interest on delayed payment based on amount and delay period.</p>
-<input type="number" id="gstAmount" placeholder="GST Amount (₹)">
-<input type="number" id="gstDays" placeholder="Delay (days)">
-<button onclick="calculateGSTInterest()">Calculate Interest</button>
-<div class="tool-result" id="gstResult"></div>
-</div>
-
-<div class="tool-card">
-<h4>Business Valuation Snapshot</h4>
-<p>Get a rough estimate of business value using EBITDA multiple method.</p>
-<input type="number" id="ebitda" placeholder="Annual EBITDA (₹)">
-<input type="number" id="multiple" placeholder="Industry Multiple (e.g. 5)">
-<button onclick="calculateValuation()">Estimate Valuation</button>
-<div class="tool-result" id="valResult"></div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CAREERS -->
-<section id="careers">
-<div class="container">
-<div class="section-title">
-<h2>Careers at Uma Associate</h2>
-<p>Join a growing professional firm and build a rewarding career in accounting, taxation, compliance, and corporate finance.</p>
-</div>
-
-<div class="career-grid">
-
-<div class="career-card">
-<h4>Junior Accountant</h4>
-<p>Looking for a commerce graduate with 1–3 years experience in accounting, Tally, GST returns, and basic compliance.</p>
-<span>Location: Gandhinagar | Full-Time</span>
-<button onclick="applyJob('Junior Accountant')">Apply Now</button>
-</div>
-
-<div class="career-card">
-<h4>GST Executive</h4>
-<p>Candidate with strong GST compliance knowledge, return filing, reconciliation, and notice handling experience.</p>
-<span>Location: Ahmedabad/Gandhinagar | Full-Time</span>
-<button onclick="applyJob('GST Executive')">Apply Now</button>
-</div>
-
-<div class="career-card">
-<h4>Corporate Finance Analyst</h4>
-<p>Candidate with experience in financial modeling, valuation, MIS analysis, and fundraising support.</p>
-<span>Location: Remote/Hybrid | Full-Time</span>
-<button onclick="applyJob('Corporate Finance Analyst')">Apply Now</button>
-</div>
-
-<div class="career-card">
-<h4>Accounts Intern / Trainee</h4>
-<p>Commerce students or freshers eager to learn accounting, GST, income tax, and compliance under expert guidance.</p>
-<span>Location: Gandhinagar | Internship</span>
-<button onclick="applyJob('Accounts Intern')">Apply Now</button>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CLIENT PORTAL -->
-<section>
-<div class="container">
-<div class="portal">
-<div class="section-title">
-<h2>Client Portal (Demo Interface)</h2>
-<p>Secure online portal for document upload, compliance tracking, service requests, and real-time communication.</p>
-</div>
-
-<div class="portal-grid">
-
-<div class="portal-box">
-<h4>Client Login</h4>
-<input type="text" placeholder="Client ID / Email">
-<input type="password" placeholder="Password">
-<button>Login</button>
-<p style="font-size:12px;margin-top:8px;color:var(--muted);">Forgot password? Contact support.</p>
-</div>
-
-<div class="portal-box">
-<h4>New Client Registration</h4>
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email Address">
-<input type="tel" placeholder="Mobile Number">
-<button>Register</button>
-<p style="font-size:12px;margin-top:8px;color:var(--muted);">Our team will activate your account within 24 hours.</p>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-<div class="container">
-<div class="section-title">
-<h2>Insights, Articles & Knowledge Hub</h2>
-<p>Stay updated with the latest taxation laws, GST amendments, compliance updates, and corporate finance trends.</p>
-</div>
-
-<div class="blog-grid">
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1581092919535-7146a2a2d6c0?auto=format&fit=crop&w=1100&q=80" alt="GST Update">
-<div class="blog-body">
-<h4>Latest GST Return Filing Rules for FY 2025-26</h4>
-<p>Understand the new GST compliance framework, return formats, reconciliation norms, and penalties to ensure smooth filings.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=1100&q=80" alt="Income Tax Planning">
-<div class="blog-body">
-<h4>Smart Income Tax Planning Strategies for Salaried Professionals</h4>
-<p>Explore legal tax saving strategies under old and new tax regimes to optimize take-home income.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1100&q=80" alt="Corporate Finance">
-<div class="blog-body">
-<h4>Corporate Finance Strategies for MSME Growth</h4>
-<p>Learn how financial modeling, capital structuring, and working capital optimization drive sustainable business expansion.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1100&q=80" alt="Startup Compliance">
-<div class="blog-body">
-<h4>Startup Compliance Checklist for New Entrepreneurs</h4>
-<p>A complete compliance roadmap for startups covering registrations, tax filings, payroll, and statutory requirements.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1100&q=80" alt="Business Valuation">
-<div class="blog-body">
-<h4>Business Valuation: Methods, Use Cases & Benefits</h4>
-<p>Understand valuation techniques and how accurate valuation supports fundraising, mergers, acquisitions, and exits.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-<div class="blog-card">
-<img src="https://images.unsplash.com/photo-1554224155-3c3f8d8d4f53?auto=format&fit=crop&w=1100&q=80" alt="Cash Flow">
-<div class="blog-body">
-<h4>Improving Cash Flow Management for SMEs</h4>
-<p>Practical cash flow strategies to strengthen liquidity, reduce financial stress, and enhance business resilience.</p>
-<a href="#">Read More →</a>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- DOWNLOAD CENTER -->
-<section>
-<div class="container">
-<div class="section-title">
-<h2>Downloads & Resources</h2>
-<p>Free compliance checklists, tax guides, templates, and business tools for individuals and enterprises.</p>
-</div>
-
-<div class="download-grid">
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>GST Compliance Checklist</h5>
-<p>Monthly, quarterly, and annual GST compliance tracker for businesses.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>Income Tax Return Filing Guide</h5>
-<p>Step-by-step guide for individuals and businesses to file accurate tax returns.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>Startup Registration Handbook</h5>
-<p>Complete guide to business formation, statutory registrations, and compliance setup.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>Working Capital Optimization Toolkit</h5>
-<p>Practical templates to improve cash flow, receivables, inventory, and payables management.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>Business Valuation Template</h5>
-<p>Excel-based valuation template for MSMEs and startups.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-<div class="download-card">
-<i class="fas fa-file-pdf"></i>
-<div>
-<h5>Payroll Compliance Calendar</h5>
-<p>Monthly and annual payroll compliance tracker for HR & finance teams.</p>
-</div>
-<a href="#">Download</a>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CTA -->
-<section>
-<div class="container">
-<div class="stats" style="background:linear-gradient(120deg,var(--primary),#0a2540);color:#fff;">
-<div class="stats-grid">
-<div style="grid-column:1/-1;text-align:center;">
-<h2 style="font-size:36px;margin-bottom:10px;">Ready to Strengthen Your Business Finances?</h2>
-<p style="max-width:800px;margin:auto 0 25px;font-size:16px;">Schedule a free consultation with our experts and discover how Uma Associate & Corporate Finance Consultants can help you achieve compliance excellence and sustainable business growth.</p>
-<a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<div class="container">
-<div class="section-title">
-<h2>Contact Uma Associate</h2>
-<p>Get in touch with us for professional accounting, taxation, compliance, and corporate finance advisory services in Gandhinagar and across Gujarat.</p>
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-<h3>Uma Associate & Corporate Finance Consultants</h3>
-<p>We are committed to delivering accurate, ethical, and strategic financial services that empower individuals, startups, MSMEs, and corporates to thrive in a complex regulatory environment.</p>
-
-<div class="contact-details">
-<div><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat, India</div>
-<div><i class="fas fa-phone"></i> +91 95746 65220</div>
-<div><i class="fas fa-envelope"></i> Umaassociate2020@yahoo.com</div>
-<div><i class="fas fa-clock"></i> Mon – Sat: 10:00 AM – 7:00 PM</div>
-</div>
-</div>
-
-<div class="contact-form">
-<h4>Request a Callback / Consultation</h4>
-<form onsubmit="event.preventDefault(); submitForm();">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="email" id="email" placeholder="Your Email" required>
-<input type="tel" id="phone" placeholder="Your Phone Number" required>
-<textarea rows="4" id="message" placeholder="Your Requirement"></textarea>
-<button type="submit">Submit Request</button>
-</form>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<div class="container">
-<div class="footer-grid">
-
-<div class="footer-col">
-<h4>Uma Associate</h4>
-<p>Uma Associate & Corporate Finance Consultants is a professional firm offering accounting, taxation, compliance, and financial advisory services to individuals, startups, MSMEs, and corporate clients across Gujarat.</p>
-<div class="footer-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-</div>
-</div>
-
-<div class="footer-col">
-<h4>Services</h4>
-<ul>
-<li><a href="#">Accounting & Bookkeeping</a></li>
-<li><a href="#">Income Tax Advisory</a></li>
-<li><a href="#">GST Registration & Filing</a></li>
-<li><a href="#">TDS & Payroll</a></li>
-<li><a href="#">Corporate Finance Advisory</a></li>
-<li><a href="#">Startup Registrations</a></li>
-</ul>
-</div>
-
-<div class="footer-col">
-<h4>Corporate Finance</h4>
-<ul>
-<li><a href="#">Business Valuation</a></li>
-<li><a href="#">Fundraising Advisory</a></li>
-<li><a href="#">Mergers & Acquisitions</a></li>
-<li><a href="#">Financial Modeling</a></li>
-<li><a href="#">Working Capital Advisory</a></li>
-<li><a href="#">Business Restructuring</a></li>
-</ul>
-</div>
-
-<div class="footer-col">
-<h4>Quick Links</h4>
-<ul>
-<li><a href="#about">About Us</a></li>
-<li><a href="#services">Our Services</a></li>
-<li><a href="#blog">Insights</a></li>
-<li><a href="#careers">Careers</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-</ul>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 Uma Associate & Corporate Finance Consultants. All Rights Reserved.
-</div>
-</div>
-</footer>
-
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/919574665220" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
-<div class="chatbot-btn" onclick="toggleChatbot()"><i class="fas fa-robot"></i></div>
-
-<div class="chatbot-box" id="chatbot">
-<div class="chatbot-header">
-<span>Uma AI Assistant</span>
-<span style="cursor:pointer;" onclick="toggleChatbot()">✖</span>
-</div>
-<div class="chatbot-messages" id="chatMessages">
-<div><b>Bot:</b> Hello 👋 I’m Uma AI Assistant. How can I help you today? You can ask about GST, Income Tax, Accounting, Corporate Finance, or Careers.</div>
-</div>
-<div class="chatbot-input">
-<input type="text" id="chatInput" placeholder="Type your question...">
-<button onclick="sendChat()">Send</button>
-</div>
-</div>
-
-<script>
-/* THEME */
-function toggleTheme(){
-const body=document.body;
-const icon=document.querySelector('.theme-toggle i');
-if(body.getAttribute('data-theme')==='dark'){
-body.removeAttribute('data-theme');
-icon.className='fas fa-moon';
-}else{
-body.setAttribute('data-theme','dark');
-icon.className='fas fa-sun';
-}
-}
-
-/* CONTACT FORM */
-function submitForm(){
-alert("Thank you! Our team will contact you shortly.");
-document.querySelector("form").reset();
-}
-
-/* CHATBOT */
-function toggleChatbot(){
-const box=document.getElementById('chatbot');
-box.style.display=box.style.display==='flex'?'none':'flex';
-}
-function sendChat(){
-const input=document.getElementById('chatInput');
-const msg=input.value.trim();
-if(!msg) return;
-const messages=document.getElementById('chatMessages');
-messages.innerHTML+=`<div><b>You:</b> ${msg}</div>`;
-
-let reply="Thank you for your query. Our expert will contact you shortly. For immediate assistance, please call +91 95746 65220.";
-
-if(msg.toLowerCase().includes("gst")) reply="We provide GST registration, returns, reconciliation, audit & notice handling. Would you like a callback?";
-if(msg.toLowerCase().includes("tax")) reply="We handle Income Tax returns, tax planning, scrutiny & notices. Shall I arrange a consultation?";
-if(msg.toLowerCase().includes("account")) reply="We offer accounting, bookkeeping, MIS reporting & compliance services. Please share your requirement.";
-if(msg.toLowerCase().includes("finance")) reply="Our Corporate Finance services include valuation, fundraising, working capital, restructuring & M&A advisory.";
-
-setTimeout(()=>{
-messages.innerHTML+=`<div><b>Bot:</b> ${reply}</div>`;
-messages.scrollTop=messages.scrollHeight;
-},600);
-
-input.value="";
-messages.scrollTop=messages.scrollHeight;
-}
-
-/* FAQ */
-function toggleFaq(el){
-const item=el.parentElement;
-item.classList.toggle('active');
-const icon=el.querySelector('i');
-icon.className=item.classList.contains('active')?'fas fa-minus':'fas fa-plus';
-}
-
-/* TOOLS */
-function calculateEMI(){
-const P=parseFloat(document.getElementById('emiAmount').value);
-const r=parseFloat(document.getElementById('emiRate').value)/12/100;
-const n=parseFloat(document.getElementById('emiTenure').value)*12;
-if(!P||!r||!n){document.getElementById('emiResult').innerText="Please enter valid values.";return;}
-const emi=P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
-document.getElementById('emiResult').innerText="Estimated EMI: ₹"+emi.toFixed(2);
-}
-
-function calculateTax(){
-const income=parseFloat(document.getElementById('taxIncome').value);
-const regime=document.getElementById('taxRegime').value;
-if(!income){document.getElementById('taxResult').innerText="Please enter income.";return;}
-let tax=0;
-if(regime==="new"){
-if(income<=300000) tax=0;
-else if(income<=600000) tax=(income-300000)*0.05;
-else if(income<=900000) tax=15000+(income-600000)*0.10;
-else if(income<=1200000) tax=45000+(income-900000)*0.15;
-else if(income<=1500000) tax=90000+(income-1200000)*0.20;
-else tax=150000+(income-1500000)*0.30;
-}else{
-if(income<=250000) tax=0;
-else if(income<=500000) tax=(income-250000)*0.05;
-else if(income<=1000000) tax=12500+(income-500000)*0.20;
-else tax=112500+(income-1000000)*0.30;
-}
-document.getElementById('taxResult').innerText="Estimated Annual Tax: ₹"+tax.toFixed(2);
-}
-
-function calculateGSTInterest(){
-const amt=parseFloat(document.getElementById('gstAmount').value);
-const days=parseFloat(document.getElementById('gstDays').value);
-if(!amt||!days){document.getElementById('gstResult').innerText="Please enter valid values.";return;}
-const interest=amt*0.18/365*days;
-document.getElementById('gstResult').innerText="Estimated Interest: ₹"+interest.toFixed(2);
-}
-
-function calculateValuation(){
-const ebitda=parseFloat(document.getElementById('ebitda').value);
-const mult=parseFloat(document.getElementById('multiple').value);
-if(!ebitda||!mult){document.getElementById('valResult').innerText="Please enter valid values.";return;}
-const val=ebitda*mult;
-document.getElementById('valResult').innerText="Estimated Business Value: ₹"+val.toLocaleString();
-}
-
-/* CAREERS */
-function applyJob(role){
-alert("Thank you for your interest in the "+role+" position. Please send your resume to Umaassociate2020@yahoo.com");
-}
-</script>
-
-</body>
-</html>
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header id="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995474.png" alt="Uma Associate Logo">
+        Uma Associate
+      </a>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="theme-toggle" id="themeToggle" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+        <a href="#contact" class="btn btn-primary">Free Consultation</a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO SECTION
+  ========================= -->
+
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-right">
+        <h1>Professional <span>Accounting</span>, <span>GST</span> & <span>Tax Consulting</span> Services</h1>
+        <p>
+          Uma Associate & Tax Consultant helps individuals, startups, SMEs, and corporations with accurate accounting,
+          GST compliance, income tax filing, payroll, company law matters, and strategic financial advisory — all under one roof.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> Our Services</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Contact Us</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>1000+</h3>
+            <p>Clients Served</p>
+          </div>
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3>99%</h3>
+            <p>Compliance Accuracy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image" data-aos="fade-left">
+        <img class="main" src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?q=80&w=1200&auto=format&fit=crop" alt="Accounting Office">
+
+        <div class="floating-card one">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <div>
+            <strong>GST Returns</strong>
+            <p style="font-size:13px;color:#666;">Timely Filing</p>
+          </div>
+        </div>
+
+        <div class="floating-card two">
+          <i class="fa-solid fa-chart-line"></i>
+          <div>
+            <strong>Financial Growth</strong>
+            <p style="font-size:13px;color:#666;">Expert Advisory</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       BRANDS / TRUSTED BY
+  ========================= -->
+
+  <section class="brands">
+    <div class="container brands-grid">
+      <img class="brand" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Google_2015_logo.svg" alt="Google">
+      <img class="brand" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+      <img class="brand" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="TV">
+      <img class="brand" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_of_Infosys.svg" alt="Infosys">
+      <img class="brand" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+    </div>
+  </section>
+
+  <!-- =========================
+       ABOUT SECTION
+  ========================= -->
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>About Us</span>
+        <h2>Trusted Financial & Tax Consulting Partner</h2>
+        <p>
+          Uma Associate & Tax Consultant is a professional firm providing end-to-end accounting,
+          taxation, and business compliance services to individuals, startups, and organizations across India.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop" alt="Team Meeting">
+          <div class="experience-badge">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h3>Who We Are</h3>
+          <p>
+            At Uma Associate & Tax Consultant, we believe that strong financial systems are the backbone of every successful
+            business. Our mission is to simplify complex accounting, taxation, and compliance requirements while delivering
+            measurable value to our clients.
+          </p>
+          <p>
+            With a client-centric approach and a team of experienced professionals, we offer transparent, accurate, and
+            timely services. Whether you are an individual taxpayer, startup founder, or business owner, we help you
+            navigate regulations confidently while optimizing your financial performance.
+          </p>
+
+          <div class="about-features">
+            <div class="feature">
+              <i class="fa-solid fa-user-shield"></i>
+              <div>
+                <h4>Ethical & Transparent</h4>
+                <p>We maintain complete confidentiality and transparency in every engagement.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h4>Experienced Professionals</h4>
+                <p>Our team has strong expertise in accounting, taxation, and compliance.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>Timely Delivery</h4>
+                <p>We ensure all filings and compliances are completed before deadlines.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-handshake"></i>
+              <div>
+                <h4>Long-Term Partnerships</h4>
+                <p>We focus on building strong, lasting relationships with our clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       SERVICES SECTION
+  ========================= -->
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Our Services</span>
+        <h2>Comprehensive Accounting, Tax & Compliance Solutions</h2>
+        <p>
+          We provide end-to-end financial and statutory services to help businesses stay compliant,
+          grow sustainably, and focus on what matters most.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-aos="zoom-in">
+          <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h4>Accounting & Bookkeeping</h4>
+          <p>
+            Accurate and organized accounting is the foundation of every successful business. Our accounting
+            and bookkeeping services ensure that your financial records are maintained correctly, updated
+            regularly, and compliant with applicable accounting standards.
+          </p>
+          <ul>
+            <li>Daily, Weekly & Monthly Bookkeeping</li>
+            <li>Preparation of Financial Statements</li>
+            <li>Balance Sheet & Profit/Loss Accounts</li>
+            <li>Accounts Reconciliation</li>
+            <li>MIS Reports & Financial Analysis</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h4>GST Registration & Return Filing</h4>
+          <p>
+            We provide complete GST services including registration, return filing, reconciliation, and
+            compliance management. Our experts help you avoid penalties while ensuring smooth GST operations.
+          </p>
+          <ul>
+            <li>GST Registration (Regular / Composition)</li>
+            <li>Monthly, Quarterly & Annual GST Returns</li>
+            <li>Input Tax Credit Reconciliation</li>
+            <li>GST Notices & Compliance Support</li>
+            <li>GST Audit Assistance</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Consult Now</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <h4>Income Tax Return Filing</h4>
+          <p>
+            Our income tax experts help individuals, professionals, and businesses file accurate returns,
+            claim eligible deductions, and remain fully compliant with tax laws.
+          </p>
+          <ul>
+            <li>Individual ITR Filing (Salaried / Self-Employed)</li>
+            <li>Business & Firm Income Tax Returns</li>
+            <li>Tax Planning & Advisory</li>
+            <li>Income Tax Notices & Assessments</li>
+            <li>Refund Follow-Up Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">File ITR</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-icon"><i class="fa-solid fa-receipt"></i></div>
+          <h4>TDS Compliance & Returns</h4>
+          <p>
+            Our TDS services ensure proper deduction, timely payment, and accurate filing of TDS returns,
+            helping you stay compliant with income tax regulations.
+          </p>
+          <ul>
+            <li>TDS Deduction & Payment</li>
+            <li>Quarterly TDS Returns Filing</li>
+            <li>Form 16 / 16A Issuance</li>
+            <li>TDS Reconciliation & Corrections</li>
+            <li>Support for TDS Notices</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Know More</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+          <h4>Payroll Management</h4>
+          <p>
+            We manage end-to-end payroll processing, ensuring accurate salary computation, statutory
+            deductions, and timely disbursement for your employees.
+          </p>
+          <ul>
+            <li>Monthly Payroll Processing</li>
+            <li>Salary Slips & Payroll Reports</li>
+            <li>PF, ESI & Professional Tax Compliance</li>
+            <li>Employee Reimbursements</li>
+            <li>Payroll Audit Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Start Payroll</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+          <h4>Company Registration & Compliance</h4>
+          <p>
+            From company incorporation to annual compliance, we handle all regulatory requirements so
+            that you can focus on growing your business.
+          </p>
+          <ul>
+            <li>Private Limited, LLP & Partnership Registration</li>
+            <li>ROC Filings & Annual Returns</li>
+            <li>Director KYC & DIN Compliance</li>
+            <li>Statutory Registers & Records</li>
+            <li>Company Law Advisory</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Register Now</a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+          <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h4>Audit & Assurance</h4>
+          <p>
+            Our audit and assurance services provide independent, objective evaluation of financial
+            statements, helping improve accuracy, transparency, and stakeholder confidence.
+          </p>
+          <ul>
+            <li>Statutory Audit</li>
+            <li>Internal Audit</li>
+            <li>Tax Audit</li>
+            <li>Stock & Inventory Audit</li>
+            <li>Process & Compliance Review</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Request Audit</a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="700">
+          <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h4>Business Advisory & Consulting</h4>
+          <p>
+            We provide strategic business advisory services to help organizations optimize operations,
+            improve profitability, manage risks, and achieve long-term growth.
+          </p>
+          <ul>
+            <li>Startup Advisory & Business Structuring</li>
+            <li>Financial Planning & Forecasting</li>
+            <li>Budgeting & Cost Optimization</li>
+            <li>Business Valuation</li>
+            <li>Investment & Funding Advisory</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Advice</a>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="800">
+          <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h4>Management Information Systems (MIS)</h4>
+          <p>
+            Our MIS services help businesses gain actionable insights into their financial performance
+            through customized reports and dashboards.
+          </p>
+          <ul>
+            <li>Monthly & Quarterly MIS Reports</li>
+            <li>Budget vs Actual Analysis</li>
+            <li>Cash Flow Statements</li>
+            <li>Profitability Analysis</li>
+            <li>Performance Dashboards</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">View Reports</a>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="900">
+          <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Compliance & Regulatory Advisory</h4>
+          <p>
+            We provide comprehensive compliance advisory services to ensure your business adheres to
+            statutory, regulatory, and industry-specific requirements.
+          </p>
+          <ul>
+            <li>Statutory Compliance Monitoring</li>
+            <li>Labour Law Compliance</li>
+            <li>Risk Assessment & Mitigation</li>
+            <li>Regulatory Filings & Documentation</li>
+            <li>Compliance Audits</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Ensure Compliance</a>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="1000">
+          <div class="service-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+          <h4>Financial Planning & Wealth Management</h4>
+          <p>
+            Our financial planning services help individuals and businesses achieve their financial goals
+            through strategic investment planning, risk management, and long-term wealth creation.
+          </p>
+          <ul>
+            <li>Personal & Business Financial Planning</li>
+            <li>Investment Advisory</li>
+            <li>Tax-Efficient Wealth Strategies</li>
+            <li>Retirement Planning</li>
+            <li>Estate & Succession Planning</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Plan Wealth</a>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="1100">
+          <div class="service-icon"><i class="fa-solid fa-laptop-file"></i></div>
+          <h4>Virtual CFO Services</h4>
+          <p>
+            Our Virtual CFO services provide businesses with strategic financial leadership without the
+            cost of a full-time CFO, helping improve profitability and financial controls.
+          </p>
+          <ul>
+            <li>Financial Strategy & Planning</li>
+            <li>Cash Flow Management</li>
+            <li>Investor Reporting</li>
+            <li>Risk & Compliance Oversight</li>
+            <li>Business Growth Advisory</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Hire Virtual CFO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       PROCESS SECTION
+  ========================= -->
+
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>How It Works</span>
+        <h2>Simple, Transparent & Result-Oriented Process</h2>
+        <p>
+          Our structured and client-friendly approach ensures timely delivery, clear communication,
+          and maximum value at every stage of engagement.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step" data-aos="fade-up">
+          <h4>Initial Consultation</h4>
+          <p>
+            We begin with a detailed discussion to understand your business, financial objectives,
+            compliance requirements, and specific challenges. This helps us design customized solutions
+            aligned with your goals.
+          </p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+          <h4>Requirement Assessment</h4>
+          <p>
+            Our experts analyze your documents, financial data, and statutory obligations to identify
+            gaps, risks, and opportunities for improvement.
+          </p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+          <h4>Solution Design</h4>
+          <p>
+            Based on your requirements, we develop a comprehensive service plan covering accounting,
+            taxation, compliance, reporting, and advisory needs.
+          </p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+          <h4>Execution & Implementation</h4>
+          <p>
+            Our team executes the agreed services efficiently while maintaining strict confidentiality,
+            accuracy, and adherence to timelines.
+          </p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+          <h4>Review & Reporting</h4>
+          <p>
+            We provide regular reports, dashboards, and updates to keep you informed about financial
+            performance, compliance status, and key insights.
+          </p>
+        </div>
+
+        <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+          <h4>Ongoing Support</h4>
+          <p>
+            Our relationship doesn’t end with delivery. We offer continuous advisory, compliance
+            monitoring, and proactive recommendations to support your growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       WHY CHOOSE US SECTION
+  ========================= -->
+
+  <section class="section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content" data-aos="fade-right">
+          <span style="display:inline-block;padding:6px 16px;border-radius:50px;background:rgba(11,94,215,0.1);color:var(--primary);font-weight:600;font-size:14px;margin-bottom:12px;">Why Choose Us</span>
+          <h3>Your Trusted Partner for Accounting, Tax & Compliance</h3>
+          <p>
+            We go beyond traditional accounting services to become a strategic partner in your business
+            journey. Our client-first philosophy, technical expertise, and ethical standards ensure
+            superior outcomes for individuals and organizations alike.
+          </p>
+
+          <div class="why-list">
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Expert Team</h4>
+                <p>Qualified professionals with deep expertise in taxation, accounting, and compliance.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Customized Solutions</h4>
+                <p>Tailor-made services designed specifically to match your business requirements.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Accuracy & Compliance</h4>
+                <p>High standards of accuracy and strict adherence to statutory deadlines.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Transparent Pricing</h4>
+                <p>No hidden charges — clear, upfront pricing for all services.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Proactive Advisory</h4>
+                <p>Regular insights and recommendations to improve financial performance.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <h4>Long-Term Partnership</h4>
+                <p>We build enduring relationships based on trust, performance, and results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-image" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop" alt="Financial Consulting">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       STATS SECTION
+  ========================= -->
+
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div data-aos="fade-up">
+        <div class="counter" data-target="1200">0</div>
+        <p>Happy Clients</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <div class="counter" data-target="3500">0</div>
+        <p>Returns Filed</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <div class="counter" data-target="98">0</div>
+        <p>Compliance Success (%)</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <div class="counter" data-target="25">0</div>
+        <p>Expert Team Members</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       TEAM SECTION
+  ========================= -->
+
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Our Team</span>
+        <h2>Meet Our Experienced Professionals</h2>
+        <p>
+          Our team comprises qualified accountants, tax consultants, and compliance specialists
+          dedicated to delivering excellence and building long-term client relationships.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card" data-aos="zoom-in">
+          <div class="team-image">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h4>Harshil Patel</h4>
+            <p>Founder & Lead Consultant</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="team-image">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Team Member">
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h4>Neha Sharma</h4>
+            <p>Senior Tax Advisor</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="team-image">
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Team Member">
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h4>Rohit Mehta</h4>
+            <p>GST Compliance Specialist</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="team-image">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Team Member">
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h4>Pooja Desai</h4>
+            <p>Accounts Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       TESTIMONIALS SECTION
+  ========================= -->
+
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>
+          We take pride in building long-term relationships with our clients by delivering
+          reliable, accurate, and timely financial services.
+        </p>
+      </div>
+
+      <div class="swipe
